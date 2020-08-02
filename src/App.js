@@ -1,13 +1,15 @@
-import React  from 'react';
+import React from 'react';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import './assets/styles/App.scss';
 const App = () => {
   return (
-    <div className="App">
-      <Header />
+    <div id="fullpage">
+      <div className="section">
+        <Header />
 
-       <Footer />   
+        <Footer />
+      </div>
     </div>
   );
 };
