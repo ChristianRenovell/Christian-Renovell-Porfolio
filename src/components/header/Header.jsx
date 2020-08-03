@@ -15,7 +15,7 @@ const Header = () => {
                     </span>
                 </button>
                 <div className="collapse navbar-collapse textcolor" id="navbarTogglerDemo01">
-                    <a className="navbar-brand" href="#" onclick="myFunction()">CHRISTIAN RENOVELL</a>
+                    <a className="navbar-brand" href="#" onclick="myFunction()"><h2></h2></a>
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li className="nav-item active">
                             <a className="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -31,15 +31,6 @@ const Header = () => {
                         </li>
                         <div>
                             <div >
-                                <div className="time-circle">
-                                    <div className="sun">
-                                        <img className="avatarDay" src={avatar} />
-                                    </div>
-                                    <div className="sunClose">
-                                        <img className="avatarNight" src={avatarNigth} />
-                                    </div>
-                                    <div className="water"></div>
-                                </div>
                                 <div id="switch" onClick={mode}>
                                     <div id="circle" ></div>
                                 </div>
