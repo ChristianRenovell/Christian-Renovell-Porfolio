@@ -7,9 +7,10 @@
 }
 body {
     padding: 0;
-	margin: 0;
-	font-family: 'Lato';
-   text-align: center;
+	  margin: 0;
+	  font-family: 'Lato';
+    text-align: center;
+    
    
 }
 
@@ -19,7 +20,7 @@ body {
 	text-align: center;
 	background: #f1ede3;
 	width: 100%;
-	height: 100vh;
+  height: 100vh;
 	-webkit-transition: background 0.5s ease-in-out;
 		transition: background 0.5s ease-in-out;
 }
@@ -27,11 +28,13 @@ body {
     color: #555;
 }
 .night .section {
-	background: #080d17;
+  background: #080d17;
+  color: palevioletred;
    
 }
+
 .night .section a {
-    color: #e9e5d5;
+    color: palevioletred;
 }
 .night #intro-text {
 	color: #e9e5d5;

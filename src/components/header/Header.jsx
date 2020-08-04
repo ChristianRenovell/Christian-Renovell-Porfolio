@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './header.scss';
-import avatar from '../../assets/static/myAvatar.png';
-import avatarNigth from '../../assets/static/myAvatarNigth.png';
-import mode from './index.js';
 import burger from '../../assets/static/burger.png';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const Header = () => {
     return (
@@ -11,31 +9,23 @@ const Header = () => {
             <nav className="navbar navbar-expand-lg">
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="">
-                       <img src={burger} width="50px"/>
+                        <img src={burger} width="50px" />
                     </span>
                 </button>
                 <div className="collapse navbar-collapse textcolor" id="navbarTogglerDemo01">
-                    <a className="navbar-brand" href="#" onclick="myFunction()"><h2></h2></a>
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                           <Link to={"/"} className="navbar-brand">Inicio</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Proyectos</a>
+                            <Link to={"/proyects"} className="navbar-brand">Proyectos</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Conocimientos</a>
+                            <Link to={"/courses"} className="navbar-brand">Comocimientos</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Contacto</a>
+                            <Link to={"/contact"} className="navbar-brand">Contacto</Link>
                         </li>
-                        <div>
-                            <div >
-                                <div id="switch" onClick={mode}>
-                                    <div id="circle" ></div>
-                                </div>
-                            </div>
-                        </div>
                     </ul>
                 </div>
             </nav>

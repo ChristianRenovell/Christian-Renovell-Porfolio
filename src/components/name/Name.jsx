@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { render } from 'react-dom';
 import { useTrail, animated } from 'react-spring';
 import './name.scss';
 
@@ -17,15 +16,15 @@ function Name() {
   })
 
   return (
-    <div className="trails-main" onClick={() => set(state => !state)}>
-      <div>
+    <div className="trails-main" onClick={() => set(state => !state)} >
+      <div id="fullpage2">
         {trail.map(({ x, height, ...rest }, index) => (
-          <animated.div
+          <a><animated.div
             key={items[index]}
             className="trails-text"
             style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}>
             <animated.div style={{ height }}>{items[index]}</animated.div>
-          </animated.div>
+          </animated.div></a>
         ))}
       </div>
     </div>
