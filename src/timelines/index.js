@@ -5,12 +5,14 @@ const getDefaultTimeline = (node, delay) => {
   const content = node.querySelector('.content');
   const contentInner = node.querySelector('.content--inner');
   const contentInner2 = node.querySelector('.content--inner2');
+  const contentInner3 = node.querySelector('.content--inner3');
 
   timeline
     .from(node, 0.30, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn })
     .from(content, 0.60, { autoAlpha: 0, y: 25, ease: Power1.easeInOut })
     .from(contentInner, 0.55, { autoAlpha: 0, delay: 0.15, ease: Power1.easeIn })
-    .from(contentInner2, 1.0, { autoAlpha: 0, delay: 0.15, ease: Power1.easeIn });
+    .from(contentInner2, 1.0, { autoAlpha: 0, delay: 0.15, ease: Power1.easeIn })
+    .from(contentInner3, 1.0, { autoAlpha: 0, delay: 0.15, ease: Power1.easeIn });
 
 
   return timeline;

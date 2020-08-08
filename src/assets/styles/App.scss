@@ -25,15 +25,15 @@ body {
 .section a{
     color: #555;
 }
+
 .night .section {
   background: #080d17;
-  color: palevioletred;
-   
+  color: #d87093;
+}
+.night .section a {
+    color: #d87093;
 }
 
-.night .section a {
-    color: palevioletred;
-}
 .night #intro-text {
 	color: #e9e5d5;
 }

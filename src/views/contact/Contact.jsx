@@ -1,6 +1,9 @@
 import React from 'react';
 
-const Contact = () => {
+const Contact = (props) => {
+ 
+console.log(`images/facebook-${props.match.params.mode}.png`)
+
   return (
     <div id="fullpage">
       <div className="section">
@@ -52,19 +55,35 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="content--inner2">
-                  <div class="col-md-12 text-center mt-4">
-                    <ul class="list-unstyled mb-0">
-                      <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                        <p>San Francisco, CA 94126, USA</p>
-                      </li>
-                      <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                        <p>+ 01 234 567 89</p>
-                      </li>
-                      <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                        <p>contact@mdbootstrap.com</p>
-                      </li>
-                    </ul>
+                    <div class="col-md-12 text-center mt-4">
+                      <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                          <p>San Francisco, CA 94126, USA</p>
+                        </li>
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                          <p>+ 01 234 567 89</p>
+                        </li>
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                          <p>contact@mdbootstrap.com</p>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
+                  <div className="content--inner3">
+                    <div className="row">
+                      <div className="col-md-3 mt-4">
+                        <a href=""><img width="50px" src={`../images/facebook-${props.match.params.mode}.png`} id="facebook"/></a>
+                      </div>  
+                      <div className="col-md-3 mt-4">
+                        <a href=""><img width="50px" src={`../images/instagram-${props.match.params.mode}.png`} id="instagram"/></a>
+                      </div>
+                      <div className="col-md-3 mt-4">
+                        <a href=""><img  width="50px" src={`../images/linkedin-${props.match.params.mode}.png`} id="linkedin"/></a>
+                      </div>
+                      <div className="col-md-3 mt-4">
+                        <a href=""><img  width="50px" src={`../images/git-${props.match.params.mode}.png`} id="git"/></a>
+                      </div>
+                    </div>
                   </div>
                 </section>
               </div>

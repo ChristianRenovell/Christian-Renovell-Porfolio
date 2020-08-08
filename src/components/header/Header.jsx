@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import './header.scss';
 import burger from '../../assets/static/burger.png';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+const Header = (props) => {
 
-const Header = () => {
+    console.log(props.mode, "esto estam llegando");
+
     return (
         <div id="intro-text">
             <nav className="navbar navbar-expand-lg">
@@ -12,6 +14,7 @@ const Header = () => {
                         <img src={burger} width="50px" />
                     </span>
                 </button>
+               
                 <div className="collapse navbar-collapse textcolor" id="navbarTogglerDemo01">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li className="nav-item active">
@@ -24,7 +27,7 @@ const Header = () => {
                             <Link to={"/courses"} className="navbar-brand">Comocimientos</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={"/contact"} className="navbar-brand">Contacto</Link>
+                            <Link to={`/contact/${props.mode}`} className="navbar-brand">Contacto</Link>
                         </li>
                     </ul>
                 </div>
