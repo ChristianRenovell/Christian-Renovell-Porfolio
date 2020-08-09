@@ -1,18 +1,30 @@
 import React from 'react';
 import './card.scss';
+import Background from '../../assets/static/christian-darck.png';
+
+var sectionStyle = {
+    
+    backgroundImage: `url(${Background})`
+  };
 
 const Card = (props) => {
 
     return (
         <div className="conatainer cont">
-            <div className="row">
-                <div id="box-6" class="box">
-                    <img id="image-6" src="../images/christian-darck.png" width="250px"/>
-                    <span class="caption scale-caption">
-                        <h3>Scale Caption</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-			                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    </span>
+            <div class="containerCard" style={ sectionStyle }>
+                <div class="overlay">
+                    <div class="items"></div>
+                    <div class="items head">
+                        <p>Flower Embroidery Hoop Art</p>
+                    </div>
+                    <div class="items price">
+                        <p class="old">$699</p>
+                        <p class="new">$345</p>
+                    </div>
+                    <div class="items cart">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span>ADD TO CART</span>
+                    </div>
                 </div>
             </div>
         </div>

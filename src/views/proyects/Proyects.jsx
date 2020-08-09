@@ -10,15 +10,9 @@ const Proyects = (props) => {
           <h1>Mis trabajos recientes</h1>
         </div>
         <div className="content--inner mt-5">
-          <div className="container-fluid">
+          <div className="container">
             <div className="row">
-              <div className="col-md-4">
-                <Card />
-              </div>
-              <div className="col-md-4">
-                <Card />
-              </div>
-              <div className="col-md-4">
+              <div className="col-md-12">
                 <Card />
               </div>
             </div>
