@@ -11,6 +11,10 @@ body {
 	  font-family: 'Lato';
     text-align: center;
 }
+p{
+  font-size: 1.3em;
+  text-align: left;
+}
 .section {
 	padding-top: 40px;
 	font-size: 1em;
@@ -36,6 +40,45 @@ body {
 
 .night #intro-text {
 	color: #e9e5d5;
+}
+
+.circle-profile-light{
+  border-radius: 50%;
+  border: #555 6px solid;
+}
+
+.circle-profile-darck{
+  border-radius: 50%;
+  border: #d87093 6px solid;
+}
+
+.btn-profile-light {
+ 
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3em;
+    border: #555 1px solid;
+    border-radius: 100px;
+    width: 200px;
+    cursor: pointer;
+
+}
+
+.btn-profile-light:hover {
+  background-color: rgb(189, 189, 189);
+  color: red;
+  
+}
+
+.btn-profile-darck {
+
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3em;
+    border: #d87093 1px solid;
+    border-radius: 100px;
+    width: 200px;
+    cursor: pointer;
 }
 
 #switch,

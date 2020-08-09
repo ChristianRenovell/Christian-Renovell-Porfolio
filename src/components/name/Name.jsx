@@ -5,7 +5,7 @@ import './name.scss';
 const items = ['christian','renovell']
 const config = { mass: 5, tension: 800, friction: 250 }
 
-function Name() {
+function Name(props) {
   const [toggle, set] = useState(true)
   const trail = useTrail(items.length, {
     config,
@@ -19,7 +19,7 @@ function Name() {
     <div className="trails-main" onClick={() => set(state => !state)} >
       <div id="fullpage2">
         {trail.map(({ x, height, ...rest }, index) => (
-          <a><animated.div
+          <a href={`/profile/${props.mode}`} ><animated.div
             key={items[index]}
             className="trails-text"
             style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}>
