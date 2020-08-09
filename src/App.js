@@ -5,8 +5,9 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import './assets/styles/App.scss';
 import Home from './views/home/Home';
-import Contact from './views/contact/Contact';
 import Profile from './views/profile/Profile';
+import Proyects from './views/proyects/Proyects';
+import Contact from './views/contact/Contact';
 import { play, exit } from './timelines';
 
 class App extends Component {
@@ -29,13 +30,15 @@ class App extends Component {
     let git = document.getElementById("git");
     let photoCircle = document.getElementById("photo-circle");
     let btnContact = document.getElementById("btn-contact");
+    let btnAbout = document.getElementById("btn-about");
 
 
     if (elemento.className === "night") {
 
       this.setState({ mode: "light" });
-
+      //contact
       try {
+        btnContact.className = "btn-profile-light";
         face.src = "../images/facebook-light.png";
         insta.src = "../images/instagram-light.png";
         linke.src = "../images/linkedin-light.png";
@@ -46,17 +49,18 @@ class App extends Component {
       try {
         photoCircle.src = "../images/christian-light.png";
         photoCircle.className = "circle-profile-light";
-        btnContact.className = "btn-profile-light";
+        btnAbout.className = "btn-profile-light";
+
       } catch{ }
-
       
-
       elemento.className = "";
       elemento2.className = "";
 
     } else {
       this.setState({ mode: "darck" });
+      //contact
       try {
+        btnContact.className = "btn-profile-darck";
         face.src = "../images/facebook-darck.png";
         insta.src = "../images/instagram-darck.png";
         linke.src = "../images/linkedin-darck.png";
@@ -68,9 +72,10 @@ class App extends Component {
       try {
         photoCircle.src = "../images/christian-darck.png";
         photoCircle.className = "circle-profile-darck";
-        btnContact.className = "btn-profile-darck";
+        btnAbout.className = "btn-profile-darck";
+
       } catch{ }
-      
+
       elemento.className += "night";
       elemento2.className += "switched";
 
@@ -102,8 +107,10 @@ class App extends Component {
                   >
                     <Switch location={location}>
                       <Route exact path="/" component={Home} />
-                      <Route exact path="/contact/:mode" component={Contact} />
                       <Route exact path="/profile/:mode" component={Profile} />
+                      <Route exact path="/proyects/:mode" component={Proyects} />
+                      <Route exact path="/contact/:mode" component={Contact} />
+                      
                     </Switch>
                   </Transition>
                 </TransitionGroup>

@@ -23,7 +23,7 @@ const Header = (props) => {
                             <Link to={`/profile/${props.mode}`} className="navbar-brand">sobre mi</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={"/proyects"} className="navbar-brand">Proyectos</Link>
+                            <Link to={`/proyects/${props.mode}`} className="navbar-brand">Proyectos</Link>
                         </li>
                         <li className="nav-item">
                             <Link to={"/courses"} className="navbar-brand">Comocimientos</Link>

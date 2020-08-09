@@ -11,9 +11,11 @@ body {
 	  font-family: 'Lato';
     text-align: center;
 }
-p{
+
+.about-p{
   font-size: 1.3em;
   text-align: left;
+  
 }
 .section {
 	padding-top: 40px;
@@ -29,13 +31,30 @@ p{
 .section a{
     color: #555;
 }
+.section input{
+  border: #555 1px solid;
+  border-radius: 20px;
+}
+.section textarea{
+  border: #555 1px solid;
+  border-radius: 20px;
+}
 
+//mode night
 .night .section {
   background: #080d17;
   color: #d87093;
 }
 .night .section a {
     color: #d87093;
+}
+.night input{
+  border: #d87093 1px solid;
+  border-radius: 20px;
+}
+.night textarea{
+  border: #d87093 1px solid;
+  border-radius: 20px;
 }
 
 .night #intro-text {
@@ -56,17 +75,23 @@ p{
  
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.3em;
+    font-size: 1em;
+    padding: 10px;
     border: #555 1px solid;
-    border-radius: 100px;
+    border-radius: 50px;
+    text-align: center;
     width: 200px;
     cursor: pointer;
-
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+    
 }
 
 .btn-profile-light:hover {
-  background-color: rgb(189, 189, 189);
-  color: red;
+  background-color: #555;
+  color: #e9e5d5;
   
 }
 
@@ -75,10 +100,21 @@ p{
     margin-left: auto;
     margin-right: auto;
     font-size: 1.3em;
+    padding: 10px;
     border: #d87093 1px solid;
     border-radius: 100px;
     width: 200px;
     cursor: pointer;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+}
+
+.btn-profile-darck:hover {
+  background-color: #d87093;
+  color: #080d17;
+  
 }
 
 #switch,

@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Contact = (props) => {
  
 console.log(`images/facebook-${props.match.params.mode}.png`)
@@ -20,37 +21,38 @@ console.log(`images/facebook-${props.match.params.mode}.png`)
                       <form id="contact-form" name="contact-form" action="mail.php" method="POST">
                         <div class="row">
                           <div class="col-md-6">
-                            <div class="md-form mb-0">
+                            <div class="md-form mb-4">
+                            <label for="name" className="">Nombre</label>
                               <input type="text" id="name" name="name" class="form-control bg-transparent" />
-                              <label for="name" class="">Nombre</label>
                             </div>
                           </div>
                           <div class="col-md-6">
-                            <div class="md-form mb-0">
+                            <div class="md-form mb-4">
+                            <label for="email" class="">Email</label>
                               <input type="text" id="email" name="email" class="form-control bg-transparent" />
-                              <label for="email" class="">Email</label>
                             </div>
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-12">
+                          <div class="col-md-12 mb-4">
                             <div class="md-form mb-0">
+                            <label for="subject" class="">Asunto</label>
                               <input type="text" id="subject" name="subject" class="form-control bg-transparent" />
-                              <label for="subject" class="">Asunto</label>
                             </div>
                           </div>
                         </div>
                         <div class="row mb-4">
                           <div class="col-md-12">
                             <div class="md-form">
+                            <label for="message">Mensaje</label>
                               <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea bg-transparent"></textarea>
-                              <label for="message">Mensaje</label>
+                              
                             </div>
                           </div>
                         </div>
                       </form>
                       <div class="text-center text-md-center">
-                        <a class="btn btn-light" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+                      <div className={`btn-profile-${props.match.params.mode}`} id="btn-contact" onclick="document.getElementById('contact-form').submit();">Enviar</div>
                       </div>
                     </div>
                   </div>
@@ -58,13 +60,13 @@ console.log(`images/facebook-${props.match.params.mode}.png`)
                     <div class="col-md-12 text-center mt-4">
                       <ul class="list-unstyled mb-0">
                         <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                          <p>San Francisco, CA 94126, USA</p>
+                          <p>Candelaria, Santa cruz de Tenerife, España</p>
                         </li>
                         <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                          <p>+ 01 234 567 89</p>
+                          <p>+34 679985955</p>
                         </li>
                         <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                          <p>contact@mdbootstrap.com</p>
+                          <p>christianrenovell83@gmail.com</p>
                         </li>
                       </ul>
                     </div>
