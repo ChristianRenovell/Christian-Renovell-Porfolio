@@ -15,9 +15,10 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      mode: "light"
+      mode: ""
     };
     this.mode = this.mode.bind(this);
+
   };
 
   mode() {
@@ -31,8 +32,7 @@ class App extends Component {
     let photoCircle = document.getElementById("photo-circle");
     let btnContact = document.getElementById("btn-contact");
     let btnAbout = document.getElementById("btn-about");
-
-
+   
     if (elemento.className === "night") {
 
       this.setState({ mode: "light" });
@@ -52,11 +52,12 @@ class App extends Component {
         btnAbout.className = "btn-profile-light";
 
       } catch{ }
-      
+
       elemento.className = "";
       elemento2.className = "";
 
     } else {
+
       this.setState({ mode: "darck" });
       //contact
       try {
@@ -81,9 +82,12 @@ class App extends Component {
 
     }
   }
-
+  
 
   render() {
+
+    window.onload = this.mode;
+
     return (
       <BrowserRouter>
         <div id="fullpage">
@@ -106,11 +110,21 @@ class App extends Component {
                     timeout={{ enter: 750, exit: 150 }}
                   >
                     <Switch location={location}>
-                      <Route exact path="/" component={Home} />
-                      <Route exact path="/profile/:mode" component={Profile} />
+                      <Route
+                        exact path='/'
+                        render={(props) => (
+                          <Home {...props} mode={this.state.mode} />
+                        )}
+                      />
+                      <Route
+                        exact path='/profile/:mode'
+                        render={(props) => (
+                          <Profile {...props} mode={this.state.mode} />
+                        )}
+                      />
                       <Route exact path="/proyects/:mode" component={Proyects} />
                       <Route exact path="/contact/:mode" component={Contact} />
-                      
+
                     </Switch>
                   </Transition>
                 </TransitionGroup>

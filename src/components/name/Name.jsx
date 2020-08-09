@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTrail, animated } from 'react-spring';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import './name.scss';
 
 const items = ['christian','renovell']
@@ -19,12 +20,12 @@ function Name(props) {
     <div className="trails-main" onClick={() => set(state => !state)} >
       <div id="fullpage2">
         {trail.map(({ x, height, ...rest }, index) => (
-          <a href={`/profile/${props.mode}`} ><animated.div
+          <Link to={`/profile/${props.mode}`} ><animated.div
             key={items[index]}
             className="trails-text"
             style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}>
             <animated.div style={{ height }}>{items[index]}</animated.div>
-          </animated.div></a>
+          </animated.div></Link>
         ))}
       </div>
     </div>

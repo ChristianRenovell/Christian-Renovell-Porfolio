@@ -3,8 +3,6 @@ import React from 'react';
 
 const Contact = (props) => {
  
-console.log(`images/facebook-${props.match.params.mode}.png`)
-
   return (
     <div id="fullpage">
       <div className="section">

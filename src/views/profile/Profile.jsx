@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-
 const Profile = (props) => {
 
     return (
@@ -25,7 +24,7 @@ const Profile = (props) => {
                             <div className="col-md-5">
                             </div>
                             <div className="col-md-5 mt-5 content--inner2">
-                                <div className={`btn-profile-${props.match.params.mode}`} id="btn-about"><Link to={`/contact/${props.match.params.mode}`} className="navbar-brand ml-2">Contacta conmigo</Link></div>
+                                <Link to={`/contact/${props.mode}`} className="navbar-brand"><div className={`btn-profile-${props.match.params.mode}`} id="btn-about">Contacta conmigo</div></Link>
                             </div>
                             <div className="col-md-2">
                             </div>

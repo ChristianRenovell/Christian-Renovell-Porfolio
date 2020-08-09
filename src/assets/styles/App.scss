@@ -12,7 +12,8 @@ body {
     text-align: center;
 }
 
-.about-p{
+
+.about-p {
   font-size: 1.3em;
   text-align: left;
   
@@ -29,8 +30,9 @@ body {
 		transition: background 0.5s ease-in-out;
 }
 .section a{
-    color: #555;
-}
+  text-decoration: none;
+  color: #555;
+} 
 .section input{
   border: #555 1px solid;
   border-radius: 20px;
@@ -72,7 +74,7 @@ body {
 }
 
 .btn-profile-light {
- 
+
     margin-left: auto;
     margin-right: auto;
     font-size: 1em;
@@ -86,12 +88,12 @@ body {
     -moz-transition: background-color 1s ease-out;
     -o-transition: background-color 1s ease-out;
     transition: background-color 1s ease-out;
-    
 }
 
 .btn-profile-light:hover {
-  background-color: #555;
+
   color: #e9e5d5;
+  background-color: #555;
   
 }
 
@@ -99,7 +101,7 @@ body {
 
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.3em;
+    font-size: 1em;
     padding: 10px;
     border: #d87093 1px solid;
     border-radius: 100px;
@@ -112,8 +114,8 @@ body {
 }
 
 .btn-profile-darck:hover {
-  background-color: #d87093;
   color: #080d17;
+  background-color: #d87093;
   
 }
 
