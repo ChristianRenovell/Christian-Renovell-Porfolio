@@ -1,29 +1,24 @@
 import React from 'react';
 import './card.scss';
-import Background from '../../assets/static/christian-darck.png';
-
-var sectionStyle = {
-    
-    backgroundImage: `url(${Background})`
-  };
 
 const Card = (props) => {
 
+    var sectionStyle = {
+
+        backgroundImage: `url(${props.background})`
+    };
+   
     return (
-        <div className="conatainer cont">
-            <div class="containerCard" style={ sectionStyle }>
-                <div class="overlay">
-                    <div class="items"></div>
-                    <div class="items head">
-                        <p>Flower Embroidery Hoop Art</p>
+        <div className="conatainercont">
+            <div class="containerCard" style={sectionStyle}>
+                <div class="overlay section">
+                    <div class="items head about-p">
+                        <p>{props.title} </p>
                     </div>
-                    <div class="items price">
-                        <p class="old">$699</p>
-                        <p class="new">$345</p>
-                    </div>
+                        <p class="description">{props.description}</p>
                     <div class="items cart">
-                        <i class="fa fa-shopping-cart"></i>
-                        <span>ADD TO CART</span>
+                        <img className="mr-2" src={`../images/ojo-${props.iconMode}.png`} width="30px"/>
+                        <a href={props.link}>Visita la web</a>
                     </div>
                 </div>
             </div>

@@ -12,13 +12,13 @@ body {
     text-align: center;
 }
 
-
 .about-p {
   font-size: 1.3em;
   text-align: left;
   
 }
 .section {
+  
 	padding-top: 40px;
 	font-size: 1em;
 	text-align: center;
@@ -50,11 +50,11 @@ body {
 .night .section a {
     color: #d87093;
 }
-.night input{
+.night input { 
   border: #d87093 1px solid;
   border-radius: 20px;
 }
-.night textarea{
+.night textarea {
   border: #d87093 1px solid;
   border-radius: 20px;
 }
@@ -63,14 +63,32 @@ body {
 	color: #e9e5d5;
 }
 
-.circle-profile-light{
-  border-radius: 50%;
-  border: #555 6px solid;
+.night .card {
+  border: #d87093 1px solid;
+ 
+}
+.night .card:hover {
+  background-color: #18182e;
 }
 
-.circle-profile-darck{
+.circle-profile-light {
   border-radius: 50%;
-  border: #d87093 6px solid;
+  border: #555 3px solid;
+}
+
+.circle-profile-darck {
+  border-radius: 50%;
+  border: #d87093 3px solid;
+}
+
+.night .containerCard:hover{
+  border: #d87093 1px solid;
+}
+
+.night .myModal {
+
+  background-color: #080d17;
+  
 }
 
 .btn-profile-light {
@@ -92,9 +110,7 @@ body {
 
 .btn-profile-light:hover {
 
-  color: #e9e5d5;
-  background-color: #555;
-  
+  background-color: #fffcf2;
 }
 
 .btn-profile-darck {
@@ -114,8 +130,8 @@ body {
 }
 
 .btn-profile-darck:hover {
-  color: #080d17;
-  background-color: #d87093;
+  
+  background-color: #18182e;
   
 }
 

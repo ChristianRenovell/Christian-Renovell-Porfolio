@@ -26,7 +26,7 @@ const Header = (props) => {
                             <Link to={`/proyects/${props.mode}`} className="navbar-brand">Proyectos</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={"/courses"} className="navbar-brand">Comocimientos</Link>
+                            <Link to={"/courses"} className="navbar-brand">Conocimientos</Link>
                         </li>
                         <li className="nav-item">
                             <Link to={`/contact/${props.mode}`} className="navbar-brand">Contacto</Link>

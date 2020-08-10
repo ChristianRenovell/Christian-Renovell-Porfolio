@@ -1,0 +1,45 @@
+  .card {
+    width: 305px;
+    height: 370px;
+    cursor: pointer;
+    border: solid 1px  #555;
+    border-radius: 20px;
+    }
+    .title{
+      font-size: 2.3em;
+      text-align: left;
+      margin-left: 20px;
+    }
+    .descrip {
+      font-size: 1.2em;
+      color: red($color: #000000);
+      text-align: left;
+      margin-left: 20px;
+    } 
+
+    .card:hover {
+  
+    background-color: #fffcf2;
+      -webkit-transition:background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    }
+
+  .myModal {
+   
+    border-radius: 30px;
+    height: 90vh;
+    background-color: #f1ede3;
+    border: solid 1px  #555;
+  }
+    
+  .modal-dialog {
+    width: 98%;
+    height: 92%;
+    padding: 0;
+  }
+  
+  .modal-content {
+    height: 99%;
+  }

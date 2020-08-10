@@ -121,7 +121,12 @@ class App extends Component {
                           <Profile {...props} mode={this.state.mode} />
                         )}
                       />
-                      <Route exact path="/proyects/:mode" component={Proyects} />
+                      <Route
+                        exact path='/proyects/:mode'
+                        render={(props) => (
+                          <Proyects {...props} mode={this.state.mode} />
+                        )}
+                      />
                       <Route exact path="/contact/:mode" component={Contact} />
 
                     </Switch>
