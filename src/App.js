@@ -35,7 +35,7 @@ class App extends Component {
    
     if (elemento.className === "night") {
 
-      this.setState({ mode: "light" });
+      
       //contact
       try {
         btnContact.className = "btn-profile-light";
@@ -53,6 +53,7 @@ class App extends Component {
 
       } catch{ }
 
+      this.setState({ mode: "light" });
       elemento.className = "";
       elemento2.className = "";
 
@@ -85,7 +86,7 @@ class App extends Component {
   
   render() {
 
-    window.onload = this.mode;
+      window.onload = this.mode;
 
     return (
       <BrowserRouter>

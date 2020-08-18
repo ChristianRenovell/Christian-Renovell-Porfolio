@@ -1,7 +1,6 @@
 import React from 'react';
-import Card from '../../components/card/Card';
 import CardProyect from '../../components/cardProyect/CardProyect';
-//import Background from '../../assets/static/sapau.png';
+import sapau1 from '../../assets/img/sapau.png';
 
 const Proyects = (props) => {
 
@@ -16,7 +15,7 @@ const Proyects = (props) => {
             <div class="row justify-content-center">
               <div class="col-md-6 col-lg-4 mb-5">
                 <CardProyect
-                  background={`../images/sapau-${props.mode}.png`}
+                  img1={sapau1}
                   title="Comercial Sapau.es"
                   description="Web informativa de comercio de distribucion de importantes marcas de camping, jardineria y ferreteria."
                   link=""

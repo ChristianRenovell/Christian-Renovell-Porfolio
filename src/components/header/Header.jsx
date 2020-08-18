@@ -17,19 +17,19 @@ const Header = (props) => {
                 <div className="collapse navbar-collapse textcolor" id="navbarTogglerDemo01">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li className="nav-item active">
-                           <Link to={"/"} className="navbar-brand">Inicio</Link>
+                           <Link to={"/"} className="navbar-brand lin">Inicio</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={`/profile/${props.mode}`} className="navbar-brand">sobre mi</Link>
+                            <Link to={`/profile/${props.mode}`} className="navbar-brand lin">sobre mi</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={`/proyects/${props.mode}`} className="navbar-brand">Proyectos</Link>
+                            <Link to={`/proyects/${props.mode}`} className="navbar-brand lin">Proyectos</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={"/courses"} className="navbar-brand">Conocimientos</Link>
+                            <Link to={"/courses"} className="navbar-brand lin">Conocimientos</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={`/contact/${props.mode}`} className="navbar-brand">Contacto</Link>
+                            <Link to={`/contact/${props.mode}`} className="navbar-brand lin">Contacto</Link>
                         </li>
                     </ul>
                 </div>
