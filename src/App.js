@@ -7,6 +7,7 @@ import './assets/styles/App.scss';
 import Home from './views/home/Home';
 import Profile from './views/profile/Profile';
 import Proyects from './views/proyects/Proyects';
+import Knowledge from './views/knowledge/Knowledge';
 import Contact from './views/contact/Contact';
 import { play, exit } from './timelines';
 
@@ -35,7 +36,6 @@ class App extends Component {
    
     if (elemento.className === "night") {
 
-      
       //contact
       try {
         btnContact.className = "btn-profile-light";
@@ -44,7 +44,6 @@ class App extends Component {
         linke.src = "../images/linkedin-light.png";
         git.src = "../images/git-light.png";
       } catch{ }
-
       //profile
       try {
         photoCircle.src = "../images/christian-light.png";
@@ -52,13 +51,10 @@ class App extends Component {
         btnAbout.className = "btn-profile-light";
 
       } catch{ }
-
       this.setState({ mode: "light" });
       elemento.className = "";
       elemento2.className = "";
-
     } else {
-
       this.setState({ mode: "darck" });
       //contact
       try {
@@ -67,20 +63,15 @@ class App extends Component {
         insta.src = "../images/instagram-darck.png";
         linke.src = "../images/linkedin-darck.png";
         git.src = "../images/git-darck.png";
-
       } catch{ }
-
       //profile
       try {
         photoCircle.src = "../images/christian-darck.png";
         photoCircle.className = "circle-profile-darck";
         btnAbout.className = "btn-profile-darck";
-
       } catch{ }
-
       elemento.className += "night";
       elemento2.className += "switched";
-
     }
   }
   
@@ -126,6 +117,12 @@ class App extends Component {
                         exact path='/proyects/:mode'
                         render={(props) => (
                           <Proyects {...props} mode={this.state.mode} />
+                        )}
+                      />
+                        <Route
+                        exact path='/knowledge/:mode'
+                        render={(props) => (
+                          <Knowledge {...props} mode={this.state.mode} />
                         )}
                       />
                       <Route exact path="/contact/:mode" component={Contact} />

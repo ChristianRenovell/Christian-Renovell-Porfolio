@@ -7,7 +7,7 @@ const Card = (props) => {
 
         backgroundImage: `url(${props.background})`
     };
-   
+
     return (
         <div className="conatainercont">
             <div class="containerCard" style={sectionStyle}>
@@ -17,7 +17,7 @@ const Card = (props) => {
                     </div>
                         <p class="description">{props.description}</p>
                     <div class="items cart">
-                        <img className="mr-2" src={`../images/ojo-${props.iconMode}.png`} width="30px"/>
+                        <img className="mr-2" src=""/>
                         <a href={props.link}>Visita la web</a>
                     </div>
                 </div>

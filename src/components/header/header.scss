@@ -2,10 +2,11 @@ a{
     font-size: 1.4em;
 }
 .lin:hover{
-   
     font-weight: bold;
+   
   } 
 .lin:active {
-    
     opacity: 0;
+    -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
   }
