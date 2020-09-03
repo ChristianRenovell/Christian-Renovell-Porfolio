@@ -1,8 +1,7 @@
 import React from 'react';
 
-
 const Contact = (props) => {
- 
+
   return (
     <div id="fullpage">
       <div className="section">
@@ -20,13 +19,13 @@ const Contact = (props) => {
                         <div class="row">
                           <div class="col-md-6">
                             <div class="md-form mb-4">
-                            <label for="name" className="">Nombre</label>
+                              <label for="name" className="">Nombre</label>
                               <input type="text" id="name" name="name" class="form-control bg-transparent" />
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="md-form mb-4">
-                            <label for="email" class="">Email</label>
+                              <label for="email" class="">Email</label>
                               <input type="text" id="email" name="email" class="form-control bg-transparent" />
                             </div>
                           </div>
@@ -34,7 +33,7 @@ const Contact = (props) => {
                         <div class="row">
                           <div class="col-md-12 mb-4">
                             <div class="md-form mb-0">
-                            <label for="subject" class="">Asunto</label>
+                              <label for="subject" class="">Asunto</label>
                               <input type="text" id="subject" name="subject" class="form-control bg-transparent" />
                             </div>
                           </div>
@@ -42,15 +41,15 @@ const Contact = (props) => {
                         <div class="row mb-4">
                           <div class="col-md-12">
                             <div class="md-form">
-                            <label for="message">Mensaje</label>
+                              <label for="message">Mensaje</label>
                               <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea bg-transparent"></textarea>
-                              
+
                             </div>
                           </div>
                         </div>
                       </form>
                       <div class="text-center text-md-center">
-                      <div className={`btn-profile-${props.match.params.mode}`} id="btn-contact" onclick="document.getElementById('contact-form').submit();">Enviar</div>
+                        <div className={`btn-profile-${props.match.params.mode}`} id="btn-contact" onclick="document.getElementById('contact-form').submit();">Enviar</div>
                       </div>
                     </div>
                   </div>
@@ -72,16 +71,16 @@ const Contact = (props) => {
                   <div className="content--inner3">
                     <div className="row">
                       <div className="col-md-3 mt-4">
-                        <a href=""><img width="50px" src={`../images/facebook-${props.match.params.mode}.png`} id="facebook"/></a>
-                      </div>  
-                      <div className="col-md-3 mt-4">
-                        <a href=""><img width="50px" src={`../images/instagram-${props.match.params.mode}.png`} id="instagram"/></a>
+                        <a href=""><img width="50px" src={`../images/facebook-${props.mode}.png`} id="facebook" /></a>
                       </div>
                       <div className="col-md-3 mt-4">
-                        <a href=""><img  width="50px" src={`../images/linkedin-${props.match.params.mode}.png`} id="linkedin"/></a>
+                        <a href=""><img width="50px" src={`../images/instagram-${props.mode}.png`} id="instagram" /></a>
                       </div>
                       <div className="col-md-3 mt-4">
-                        <a href=""><img  width="50px" src={`../images/git-${props.match.params.mode}.png`} id="git"/></a>
+                        <a href=""><img width="50px" src={`../images/linkedin-${props.mode}.png`} id="linkedin" /></a>
+                      </div>
+                      <div className="col-md-3 mt-4">
+                        <a href=""><img width="50px" src={`../images/git-${props.mode}.png`} id="git" /></a>
                       </div>
                     </div>
                   </div>

@@ -10,7 +10,7 @@ const Profile = (props) => {
                     <div className="container-fluid">
                         <div className="row mt-5">
                             <div className="col-md-5">
-                                <img src={`../images/christian-${props.match.params.mode}.png`} alt="..." width="400px" className={`circle-profile-${props.match.params.mode}`} id="photo-circle" />
+                                <img src={`../images/christian-${props.mode}.png`} alt="..." width="400px" className={`circle-profile-${props.mode}`} id="photo-circle" />
                             </div>
                             <div className="col-md-5 content--inner">
                                 <p className="about-p" text-aling="left">
@@ -24,7 +24,7 @@ const Profile = (props) => {
                             <div className="col-md-5">
                             </div>
                             <div className="col-md-5 mt-5 content--inner2">
-                                <Link to={`/contact/${props.mode}`} className="navbar-brand"><div className={`btn-profile-${props.match.params.mode}`} id="btn-about">Contacta conmigo</div></Link>
+                                <Link to={`/contact/`} className="navbar-brand"><div className={`btn-profile-${props.mode}`} id="btn-about">Contacta conmigo</div></Link>
                             </div>
                             <div className="col-md-2">
                             </div>

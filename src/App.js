@@ -3,13 +3,13 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Transition, TransitionGroup } from 'react-transition-group';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import './assets/styles/App.scss';
 import Home from './views/home/Home';
 import Profile from './views/profile/Profile';
 import Proyects from './views/proyects/Proyects';
 import Knowledge from './views/knowledge/Knowledge';
 import Contact from './views/contact/Contact';
 import { play, exit } from './timelines';
+import './assets/styles/App.scss';
 
 class App extends Component {
 
@@ -19,6 +19,8 @@ class App extends Component {
       mode: ""
     };
     this.mode = this.mode.bind(this);
+
+
 
   };
 
@@ -33,7 +35,7 @@ class App extends Component {
     let photoCircle = document.getElementById("photo-circle");
     let btnContact = document.getElementById("btn-contact");
     let btnAbout = document.getElementById("btn-about");
-   
+
     if (elemento.className === "night") {
 
       //contact
@@ -54,7 +56,10 @@ class App extends Component {
       this.setState({ mode: "light" });
       elemento.className = "";
       elemento2.className = "";
-    } else {
+
+    }
+    else {
+
       this.setState({ mode: "darck" });
       //contact
       try {
@@ -74,14 +79,14 @@ class App extends Component {
       elemento2.className += "switched";
     }
   }
-  
+
   render() {
 
-      window.onload = this.mode;
+    window.onload = this.mode;
 
     return (
       <BrowserRouter>
-        <div id="fullpage">
+        <div id="fullpage" className="night">
           <div className="section">
             <Header mode={this.state.mode} />
 
@@ -102,31 +107,35 @@ class App extends Component {
                   >
                     <Switch location={location}>
                       <Route
-                        exact path='/'
+                        exact path='/home'
                         render={(props) => (
                           <Home {...props} mode={this.state.mode} />
                         )}
                       />
                       <Route
-                        exact path='/profile/:mode'
+                        exact path='/profile/'
                         render={(props) => (
                           <Profile {...props} mode={this.state.mode} />
                         )}
                       />
                       <Route
-                        exact path='/proyects/:mode'
+                        exact path='/proyects/'
                         render={(props) => (
                           <Proyects {...props} mode={this.state.mode} />
                         )}
                       />
-                        <Route
-                        exact path='/knowledge/:mode'
+                      <Route
+                        exact path='/knowledge/'
                         render={(props) => (
                           <Knowledge {...props} mode={this.state.mode} />
                         )}
                       />
-                      <Route exact path="/contact/:mode" component={Contact} />
-
+                      <Route
+                        exact path='/contact/'
+                        render={(props) => (
+                          <Contact {...props} mode={this.state.mode} />
+                        )}
+                      />
                     </Switch>
                   </Transition>
                 </TransitionGroup>
