@@ -11,9 +11,7 @@ body {
 	  font-family: 'Lato';
     text-align: center;
 }
-#intro-text{
-  position: fixed;
-}
+
 .about-p {
   font-size: 1.3em;
   text-align: left;
@@ -30,6 +28,25 @@ body {
   height: 100vh;
 	-webkit-transition: background 0.5s ease-in-out;
 	transition: background 0.5s ease-in-out;
+}
+a{
+  font-size: 1.4em;
+}
+.lin:hover{
+  font-weight: bold;
+ 
+} 
+.lin:active {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+.navbar {
+
+width: 100%; 
+position: fixed;
+z-index: 10000;
 }
 .section a{
   text-decoration: none;
@@ -176,6 +193,3 @@ body {
   margin-left: 55%;
   background: #e9e5d5;
 }
-
-//media
-

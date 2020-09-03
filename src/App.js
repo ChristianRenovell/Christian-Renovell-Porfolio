@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import { Transition, TransitionGroup } from 'react-transition-group';
-import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Home from './views/home/Home';
 import Profile from './views/profile/Profile';
@@ -10,6 +9,8 @@ import Knowledge from './views/knowledge/Knowledge';
 import Contact from './views/contact/Contact';
 import { play, exit } from './timelines';
 import './assets/styles/App.scss';
+import burger from './assets/static/burger.png';
+
 
 class App extends Component {
 
@@ -88,10 +89,36 @@ class App extends Component {
       <BrowserRouter>
         <div id="fullpage" className="night">
           <div className="section">
-            <Header mode={this.state.mode} />
-
-            <div id="switch" onClick={this.mode} >
-              <div id="circle" ></div>
+            <div id="intro-text" className="mb-5">
+              <nav className="navbar navbar-expand-lg">
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span className="">
+                    <img src={burger} width="50px" />
+                  </span>
+                </button>
+                <div className="collapse navbar-collapse textcolor" id="navbarTogglerDemo01">
+                  <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li className="nav-item active">
+                      <Link to={"/home"} className="navbar-brand lin">Inicio</Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link to={`/profile/`} className="navbar-brand lin">sobre mi</Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link to={`/proyects/`} className="navbar-brand lin">Proyectos</Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link to={`/Knowledge/`} className="navbar-brand lin">Conocimientos</Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link to={`/contact/`} className="navbar-brand lin">Contacto</Link>
+                    </li>
+                  </ul>
+                </div>
+                <div id="switch" onClick={this.mode} >
+                  <div id="circle" ></div>
+                </div>
+              </nav>
             </div>
             <Route render={({ location }) => {
               const { pathname, key } = location;
