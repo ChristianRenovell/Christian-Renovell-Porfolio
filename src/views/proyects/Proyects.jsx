@@ -4,9 +4,18 @@ import './proyects.scss';
 
 
 
+
 const Proyects = (props) => {
 
   let url = `../images/christian-${props.mode}.png`;
+  let color;
+
+  if(props.mode==="light"){
+    color = "#f1ede3";
+  }
+  if(props.mode==="darck"){
+    color = "#080d17";
+  }
 
   return (
     <div id="fullpage">
@@ -24,7 +33,7 @@ const Proyects = (props) => {
               {/*sapau*/}
               <div className="col-md-4">
                 <div className="containerCard" style={{ backgroundImage: "url(" + url + ")" }}>
-                  <div className="overlay" style={{ backgroundColor: "red" }}>
+                  <div className="overlay" style={{ backgroundColor: color }}>
                     <div className="items"></div>
                     <div className="items head">
                       <p>Flower Embroidery Hoop Art</p>
@@ -43,7 +52,7 @@ const Proyects = (props) => {
               </div>
               <div className="col-md-4">
                 <div className="containerCard" style={{ backgroundImage: "url(" + url + ")" }}>
-                  <div className="overlay">
+                  <div className="overlay" style={{ backgroundColor: color }}>
                     <div className="items"></div>
                     <div className="items head">
                       <p>Flower Embroidery Hoop Art</p>
@@ -62,7 +71,7 @@ const Proyects = (props) => {
               </div>
               <div className="col-md-4">
                 <div className="containerCard" style={{ backgroundImage: "url(" + url + ")" }}>
-                  <div className="overlay">
+                  <div className="overlay" style={{ backgroundColor: color }}>
                     <div className="items"></div>
                     <div className="items head">
                       <p>Flower Embroidery Hoop Art</p>
