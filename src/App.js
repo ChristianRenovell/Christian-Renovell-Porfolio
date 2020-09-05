@@ -10,6 +10,7 @@ import Contact from './views/contact/Contact';
 import { play, exit } from './timelines';
 import './assets/styles/App.scss';
 import burger from './assets/static/burger.png';
+import Burger from './components/burger/Burger';
 
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
       mode: ""
     };
     this.mode = this.mode.bind(this);
+    this.hola = this.showItens.bind(this);
 
 
 
@@ -80,6 +82,17 @@ class App extends Component {
       elemento2.className += "switched";
     }
   }
+   showItens(){
+
+    var x = document.getElementById("l1");
+
+    if (x.style.display === "none") {
+      
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
 
   render() {
 
@@ -96,10 +109,11 @@ class App extends Component {
                     <img src={burger} width="50px" />
                   </span>
                 </button>
+                <Burger onClick={this.showItens}/>
                 <div className="collapse navbar-collapse textcolor" id="navbarTogglerDemo01">
                   <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li className="nav-item active">
-                      <Link to={"/home"} className="navbar-brand lin">Inicio</Link>
+                      <Link to={"/home"} id="l1" className="navbar-brand lin">Inicio</Link>
                     </li>
                     <li className="nav-item">
                       <Link to={`/profile/`} className="navbar-brand lin">sobre mí</Link>
