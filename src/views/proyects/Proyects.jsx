@@ -9,12 +9,15 @@ const Proyects = (props) => {
 
   let url = `../images/christian-${props.mode}.png`;
   let color;
+  let colorBorder;
 
   if(props.mode==="light"){
     color = "#f1ede3";
+    colorBorder = "#555";
   }
   if(props.mode==="darck"){
     color = "#080d17";
+    colorBorder = "#d87093";
   }
 
   return (
@@ -32,7 +35,7 @@ const Proyects = (props) => {
             <div className="row mt-5">
               {/*sapau*/}
               <div className="col-md-4">
-                <div className="containerCard" style={{ backgroundImage: "url(" + url + ")" }}>
+                <div className="containerCard" style={{ backgroundImage: "url(" + url + ")", boxShadow: "0 0 5px"+colorBorder+""  }}>
                   <div className="overlay" style={{ backgroundColor: color }}>
                     <div className="items"></div>
                     <div className="items head">
@@ -51,7 +54,7 @@ const Proyects = (props) => {
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="containerCard" style={{ backgroundImage: "url(" + url + ")" }}>
+                <div className="containerCard" style={{ backgroundImage: "url(" + url + ")", boxShadow: "0 0 5px"+colorBorder+"" }}>
                   <div className="overlay" style={{ backgroundColor: color }}>
                     <div className="items"></div>
                     <div className="items head">
@@ -70,7 +73,7 @@ const Proyects = (props) => {
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="containerCard" style={{ backgroundImage: "url(" + url + ")" }}>
+                <div className="containerCard" style={{ backgroundImage: "url(" + url + ")", boxShadow: "0 0 5px"+colorBorder+""  }}>
                   <div className="overlay" style={{ backgroundColor: color }}>
                     <div className="items"></div>
                     <div className="items head">
