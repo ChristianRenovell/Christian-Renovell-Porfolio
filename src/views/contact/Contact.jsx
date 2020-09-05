@@ -49,7 +49,7 @@ const Contact = (props) => {
                         </div>
                       </form>
                       <div class="text-center text-md-center">
-                        <div className={`btn-profile-${props.match.params.mode}`} id="btn-contact" onclick="document.getElementById('contact-form').submit();">Enviar</div>
+                        <div className={`btn-profile-${props.mode}`} id="btn-contact" onclick="document.getElementById('contact-form').submit();">Enviar</div>
                       </div>
                     </div>
                   </div>

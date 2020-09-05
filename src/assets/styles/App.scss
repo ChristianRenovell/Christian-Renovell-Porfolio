@@ -165,9 +165,9 @@ z-index: 10000;
   top: 20px;
   width: 60px;
   margin: 0 auto;
-  border: 2px solid $light-3;
+  border: 2px solid $light-2;
   border-radius: 27px;
-  background: $light-3;
+  background: $light-2;
   
 }
 #circle {
@@ -179,8 +179,8 @@ z-index: 10000;
   background: #e9e5d5;
 }
 .switched {
-  border-color: $darck-3 !important;
-  background: $darck-3 !important;
+  border-color: $darck-2 !important;
+  background: $darck-2 !important;
 }
 .switched #circle {
   margin-left: 55%;

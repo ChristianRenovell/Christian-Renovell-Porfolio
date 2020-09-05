@@ -102,7 +102,7 @@ class App extends Component {
                       <Link to={"/home"} className="navbar-brand lin">Inicio</Link>
                     </li>
                     <li className="nav-item">
-                      <Link to={`/profile/`} className="navbar-brand lin">sobre mi</Link>
+                      <Link to={`/profile/`} className="navbar-brand lin">sobre mí</Link>
                     </li>
                     <li className="nav-item">
                       <Link to={`/proyects/`} className="navbar-brand lin">Proyectos</Link>
