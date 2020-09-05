@@ -1,47 +1,87 @@
 import React from 'react';
-import CardProyect from '../../components/cardProyect/CardProyect';
-import sapau1 from '../../assets/img/sapau.png';
+import './proyects.scss';
+
+
+
 
 const Proyects = (props) => {
+
+  let url = `../images/christian-${props.mode}.png`;
 
   return (
     <div id="fullpage">
       <div className="section">
-        <div className="content">
-          <h1>Mis trabajos recientes</h1>
-        </div>
         <div className="content--inner mt-5">
           <div className="container">
-            <div class="row justify-content-center">
-              <div class="col-md-6 col-lg-4 mb-5">
-                <CardProyect
-                  img1={sapau1}
-                  title="Comercial Sapau.es"
-                  description="Web informativa de comercio de distribucion de importantes marcas de camping, jardineria y ferreteria."
-                  link=""
-                  iconMode={props.mode}
-                />
+            <div className="row">
+              <div className="col-md-12">
+                <div className="content">
+                  <h1>Mis trabajos recientes</h1>
+                </div>
               </div>
-              <div class="col-md-6 col-lg-4 mb-5">
-                <CardProyect
-                  background={`../images/sapau-${props.mode}.png`}
-                  title="Techneros Del Mundo"
-                  description="red social enfocada a la musica electronica y de club."
-                  link=""
-                  iconMode={props.mode}
-                />
+            </div>
+            <div className="row mt-5">
+              {/*sapau*/}
+              <div className="col-md-4">
+                <div className="containerCard" style={{ backgroundImage: "url(" + url + ")" }}>
+                  <div className="overlay" style={{ backgroundColor: "red" }}>
+                    <div className="items"></div>
+                    <div className="items head">
+                      <p>Flower Embroidery Hoop Art</p>
+                      <hr></hr>
+                    </div>
+                    <div className="items price">
+                      <p className="old">$699</p>
+                      <p className="new">$345</p>
+                    </div>
+                    <div className="items cart">
+                      <i className="fa fa-shopping-cart"></i>
+                      <span>ADD TO CART</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-6 col-lg-4 mb-5">
-                <CardProyect
-                  background={`../images/sapau-${props.mode}.png`}
-                  title="Comercial Sapau.es"
-                  description="Web informativa de comercio de distribucion de importantes marcas de camping, jardineria y ferreteria."
-                  link=""
-                  iconMode={props.mode}
-                />
+              <div className="col-md-4">
+                <div className="containerCard" style={{ backgroundImage: "url(" + url + ")" }}>
+                  <div className="overlay">
+                    <div className="items"></div>
+                    <div className="items head">
+                      <p>Flower Embroidery Hoop Art</p>
+                      <hr></hr>
+                    </div>
+                    <div className="items price">
+                      <p className="old">$699</p>
+                      <p className="new">$345</p>
+                    </div>
+                    <div className="items cart">
+                      <i className="fa fa-shopping-cart"></i>
+                      <span>ADD TO CART</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>           
+              <div className="col-md-4">
+                <div className="containerCard" style={{ backgroundImage: "url(" + url + ")" }}>
+                  <div className="overlay">
+                    <div className="items"></div>
+                    <div className="items head">
+                      <p>Flower Embroidery Hoop Art</p>
+                      <hr></hr>
+                    </div>
+                    <div className="items price">
+                      <p className="old">$699</p>
+                      <p className="new">$345</p>
+                    </div>
+                    <div className="items cart">
+                      <i className="fa fa-shopping-cart"></i>
+                      <span>ADD TO CART</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
