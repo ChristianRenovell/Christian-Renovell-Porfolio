@@ -20,43 +20,45 @@ const Proyects = (props) => {
   return (
     <div id="fullpage">
       <div className="section">
-        <div className="content--inner mt-5">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <div className="content">
-                  <h1>Trabajos recientes</h1>
+        <div className="contentComponent">
+          <div className="content--inner mt-4">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="content">
+                    <h1>Trabajos recientes</h1>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="row mt-5 content--inner2">
-              {/*sapau*/}
-              <Card
-                imgUrl="../images/sapau-p.png"
-                color={color}
-                colorBorder={colorBorder}
-                title="Comercial Sapau.es"
-                description="Comercio de Marcas inportantes de Jardineria y camping."
-                linkView="https://sapau.000webhostapp.com/" />
-              <Card
-                imgUrl="../images/be.png"
-                color={color}
-                colorBorder={colorBorder}
-                title="Be Bangarang"
-                description="Colaborador para agencia deigital en varios proyectos."
-                linkView="https://bebangarang.es/" />
-              <Card
-                imgUrl="../images/syc.png"
-                color={color}
-                colorBorder={colorBorder}
-                title="Show Your Company"
-                description="Empresa de publicidad y marquetin digital en dispositivos moviles."
-                linkView="https://www.showyourcompany.com/" />
-            </div>
-            <div className="row mt-5">
-              <div className="col-md-12">
-                <div className="content--inner3">
-                  <Link href=""><h2>Este es mi Porfolio<img className="ml-3" width="50px" src={`../images/git-${props.mode}.png`} id="git" /></h2></Link>
+              <div className="row mt-5 content--inner2">
+                {/*sapau*/}
+                <Card
+                  imgUrl="../images/sapau-p.png"
+                  color={color}
+                  colorBorder={colorBorder}
+                  title="Comercial Sapau.es"
+                  description="Comercio de Marcas inportantes de Jardineria y camping."
+                  linkView="https://sapau.000webhostapp.com/" />
+                <Card
+                  imgUrl="../images/be.png"
+                  color={color}
+                  colorBorder={colorBorder}
+                  title="Be Bangarang"
+                  description="Colaborador para agencia deigital en varios proyectos."
+                  linkView="https://bebangarang.es/" />
+                <Card
+                  imgUrl="../images/syc.png"
+                  color={color}
+                  colorBorder={colorBorder}
+                  title="Show Your Company"
+                  description="Empresa de publicidad y marquetin digital en dispositivos moviles."
+                  linkView="https://www.showyourcompany.com/" />
+              </div>
+              <div className="row mt-5">
+                <div className="col-md-12">
+                  <div className="content--inner3">
+                    <Link href=""><h2>Este es mi Porfolio<img className="ml-3" width="50px" src={`../images/git-${props.mode}.png`} id="git" /></h2></Link>
+                  </div>
                 </div>
               </div>
             </div>

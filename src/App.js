@@ -182,9 +182,9 @@ class App extends Component {
       <BrowserRouter>
         <div id="fullpage" className="night">
           <div className="section">
-            <div id="intro-text" className="mb-5">
+            <div id="intro-text" className="">
               <nav className="navbar navbar-expand-lg">
-                <div className="burg" >
+                <div>
                   <div
                     className={`menu-btn ${this.state.menuOpen ? "open" : "closed"}`}
                     onClick={this.handleOpenMenu}
@@ -214,7 +214,6 @@ class App extends Component {
                       </ul>
                     </div>
                   </div>
-
                 </div>
                 <div id="switch" onClick={this.mode} >
                   <div id="circle" ></div>
@@ -237,7 +236,7 @@ class App extends Component {
                       <Route
                         exact path='/home'
                         render={(props) => (
-                          <Home {...props} mode={this.state.mode} />
+                          <Home {...props} mode={this.state.mode}/>
                         )}
                       />
                       <Route
