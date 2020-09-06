@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
-import { withRouter } from 'react-router-dom';
 import { Transition, TransitionGroup } from 'react-transition-group';
 import Footer from './components/footer/Footer';
 import Home from './views/home/Home';

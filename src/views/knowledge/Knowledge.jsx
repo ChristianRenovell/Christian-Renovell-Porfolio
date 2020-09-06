@@ -11,11 +11,6 @@ const Knowledge = (props) => {
                         <div className="col-md-12 content">
                             <h1>Tecnologias.</h1>
                         </div>
-                        <div className="col-md-12 mt-3 content--inner">
-                            <p text-aling="center" className="kmpw-p">
-                                Estas son unas de las principales tecnologias y API´S con las que trabajado.
-                            </p>
-                        </div>
                     </div>
                     <div className="content--inner2">
                         <div className="row">
@@ -63,7 +58,7 @@ const Knowledge = (props) => {
                     </div>
                     <div className="row mt-5 content--inner3">
                         <div className="col-md-12 ">
-                            <h1>API´S</h1>
+                            <h1>API</h1>
                         </div>
                         <div className="col-md-12 mt-3">
                         <div className="row">
