@@ -108,6 +108,56 @@ z-index: 10000;
   border: $darck-2 3px solid;
 }
 
+
+.circle-light {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: $light-2 3px solid;
+  background-image: url("../img/christianJapan1-light.png");
+  background-image: no-repeat;
+  background-image: fixed;
+  background-image: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circle-light:hover{
+
+  background-image: url("../img/christianJapan2-light.png");
+
+}
+
+
+
+.circle-darck {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: $darck-2 3px solid;
+  background-image: url("../img/christianJapan1-darck.png");
+  background-image: no-repeat;
+  background-image: fixed;
+  background-image: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circle-darck:hover{
+
+  background-image: url("../img/christianJapan2-darck.png");
+
+}
+
+
 .night .containerCard:hover{
   border: $darck-2 1px solid;
 }
