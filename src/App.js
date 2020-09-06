@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 import { Transition, TransitionGroup } from 'react-transition-group';
 import Footer from './components/footer/Footer';
 import Home from './views/home/Home';
@@ -18,15 +19,20 @@ class App extends Component {
     this.state = {
       mode: "",
       burger: "",
-      menuOpen: false
+      menuOpen: false,
+      active: null
     };
 
     this.mode = this.mode.bind(this);
     this.handleOpenMenu = this.handleOpenMenu.bind(this);
+    this.active = this.active.bind(this);
+
+   
+
   };
 
   mode() {
-
+    
     let elemento = document.getElementById("fullpage");
     let elemento2 = document.getElementById("switch");
     let face = document.getElementById("facebook");
@@ -88,11 +94,66 @@ class App extends Component {
     this.setState({ menuOpen: !this.state.menuOpen });
   }
 
+  active(index) {
+
+    switch (index) {
+      case 1: 
+          document.getElementById("nemuIten1").className="navbar-brand lin selectedIten";
+          this.setState({ active: 1 });
+
+          document.getElementById("nemuIten2").className="navbar-brand lin noSelectedIten";
+          document.getElementById("nemuIten3").className="navbar-brand lin noSelectedIten";
+          document.getElementById("nemuIten4").className="navbar-brand lin noSelectedIten";
+          document.getElementById("nemuIten5").className="navbar-brand lin noSelectedIten";
+        break;
+      case 2:
+        document.getElementById("nemuIten2").className="navbar-brand lin selectedIten";
+        this.setState({ active: 2 });
+        document.getElementById("nemuIten1").className="navbar-brand lin noSelectedIten";
+          document.getElementById("nemuIten3").className="navbar-brand lin noSelectedIten";
+          document.getElementById("nemuIten4").className="navbar-brand lin noSelectedIten";
+          document.getElementById("nemuIten5").className="navbar-brand lin noSelectedIten";
+        break;
+      case 3:
+        document.getElementById("nemuIten3").className="navbar-brand lin selectedIten";
+        this.setState({ active: 3 });
+        document.getElementById("nemuIten2").className="navbar-brand lin noSelectedIten";
+          document.getElementById("nemuIten1").className="navbar-brand lin noSelectedIten";
+          document.getElementById("nemuIten4").className="navbar-brand lin noSelectedIten";
+          document.getElementById("nemuIten5").className="navbar-brand lin noSelectedIten";
+        break;
+      case 4:
+        document.getElementById("nemuIten4").className="navbar-brand lin selectedIten";
+        this.setState({ active: 4 });
+        document.getElementById("nemuIten2").className="navbar-brand lin noSelectedIten";
+          document.getElementById("nemuIten3").className="navbar-brand lin noSelectedIten";
+          document.getElementById("nemuIten1").className="navbar-brand lin noSelectedIten";
+          document.getElementById("nemuIten5").className="navbar-brand lin noSelectedIten";
+        break;
+      case 5:
+        document.getElementById("nemuIten5").className="navbar-brand lin selectedIten";
+        this.setState({ active: 5 });
+        document.getElementById("nemuIten2").className="navbar-brand lin noSelectedIten";
+          document.getElementById("nemuIten3").className="navbar-brand lin noSelectedIten";
+          document.getElementById("nemuIten4").className="navbar-brand lin noSelectedIten";
+          document.getElementById("nemuIten1").className="navbar-brand lin noSelectedIten";
+        break;
+    }
+
+
+  }
+
+  componentDidMount(){
+    console.log(this.props.location,"wpodwqoij");
+    this.active(this.state.active);
+  }
+
   render() {
 
     window.onload = this.mode;
-
+   
     return (
+    
       <BrowserRouter>
         <div id="fullpage" className="night">
           <div className="section">
@@ -111,19 +172,19 @@ class App extends Component {
                     <div className=" navbar-collapse textcolor" id="navbarTogglerDemo01">
                       <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li className="nav-item active">
-                          <Link to={"/home"} id="l1" className="navbar-brand lin "><span>Inicio</span></Link>
+                          <Link to={"/home"} id="nemuIten1" className="navbar-brand lin" onClick={() => this.active(1)}><span>Inicio</span></Link>
                         </li>
                         <li className="nav-item">
-                          <Link to={`/profile/`} className="navbar-brand lin"><span>sobre mí</span></Link>
+                          <Link to={`/profile/`} id="nemuIten2" className="navbar-brand lin" onClick={() => this.active(2)}><span>sobre mí</span></Link>
                         </li>
                         <li className="nav-item">
-                          <Link to={`/proyects/`} className="navbar-brand lin"><span>Proyectos</span></Link>
+                          <Link to={`/proyects/`} id="nemuIten3" className="navbar-brand lin" onClick={() => this.active(3)}><span>Proyectos</span></Link>
                         </li>
                         <li className="nav-item">
-                          <Link to={`/Knowledge/`} className="navbar-brand lin"><span>Conocimientos</span></Link>
+                          <Link to={`/Knowledge/`} id="nemuIten4" className="navbar-brand lin" onClick={() => this.active(4)}><span>Conocimientos</span></Link>
                         </li>
                         <li className="nav-item">
-                          <Link to={`/contact/`} className="navbar-brand lin"><span>Contacto</span></Link>
+                          <Link to={`/contact/`} id="nemuIten5" className="navbar-brand lin" onClick={() => this.active(5)}><span>Contacto</span></Link>
                         </li>
                       </ul>
                     </div>
