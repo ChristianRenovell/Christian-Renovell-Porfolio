@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
-import {withRouter} from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { Transition, TransitionGroup } from 'react-transition-group';
 import Footer from './components/footer/Footer';
 import Home from './views/home/Home';
@@ -19,6 +19,7 @@ class App extends Component {
     this.state = {
       mode: "",
       burger: "",
+      index: null,
       menuOpen: false,
       active: null
     };
@@ -26,13 +27,14 @@ class App extends Component {
     this.mode = this.mode.bind(this);
     this.handleOpenMenu = this.handleOpenMenu.bind(this);
     this.active = this.active.bind(this);
+    this.itenControlSelected = this.itenControlSelected.bind(this);
 
-   
+
 
   };
 
   mode() {
-    
+
     let elemento = document.getElementById("fullpage");
     let elemento2 = document.getElementById("switch");
     let face = document.getElementById("facebook");
@@ -97,63 +99,87 @@ class App extends Component {
   active(index) {
 
     switch (index) {
-      case 1: 
-          document.getElementById("nemuIten1").className="navbar-brand lin selectedIten";
-          this.setState({ active: 1 });
+      case 1:
+        document.getElementById("nemuIten1").className = "navbar-brand lin selectedIten";
+        this.setState({ active: 1 });
 
-          document.getElementById("nemuIten2").className="navbar-brand lin noSelectedIten";
-          document.getElementById("nemuIten3").className="navbar-brand lin noSelectedIten";
-          document.getElementById("nemuIten4").className="navbar-brand lin noSelectedIten";
-          document.getElementById("nemuIten5").className="navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten2").className = "navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten3").className = "navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten4").className = "navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
         break;
       case 2:
-        document.getElementById("nemuIten2").className="navbar-brand lin selectedIten";
+        document.getElementById("nemuIten2").className = "navbar-brand lin selectedIten";
         this.setState({ active: 2 });
-        document.getElementById("nemuIten1").className="navbar-brand lin noSelectedIten";
-          document.getElementById("nemuIten3").className="navbar-brand lin noSelectedIten";
-          document.getElementById("nemuIten4").className="navbar-brand lin noSelectedIten";
-          document.getElementById("nemuIten5").className="navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten1").className = "navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten3").className = "navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten4").className = "navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
         break;
       case 3:
-        document.getElementById("nemuIten3").className="navbar-brand lin selectedIten";
+        document.getElementById("nemuIten3").className = "navbar-brand lin selectedIten";
         this.setState({ active: 3 });
-        document.getElementById("nemuIten2").className="navbar-brand lin noSelectedIten";
-          document.getElementById("nemuIten1").className="navbar-brand lin noSelectedIten";
-          document.getElementById("nemuIten4").className="navbar-brand lin noSelectedIten";
-          document.getElementById("nemuIten5").className="navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten2").className = "navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten1").className = "navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten4").className = "navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
         break;
       case 4:
-        document.getElementById("nemuIten4").className="navbar-brand lin selectedIten";
+        document.getElementById("nemuIten4").className = "navbar-brand lin selectedIten";
         this.setState({ active: 4 });
-        document.getElementById("nemuIten2").className="navbar-brand lin noSelectedIten";
-          document.getElementById("nemuIten3").className="navbar-brand lin noSelectedIten";
-          document.getElementById("nemuIten1").className="navbar-brand lin noSelectedIten";
-          document.getElementById("nemuIten5").className="navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten2").className = "navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten3").className = "navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten1").className = "navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
         break;
       case 5:
-        document.getElementById("nemuIten5").className="navbar-brand lin selectedIten";
+        document.getElementById("nemuIten5").className = "navbar-brand lin selectedIten";
         this.setState({ active: 5 });
-        document.getElementById("nemuIten2").className="navbar-brand lin noSelectedIten";
-          document.getElementById("nemuIten3").className="navbar-brand lin noSelectedIten";
-          document.getElementById("nemuIten4").className="navbar-brand lin noSelectedIten";
-          document.getElementById("nemuIten1").className="navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten2").className = "navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten3").className = "navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten4").className = "navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten1").className = "navbar-brand lin noSelectedIten";
         break;
     }
+  }
 
+  itenControlSelected(){
+
+    let URLactual = window.location.href;
+
+    if (URLactual === "http://localhost:3000/home") {
+      this.active(1);
+    }
+    if (URLactual === "http://localhost:3000/profile/") {
+      this.active(2);
+    }
+
+    if (URLactual === "http://localhost:3000/proyects/") {
+      this.active(3);
+    }
+
+    if (URLactual === "http://localhost:3000/Knowledge/") {
+      this.active(4);
+    }
+
+    if (URLactual === "http://localhost:3000/contact/") {
+      this.active(5);
+    }
 
   }
 
-  componentDidMount(){
-    console.log(this.props.location,"wpodwqoij");
-    this.active(this.state.active);
+  componentDidMount() {
+
+    this.itenControlSelected();
+
   }
 
   render() {
 
     window.onload = this.mode;
-   
+
     return (
-    
+
       <BrowserRouter>
         <div id="fullpage" className="night">
           <div className="section">
