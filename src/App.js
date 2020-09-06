@@ -9,20 +9,20 @@ import Knowledge from './views/knowledge/Knowledge';
 import Contact from './views/contact/Contact';
 import { play, exit } from './timelines';
 import './assets/styles/App.scss';
-import burger from './assets/static/burger.png';
-import Burger from './components/burger/Burger';
-
+import "./assets/styles/stylemenu.scss";
 
 class App extends Component {
 
   constructor() {
     super();
     this.state = {
-      mode: ""
+      mode: "",
+      burger: "",
+      menuOpen: false
     };
-    this.mode = this.mode.bind(this);
-    this.hola = this.showItens.bind(this);
 
+    this.mode = this.mode.bind(this);
+    this.handleOpenMenu = this.handleOpenMenu.bind(this);
   };
 
   mode() {
@@ -55,6 +55,8 @@ class App extends Component {
 
       } catch{ }
       this.setState({ mode: "light" });
+      this.setState({ burger: "burger" });
+
       elemento.className = "";
       elemento2.className = "";
 
@@ -62,6 +64,7 @@ class App extends Component {
     else {
 
       this.setState({ mode: "darck" });
+      this.setState({ burger: "burger2" });
       //contact
       try {
         btnContact.className = "btn-profile-darck";
@@ -80,17 +83,9 @@ class App extends Component {
       elemento2.className += "switched";
     }
   }
-   showItens(){
 
-    var x = document.getElementById("l1");
-    //a ver como efecto nenu
-
-    /*if (x.style.display === "none") {
-
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }*/
+  handleOpenMenu() {
+    this.setState({ menuOpen: !this.state.menuOpen });
   }
 
   render() {
@@ -103,9 +98,38 @@ class App extends Component {
           <div className="section">
             <div id="intro-text" className="mb-5">
               <nav className="navbar navbar-expand-lg">
-                <Burger mode={this.state.mode }
-                        onClick={this.showItens}/>
-                
+                <div className="burg" >
+                  <div
+                    className={`menu-btn ${this.state.menuOpen ? "open" : "closed"}`}
+                    onClick={this.handleOpenMenu}
+                  >
+                    <div className={this.state.burger} />
+                  </div>
+                  <div
+                    className={`${this.state.menuOpen ? "showMenu" : "navmenu"}`}
+                  >
+                    <div className=" navbar-collapse textcolor" id="navbarTogglerDemo01">
+                      <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li className="nav-item active">
+                          <Link to={"/home"} id="l1" className="navbar-brand lin "><span>Inicio</span></Link>
+                        </li>
+                        <li className="nav-item">
+                          <Link to={`/profile/`} className="navbar-brand lin"><span>sobre mí</span></Link>
+                        </li>
+                        <li className="nav-item">
+                          <Link to={`/proyects/`} className="navbar-brand lin"><span>Proyectos</span></Link>
+                        </li>
+                        <li className="nav-item">
+                          <Link to={`/Knowledge/`} className="navbar-brand lin"><span>Conocimientos</span></Link>
+                        </li>
+                        <li className="nav-item">
+                          <Link to={`/contact/`} className="navbar-brand lin"><span>Contacto</span></Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
                 <div id="switch" onClick={this.mode} >
                   <div id="circle" ></div>
                 </div>
