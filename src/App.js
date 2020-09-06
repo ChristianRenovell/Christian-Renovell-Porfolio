@@ -23,8 +23,6 @@ class App extends Component {
     this.mode = this.mode.bind(this);
     this.hola = this.showItens.bind(this);
 
-
-
   };
 
   mode() {
@@ -85,13 +83,14 @@ class App extends Component {
    showItens(){
 
     var x = document.getElementById("l1");
+    //a ver como efecto nenu
 
-    if (x.style.display === "none") {
-      
+    /*if (x.style.display === "none") {
+
       x.style.display = "block";
     } else {
       x.style.display = "none";
-    }
+    }*/
   }
 
   render() {
@@ -109,7 +108,8 @@ class App extends Component {
                     <img src={burger} width="50px" />
                   </span>
                 </button>
-                <Burger onClick={this.showItens}/>
+                <Burger mode={this.state.mode }
+                        onClick={this.showItens}/>
                 <div className="collapse navbar-collapse textcolor" id="navbarTogglerDemo01">
                   <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li className="nav-item active">
