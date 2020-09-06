@@ -9,7 +9,7 @@ const Home = (props) => {
             <div className="section">
                 <div className="contentComponent">
                     <div className="content">
-                        <img src={`../images/christian-${props.mode}.png`} alt="..." width="300px" className={`circle-profile-${props.mode} mt-5`} id="photo-circle" />
+                        <img src={`../images/christianJapan1-${props.mode}.png`} alt="..." width="400px" className={`circle-profile-${props.mode} mt-5`} id="photo-circle" />
                     </div>
                     <div className="content--inner">
                         <Name />
