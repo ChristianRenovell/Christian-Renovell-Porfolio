@@ -22,12 +22,11 @@ class App extends Component {
       menuOpen: false,
       active: null
     };
-
     this.mode = this.mode.bind(this);
     this.handleOpenMenu = this.handleOpenMenu.bind(this);
     this.active = this.active.bind(this);
     this.itenControlSelected = this.itenControlSelected.bind(this);
-  
+    
   };
 
   mode() {
@@ -41,6 +40,7 @@ class App extends Component {
     let photoCircle = document.getElementById("photo-circle");
     let btnContact = document.getElementById("btn-contact");
     let btnAbout = document.getElementById("btn-about");
+    
 
     if (elemento.className === "night") {
 
@@ -64,7 +64,9 @@ class App extends Component {
 
       elemento.className = "";
       elemento2.className = "";
-
+     
+      
+      document.body.style.backgroundColor = "#f1ede3"; 
     }
     else {
 
@@ -86,6 +88,8 @@ class App extends Component {
       } catch{ }
       elemento.className += "night";
       elemento2.className += "switched";
+      document.body.style.backgroundColor = "#080d17";
+       
     }
   }
 
