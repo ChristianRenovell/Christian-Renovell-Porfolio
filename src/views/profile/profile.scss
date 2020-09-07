@@ -1,22 +1,212 @@
 @import "../../assets//styles/colors.scss";
 
-.line{
+.lineTitle{
     position: relative;
-    height: 10px;
-    width: 204px;
-    background-color:#555;
     margin-left: auto;
     margin-right: auto;
+    height: 10px;
+    width: 104px;
+    background-color:#555;
+    animation-duration: 1s;
+    animation-name: lineShoswTitle;
+    animation-fill-mode: forwards;
+}
+@keyframes lineShoswTitle {
+  from {
+    opacity: 0;
+    right: -1000px;
+  }
+  to { 
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+.line1{  
+    display: block;
+    margin-top: 20px;
+    opacity: 0;
+    height: 15px;
+    width: 10px;
+    background-color:#555;
+    animation-delay: 6s;
+    animation-duration: 6s;
+    animation-name: line1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line1 {
+  from {
+    opacity: 1;
+    width: 15px;
+  }
+  to {
+    opacity: 1;
+    width: 900px;
+  }
+}
+.line2{  
+  display: block;
+  margin-top: 20px;
+  opacity: 0;
+  height: 15px;
+  width: 10px;
+  background-color:#555;
+  float: left;
+  animation-delay: 6s;
+  animation-duration: 6s;
+  animation-name: line2;
+  animation-fill-mode: forwards;
+}
+
+@keyframes line2 {
+from {
+  opacity: 1;
+  width: 15px;
+}
+to {
+  opacity: 1;
+  width: 1000px;
+}
+}
+.line3{  
+  display: block;
+  margin-top: 20px;
+  opacity: 0;
+  height: 15px;
+  width: 10px;
+  background-color:#555;
+  margin-left: auto;
+  margin-right: auto;
+  animation-delay: 6s;
+  animation-duration: 6s;
+  animation-name: line3;
+  animation-fill-mode: forwards;
+}
+
+@keyframes line3 {
+from {
+  opacity: 1;
+  width: 15px;
+}
+to {
+  opacity: 1;
+  width: 1100px;
+}
+}
+
+.line4{  
+  display: block;
+  margin-top: 20px;
+  opacity: 0;
+  height: 15px;
+  width: 10px;
+  background-color:#555;
+  margin-left: auto;
+  margin-right: auto;
+  animation-delay: 6s;
+  animation-duration: 6s;
+  animation-name: line4;
+  animation-fill-mode: forwards;
+}
+
+@keyframes line4 {
+from {
+  opacity: 1;
+  width: 15px;
+}
+to {
+  opacity: 1;
+  width: 1200px;
+}
+}
+
+.line5{  
+  display: block;
+  margin-top: 20px;
+  opacity: 0;
+  height: 15px;
+  width: 10px;
+  background-color:#555;
+  margin-left: auto;
+  margin-right: auto;
+  animation-delay: 6s;
+  animation-duration: 6s;
+  animation-name: line5;
+  animation-fill-mode: forwards;
+}
+
+@keyframes line5 {
+from {
+  opacity: 1;
+  width: 15px;
+}
+to {
+  opacity: 1;
+  width: 1000px;
+}
+}
+
+.line6{  
+  display: block;
+  margin-top: 20px;
+  opacity: 0;
+  height: 15px;
+  width: 10px;
+  background-color:#555;
+  margin-left: auto;
+  margin-right: auto;
+  animation-delay: 6s;
+  animation-duration: 6s;
+  animation-name: line6;
+  animation-fill-mode: forwards;
+}
+
+@keyframes line6 {
+from {
+  opacity: 1;
+  width: 15px;
+}
+to {
+  opacity: 1;
+  width: 1000px;
+}
+}
+
+.line6{  
+  display: block;
+  margin-top: 20px;
+  opacity: 0;
+  height: 15px;
+  width: 10px;
+  background-color:#555;
+  margin-left: auto;
+  margin-right: auto;
+  animation-delay: 6s;
+  animation-duration: 6s;
+  animation-name: line6;
+  animation-fill-mode: forwards;
+}
+
+@keyframes line6 {
+from {
+  opacity: 1;
+  width: 15px;
+}
+to {
+  opacity: 1;
+  width: 1300px;
+}
 }
 
 .habilitys{
-    
-    position: absolute;
+    font-size: 2em;
+    margin-left: 50px;
 }
 
   .p1{
       position: relative;
-      font-size: 1.6em;
+      font-size: 1.8em;
       animation-duration: 1.3s;
       animation-name: title;
   }
@@ -26,7 +216,6 @@
     animation-duration: 1s;
     animation-name: resalt;
     animation-fill-mode: forwards;
-    
   }
 
   @keyframes resalt {
@@ -39,7 +228,6 @@
         font-size: 1.2em;
     }
   }
-
 
   @keyframes title {
     from {
@@ -55,7 +243,7 @@
 
   .p2{
     position: relative;
-    font-size: 1.6em;
+    font-size: 1.8em;
     opacity: 0;
     animation-delay: 1s;
     animation-duration: 2.5s;
@@ -96,7 +284,7 @@
 
   .p3{
     position: relative;
-    font-size: 1.6em;
+    font-size: 2em;
     animation-duration: 1.9s;
     animation-name: title3;
 }
@@ -132,3 +320,121 @@
     margin-top: 0px;
   }
 }
+
+.hability1{ 
+  position: relative;
+  opacity: 0;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-name: habilityShosw1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes habilityShosw1 {
+  from {
+    opacity: 1;
+    left: -900px;
+  }
+  to { 
+    opacity: 1;
+    left: 0px;
+  }
+}
+.hability2{ 
+  position: relative;
+  opacity: 0;
+  animation-delay: 3.2s;
+  animation-duration: 2s;
+  animation-name: habilityShosw2;
+  animation-fill-mode: forwards;
+}
+
+@keyframes habilityShosw2 {
+  from {
+    opacity: 1;
+    left: -900px;
+  }
+  to { 
+    opacity: 1;
+    left: 0px;
+  }
+}
+.hability3{ 
+  position: relative;
+  opacity: 0;
+  animation-delay: 3.4s;
+  animation-duration: 2s;
+  animation-name: habilityShosw3;
+  animation-fill-mode: forwards;
+}
+
+@keyframes habilityShosw3 {
+  from {
+    opacity: 1;
+    left: -900px;
+  }
+  to { 
+    opacity: 1;
+    left: 0px;
+  }
+}
+.hability4{ 
+  position: relative;
+  opacity: 0;
+  animation-delay: 3.6s;
+  animation-duration: 2s;
+  animation-name: habilityShosw4;
+  animation-fill-mode: forwards;
+}
+
+@keyframes habilityShosw4 {
+  from {
+    opacity: 1;
+    left: -900px;
+  }
+  to { 
+    opacity: 1;
+    left: 0px;
+  }
+}
+.hability5{ 
+  position: relative;
+  opacity: 0;
+  animation-delay: 3.8s;
+  animation-duration: 2s;
+  animation-name: habilityShosw5;
+  animation-fill-mode: forwards;
+}
+
+@keyframes habilityShosw5 {
+  from {
+    opacity: 1;
+    left: -900px;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}
+.hability6{ 
+  position: relative;
+  opacity: 0;
+  animation-delay: 4s;
+  animation-duration: 2s;
+  animation-name: habilityShosw6;
+  animation-fill-mode: forwards;
+}
+
+@keyframes habilityShosw6 {
+  from {
+    opacity: 1;
+    left: -900px;
+  }
+  to { 
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+
+

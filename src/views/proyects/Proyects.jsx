@@ -57,7 +57,7 @@ const Proyects = (props) => {
               <div className="row mt-5">
                 <div className="col-md-12">
                   <div className="content--inner3">
-                    <Link href=""><h2>Este es mi Porfolio<img className="ml-3" width="50px" src={`../images/git-${props.mode}.png`} id="git" /></h2></Link>
+                    <Link href="" className="titlePorfolio"><h2>Este es mi Porfolio<img className="ml-3 iconPorfolio" width="50px" src={`../images/git-${props.mode}.png`} id="git" /></h2></Link>
                   </div>
                 </div>
               </div>

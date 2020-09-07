@@ -1,0 +1,36 @@
+.titlePorfolio{
+    position: relative;
+    animation-name: porfShow;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes porfShow {
+  from {
+    opacity: 0;
+    left: -1000px;
+  }
+  to { 
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+
+
+.iconPorfolio{
+    position: relative;
+    animation-name: iconShow;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes iconShow {
+    from {
+      opacity: 0;
+      right: 1000px;
+    }
+    to { 
+      opacity: 1;
+      right: 0px;
+    }
+  }
