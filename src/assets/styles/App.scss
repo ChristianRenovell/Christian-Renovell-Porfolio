@@ -2,6 +2,7 @@
 @import "./Media.scss";
 @import "./colors.scss";
 body {
+    overflow-x: hidden;
     padding: 0;
 	  margin: 0;
 	  font-family: $theme-font;

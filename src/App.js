@@ -26,7 +26,7 @@ class App extends Component {
     this.handleOpenMenu = this.handleOpenMenu.bind(this);
     this.active = this.active.bind(this);
     this.itenControlSelected = this.itenControlSelected.bind(this);
-    
+
   };
 
   mode() {
@@ -40,7 +40,7 @@ class App extends Component {
     let photoCircle = document.getElementById("photo-circle");
     let btnContact = document.getElementById("btn-contact");
     let btnAbout = document.getElementById("btn-about");
-    
+
 
     if (elemento.className === "night") {
 
@@ -64,9 +64,9 @@ class App extends Component {
 
       elemento.className = "";
       elemento2.className = "";
-     
-      
-      document.body.style.backgroundColor = "#f1ede3"; 
+
+
+      document.body.style.backgroundColor = "#f1ede3";
     }
     else {
 
@@ -89,7 +89,7 @@ class App extends Component {
       elemento.className += "night";
       elemento2.className += "switched";
       document.body.style.backgroundColor = "#080d17";
-       
+
     }
   }
 
@@ -144,7 +144,7 @@ class App extends Component {
     }
   }
 
-  itenControlSelected(){
+  itenControlSelected() {
 
     let URLactual = window.location.href;
 
@@ -186,35 +186,45 @@ class App extends Component {
           <div className="section ">
             <div id="intro-text">
               <nav className="navbar navbar-expand-lg  ">
-                  <div
-                    className={`menu-btn ${this.state.menuOpen ? "open" : "closed"}`}
-                    onClick={this.handleOpenMenu}
-                  >
-                    <div className={this.state.burger} />
+                <div
+                  className={`menu-btn ${this.state.menuOpen ? "open" : "closed"}`}
+                  onClick={this.handleOpenMenu}
+                >
+                  <div className={this.state.burger} />
+                </div>
+                <div
+                  className={`${this.state.menuOpen ? "showMenu" : "navmenu"}`}
+                >
+                  <div className="">
+                    <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                      <li className="nav-item active">
+                        <Link to={"/home"} id="nemuIten1" className="navbar-brand lin" onClick={() => this.active(1)}><span>Inicio</span></Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link to={`/profile/`} id="nemuIten2" className="navbar-brand lin" onClick={() => this.active(2)}><span>sobre mí</span></Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link to={`/proyects/`} id="nemuIten3" className="navbar-brand lin" onClick={() => this.active(3)}><span>Proyectos</span></Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link to={`/Knowledge/`} id="nemuIten4" className="navbar-brand lin" onClick={() => this.active(4)}><span>Conocimientos</span></Link>
+                      </li>
+                      <li className="nav-item mr-3">
+                        <Link to={`/contact/`} id="nemuIten5" className="navbar-brand lin" onClick={() => this.active(5)}><span>Contacto</span></Link>
+                      </li>
+                      <li className="nav-item">
+                        <div className="row">
+                          <div className="col-12 col-md-6 pt-1">
+                            <img src={`../images/es-${this.state.mode}.png`} width="35px"></img>
+                          </div>
+                          <div className="col-12  col-md-6 pt-1">
+                            <img src={`../images/eng-${this.state.mode}.png`} width="35px"></img>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
-                  <div
-                    className={`${this.state.menuOpen ? "showMenu" : "navmenu"}`} 
-                  >
-                    <div className="">
-                      <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li className="nav-item active">
-                          <Link to={"/home"} id="nemuIten1" className="navbar-brand lin" onClick={() => this.active(1)}><span>Inicio</span></Link>
-                        </li>
-                        <li className="nav-item">
-                          <Link to={`/profile/`} id="nemuIten2" className="navbar-brand lin" onClick={() => this.active(2)}><span>sobre mí</span></Link>
-                        </li>
-                        <li className="nav-item">
-                          <Link to={`/proyects/`} id="nemuIten3" className="navbar-brand lin" onClick={() => this.active(3)}><span>Proyectos</span></Link>
-                        </li>
-                        <li className="nav-item">
-                          <Link to={`/Knowledge/`} id="nemuIten4" className="navbar-brand lin" onClick={() => this.active(4)}><span>Conocimientos</span></Link>
-                        </li>
-                        <li className="nav-item">
-                          <Link to={`/contact/`} id="nemuIten5" className="navbar-brand lin" onClick={() => this.active(5)}><span>Contacto</span></Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+                </div>
                 <div id="switch" onClick={this.mode} >
                   <div id="circle" ></div>
                 </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import './profile.scss';
 
 const Profile = (props) => {
 
@@ -8,26 +8,30 @@ const Profile = (props) => {
             <div className="section">
                 <div className="contentComponent">
                     <div className="content">
-                        <div className="container-fluid">
-                            <div className="row">
-                                <div className="col-md-5 mt-5">
-                                    <img src={`../images/christian-${props.mode}.png`} alt="..." width="400px" className={`circle-profile-${props.mode}`} id="photo-circle" />
-                                </div>
-                                <div className="col-md-5 content--inner mt-5">
-                                    <p className="about-p" text-aling="left">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                                </p>
-                                </div>
-                                <div className="col-md-2">
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-md-5">
-                                </div>
-                                <div className="col-md-2">
-                                </div>
-                            </div>
 
+                        <div className="container-fluid">
+                            <h1 className="title mt-5">¿Quién soy?</h1>
+                        </div>
+                        <div className="p1 mt-5">
+                            Soy un <span className="textRelt">programador</span> y <span className="textRelt">desarollador Web</span> con conocimientos tanto en front-end como en back-end.
+                        </div>
+                        <div className="p2 mt-2">
+                            Apasionado de las tecnologías como <span className="textRelt2">React.js y Node.js</span> , me encanta enfrentarme a <span className="textRelt2">nuevos y desafiantes retos.</span>
+                        </div>
+                        <div className="p3 mt-2">
+                        <span className="textRelt3">Capacidad de adaptación</span> en un mercado online que evoluciona constantemente. Buenas <span className="textRelt3">habilidades comunicativas</span> para trabajo en equipo.
+                        </div>
+                        <div className="row mt-5">
+                            <div className="col-md-4 mt-5 habilitys">
+                                <h2>HABILIDADES</h2>
+                                <div className="line"/>
+                            </div>
+                            <div className="col-md-4">
+
+                            </div>
+                            <div className="col-md-4">
+
+                            </div>
                         </div>
                     </div>
                 </div>
