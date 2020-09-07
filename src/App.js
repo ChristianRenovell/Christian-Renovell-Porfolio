@@ -9,7 +9,7 @@ import Knowledge from './views/knowledge/Knowledge';
 import Contact from './views/contact/Contact';
 import { play, exit } from './timelines';
 import './assets/styles/App.scss';
-import "./assets/styles/stylemenu.scss";
+import './assets/styles/stylemenu.scss';
 
 class App extends Component {
 
@@ -27,9 +27,7 @@ class App extends Component {
     this.handleOpenMenu = this.handleOpenMenu.bind(this);
     this.active = this.active.bind(this);
     this.itenControlSelected = this.itenControlSelected.bind(this);
-
-
-
+  
   };
 
   mode() {
@@ -181,10 +179,9 @@ class App extends Component {
 
       <BrowserRouter>
         <div id="fullpage" className="night">
-          <div className="section">
+          <div className="section ">
             <div id="intro-text">
-              <nav className="navbar navbar-expand-lg">
-                <div>
+              <nav className="navbar navbar-expand-lg  ">
                   <div
                     className={`menu-btn ${this.state.menuOpen ? "open" : "closed"}`}
                     onClick={this.handleOpenMenu}
@@ -192,9 +189,9 @@ class App extends Component {
                     <div className={this.state.burger} />
                   </div>
                   <div
-                    className={`${this.state.menuOpen ? "showMenu" : "navmenu"}`}
+                    className={`${this.state.menuOpen ? "showMenu" : "navmenu"}`} 
                   >
-                    <div className="navbar-collapse textcolor" >
+                    <div className="">
                       <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li className="nav-item active">
                           <Link to={"/home"} id="nemuIten1" className="navbar-brand lin" onClick={() => this.active(1)}><span>Inicio</span></Link>
@@ -214,7 +211,6 @@ class App extends Component {
                       </ul>
                     </div>
                   </div>
-                </div>
                 <div id="switch" onClick={this.mode} >
                   <div id="circle" ></div>
                 </div>
@@ -224,7 +220,7 @@ class App extends Component {
               const { pathname, key } = location;
 
               return (
-                <TransitionGroup component={null}>
+                <TransitionGroup component={null} >
                   <Transition
                     key={key}
                     appear={true}
@@ -232,11 +228,11 @@ class App extends Component {
                     onExit={(node, appears) => exit(node, appears)}
                     timeout={{ enter: 750, exit: 150 }}
                   >
-                    <Switch location={location}>
+                    <Switch location={location} >
                       <Route
                         exact path='/home'
                         render={(props) => (
-                          <Home {...props} mode={this.state.mode}/>
+                          <Home {...props} mode={this.state.mode} />
                         )}
                       />
                       <Route

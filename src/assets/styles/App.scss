@@ -1,15 +1,10 @@
 @import "./Vars.scss";
 @import "./Media.scss";
 @import "./colors.scss";
-
-#info {
-  position: absolute;
-  left: 5%;
-}
 body {
     padding: 0;
 	  margin: 0;
-	  font-family: 'Lato';
+	  font-family: $theme-font;
     text-align: center;
     min-height: 100vh;
     background-color: $light;
@@ -22,6 +17,7 @@ body {
   
 }
 .section {
+  position: relative;
 	font-size: 1em;
 	text-align: center;
   background: $light;
@@ -49,8 +45,7 @@ a{
   transition: opacity 0.2s linear;
 }
 
-.navbar {
-
+.navbar { 
 width: 100%; 
 position: fixed;
 z-index: 10000;
