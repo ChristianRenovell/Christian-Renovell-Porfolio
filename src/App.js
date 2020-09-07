@@ -182,7 +182,7 @@ class App extends Component {
       <BrowserRouter>
         <div id="fullpage" className="night">
           <div className="section">
-            <div id="intro-text" className="">
+            <div id="intro-text">
               <nav className="navbar navbar-expand-lg">
                 <div>
                   <div
