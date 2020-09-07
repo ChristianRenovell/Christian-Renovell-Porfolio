@@ -11,7 +11,7 @@
   
   .burger {
     width: 50px;
-    height: 6px;
+    height: 4px;
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
     background: #555;
@@ -22,7 +22,7 @@
     content: "";
     position: absolute;
     width: 50px;
-    height: 6px;
+    height: 4px;
     background: #555;
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
@@ -53,7 +53,7 @@
 /*burger 2*/
   .burger2 {
     width: 50px;
-    height: 6px;
+    height: 4px;
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
     background: #d87093;
@@ -64,7 +64,7 @@
     content: "";
     position: absolute;
     width: 50px;
-    height: 6px;
+    height: 4px;
     background: #d87093;
     border-radius: 5px;
    
@@ -157,4 +157,27 @@
       top:-10px
     }
   }
+
+  @media (max-width: 991px) {
+    .showMenu {
+      width: 100%;
+     position: fixed;
+     left: 0px;
+      display: inline-block;
+      
+      z-index: -1;
+      
+    }
+    .navmenu {
+      
+      width: 100%;
+      position: fixed;
+      left: 0px;
+        position: fixed;
+        display: inline-block;
+
+        z-index: -1; 
+          
+        }
+    }
    

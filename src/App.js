@@ -194,7 +194,7 @@ class App extends Component {
                   <div
                     className={`${this.state.menuOpen ? "showMenu" : "navmenu"}`}
                   >
-                    <div className=" navbar-collapse textcolor" id="navbarTogglerDemo01">
+                    <div className="navbar-collapse textcolor" >
                       <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li className="nav-item active">
                           <Link to={"/home"} id="nemuIten1" className="navbar-brand lin" onClick={() => this.active(1)}><span>Inicio</span></Link>

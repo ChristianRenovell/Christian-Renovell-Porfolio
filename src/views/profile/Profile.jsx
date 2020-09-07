@@ -24,9 +24,6 @@ const Profile = (props) => {
                             <div className="row">
                                 <div className="col-md-5">
                                 </div>
-                                <div className="col-md-5 mt-5 content--inner2">
-                                    <Link to={`/contact/`} className="navbar-brand"><div className={`btn-profile-${props.mode}`} id="btn-about">Contacta conmigo</div></Link>
-                                </div>
                                 <div className="col-md-2">
                                 </div>
                             </div>
