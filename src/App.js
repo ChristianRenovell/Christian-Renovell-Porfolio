@@ -201,7 +201,7 @@ class App extends Component {
                         <Link to={"/home"} id="nemuIten1" className="navbar-brand lin" onClick={() => this.active(1)}><span>Inicio</span></Link>
                       </li>
                       <li className="nav-item">
-                        <Link to={`/profile/`} id="nemuIten2" className="navbar-brand lin" onClick={() => this.active(2)}><span>sobre mí</span></Link>
+                        <Link to={`/profile/`} id="nemuIten2" className="navbar-brand lin" onClick={() => this.active(2)}><span>Sobre mí</span></Link>
                       </li>
                       <li className="nav-item">
                         <Link to={`/proyects/`} id="nemuIten3" className="navbar-brand lin" onClick={() => this.active(3)}><span>Proyectos</span></Link>
