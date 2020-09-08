@@ -3,6 +3,15 @@ import './profile.scss';
 
 const Profile = (props) => {
 
+  let color;
+  
+  if (props.mode === "light") {
+    color = "#555";
+  }
+  if (props.mode === "darck") {
+    color = "#d87093";
+  }
+
     return (
         <div id="fullpage">
             <div className="section">
@@ -10,7 +19,7 @@ const Profile = (props) => {
                     <div className="content pl-5 pr-5">
                         <div className="container">
                             <h1 className="title mt-5 mb-3">¿Quién soy?</h1>
-                            <div className="lineTitle" />
+                            <div className="lineTitle" style={{ backgroundColor: color }}/>
                         </div>
                         <div className="p1 mt-3">
                             Soy un programador y desarollador Web con conocimientos tanto en <span className="textRelt">front-end</span> como en <span className="textRelt">back-end.</span>

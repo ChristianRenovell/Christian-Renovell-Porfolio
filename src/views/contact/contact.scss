@@ -1,4 +1,5 @@
-.lineTitle{
+.lineTitle {
+
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -8,6 +9,7 @@
     animation-duration: 1s;
     animation-name: lineShoswTitle;
     animation-fill-mode: forwards;
+    
   }
   @keyframes lineShoswTitle {
   from {

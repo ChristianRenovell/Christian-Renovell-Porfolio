@@ -3,6 +3,15 @@ import './knowledge.scss';
 
 const Knowledge = (props) => {
 
+    let color;
+
+    if (props.mode === "light") {
+        color = "#555";
+    }
+    if (props.mode === "darck") {
+        color = "#d87093";
+    }
+
     return (
         <div id="fullpage">
             <div className="section">
@@ -11,7 +20,7 @@ const Knowledge = (props) => {
                         <div className="row">
                             <div className="col-md-12 content mt-4">
                                 <h1>Conocimientos</h1>
-                                <div className="lineTitle" />
+                                <div className="lineTitle" style={{ backgroundColor: color }}/>
                             </div>
                         </div>
                         <div className="content--inner2">
@@ -57,17 +66,17 @@ const Knowledge = (props) => {
                                     <a href="" className="icon12"><img width="90px" src={`../images/graphQL-${props.mode}.png`} id="git" /></a>
                                 </div>
                                 <div className="col-sm-6 col-md-3 mt-4">
-                                        <a href="" className="icon13"><img width="90px" src={`../images/stripe-${props.mode}.png`} id="git" /></a>
-                                    </div>
-                                    <div className="col-sm-6 col-md-3 mt-4">
-                                        <a href="" className="icon14"><img width="90px" src={`../images/firebase-${props.mode}.png`} id="git" /></a>
-                                    </div>
-                                    <div className="col-sm-6 col-md-3 mt-4">
-                                        <a href="" className="icon15"><img width="90px" src={`../images/supersaas-${props.mode}.png`} id="git" /></a>
-                                    </div>
-                                    <div className="col-sm-6 col-md-3 mt-4">
-                                        <a href="" className="icon16"><img width="90px" src={`../images/amazon-${props.mode}.png`} id="git" /></a>
-                                    </div>
+                                    <a href="" className="icon13"><img width="90px" src={`../images/stripe-${props.mode}.png`} id="git" /></a>
+                                </div>
+                                <div className="col-sm-6 col-md-3 mt-4">
+                                    <a href="" className="icon14"><img width="90px" src={`../images/firebase-${props.mode}.png`} id="git" /></a>
+                                </div>
+                                <div className="col-sm-6 col-md-3 mt-4">
+                                    <a href="" className="icon15"><img width="90px" src={`../images/supersaas-${props.mode}.png`} id="git" /></a>
+                                </div>
+                                <div className="col-sm-6 col-md-3 mt-4">
+                                    <a href="" className="icon16"><img width="90px" src={`../images/amazon-${props.mode}.png`} id="git" /></a>
+                                </div>
                             </div>
                         </div>
                     </div>

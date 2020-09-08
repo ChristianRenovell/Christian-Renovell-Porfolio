@@ -25,7 +25,7 @@ const Proyects = (props) => {
                 <div className="col-md-12">
                   <div className="content">
                     <h1>Trabajos recientes</h1>
-                    <div className="lineTitle" />
+                    <div className="lineTitle" style={{ backgroundColor: colorBorder }}/>
                   </div>
                 </div>
               </div>
