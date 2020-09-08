@@ -1,4 +1,5 @@
 import React from 'react';
+import './contact.scss';
 
 const Contact = (props) => {
 
@@ -8,12 +9,11 @@ const Contact = (props) => {
         <div className="contentComponent">
           <div className="fullpage2 mt-4">
             <div className="content">
-              <h1>CONTACTO</h1>
-              <div className="content--inner">
+              <h1>Contacto</h1>
+              <div className="lineTitle" />
+              <div className="content--inner infoContact">
                 <div className="container">
-                  <section class="mb-4">
-                    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-    a matter of hours to help you.</p>
+                  <section class="mb-4 mt-4">
                     <div class="row">
                       <div class="col-md-12 mb-md-0 mb-5">
                         <form id="contact-form" name="contact-form" action="mail.php" method="POST">
@@ -44,7 +44,6 @@ const Contact = (props) => {
                               <div class="md-form">
                                 <label for="message">Mensaje</label>
                                 <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea bg-transparent"></textarea>
-
                               </div>
                             </div>
                           </div>
@@ -69,7 +68,6 @@ const Contact = (props) => {
                         </ul>
                       </div>
                     </div>
-                    
                   </section>
                 </div>
               </div>

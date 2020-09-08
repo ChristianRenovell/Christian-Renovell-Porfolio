@@ -1,3 +1,25 @@
+.lineTitle{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10px;
+  width: 104px;
+  background-color:#555;
+  animation-duration: 1s;
+  animation-name: lineShoswTitle;
+  animation-fill-mode: forwards;
+}
+@keyframes lineShoswTitle {
+from {
+  opacity: 0;
+  right: -1000px;
+}
+to { 
+  opacity: 1;
+  right: 0px;
+}
+}
+
 .titlePorfolio{
     position: relative;
     animation-name: porfShow;
@@ -14,8 +36,6 @@
     left: 0px;
   }
 }
-
-
 
 .iconPorfolio{
     position: relative;

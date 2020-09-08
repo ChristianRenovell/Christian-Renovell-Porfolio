@@ -16,17 +16,16 @@ const Proyects = (props) => {
     color = "#080d17";
     colorBorder = "#d87093";
   }
-
   return (
     <div id="fullpage">
       <div className="section">
         <div className="contentComponent">
-          <div className="content--inner mt-4">
             <div className="container">
               <div className="row">
                 <div className="col-md-12">
                   <div className="content">
                     <h1>Trabajos recientes</h1>
+                    <div className="lineTitle" />
                   </div>
                 </div>
               </div>
@@ -62,7 +61,7 @@ const Proyects = (props) => {
                 </div>
               </div>
             </div>
-          </div>
+          
         </div>
       </div>
     </div>
