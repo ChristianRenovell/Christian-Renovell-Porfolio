@@ -10,6 +10,8 @@ import Contact from './views/contact/Contact';
 import { play, exit } from './timelines';
 import './assets/styles/App.scss';
 import './assets/styles/stylemenu.scss';
+import './assets/styles/foot.scss';
+
 
 class App extends Component {
 
@@ -229,6 +231,9 @@ class App extends Component {
                   <div id="circle" ></div>
                 </div>
               </nav>
+              <div className="foot">
+                <img src={`../images/pie-light.png`} width="40px"/>
+              </div>
             </div>
             <Route render={({ location }) => {
               const { pathname, key } = location;
@@ -278,6 +283,7 @@ class App extends Component {
                 </TransitionGroup>
               )
             }} />
+            
             <Footer />
           </div>
         </div>

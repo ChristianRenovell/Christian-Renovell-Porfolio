@@ -1,0 +1,17 @@
+.foot{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 60px;
+    width: 55px;
+    z-index: 1000;
+    background-color: #555;
+    border-top-left-radius: 50px;
+    cursor: pointer;
+}
+.foot img{
+    position: relative;
+    top: 15px;
+    right: -4px;
+    
+}
