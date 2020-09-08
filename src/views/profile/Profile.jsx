@@ -19,35 +19,28 @@ const Profile = (props) => {
                             <span className="textRelt3">Capacidad de adaptación</span> en un mercado online que evoluciona constantemente.
                         </div>
                         <div className="p2 mt-2">
-                            Apasionado de las tecnologías como <span className="textRelt2">React.js y Node.js</span> , listo para enfrentarme <span className="textRelt2">nuevos retos.</span>
+                            Apasionado de las tecnologías como <span className="textRelt2">React.js y Node.js</span> , listo para enfrentarme a <span className="textRelt2">nuevos retos.</span>
                         </div>
                         <div className="p3 mt-2">
                             <span className="textRelt3"></span>Buenas <span className="textRelt3">habilidades comunicativas</span> para el trabajo en equipo.
                         </div>
-
-                        <div className="row mt-5 habilitys">
-                            <div className="col-md-12">
-                                <table>
-                                    <tr>
-                                        <td align="right" className="hability1">Metódico: </td><div className="line1 ml-1"/>
-                                    </tr>
-                                    <tr>
-                                        <td align="right" className="hability2">Resolutivo:</td><div className="line2 ml-1"/>
-                                    </tr>
-                                    <tr>
-                                        <td align="right" className="hability3">Autónomo:</td><div className="line3 ml-1"/>
-                                    </tr>
-                                    <tr>
-                                        <td align="right" className="hability4">Comunicativo:</td><div className="line4 ml-1"/>
-                                    </tr>
-                                    <tr>
-                                        <td align="right" className="hability5">Creativo:</td><div className="line5 ml-1"/>
-                                    </tr>
-                                    <tr>
-                                        <td align="right" className="hability6">Friki:</td><div className="line6 ml-1"/>
-                                    </tr>
-                                </table>
-                                
+                        <div className="p4 mt-2">
+                            Me considero una persona <span className="textRelt">resolutiva</span> y autonoma con buenas aptitudes de <span className="textRelt">autoaprendizaje.</span>
+                        </div>
+                        <div className="container">
+                            <div className="row mt-5">
+                                <div className="col-md-3 mt-4">
+                                    <a href="" className="iconProfile1"><img width="50px" src={`../images/facebook-${props.mode}.png`} id="facebook" /></a>
+                                </div>
+                                <div className="col-md-3 mt-4">
+                                    <a href="" className="iconProfile2"><img width="50px" src={`../images/instagram-${props.mode}.png`} id="instagram" /></a>
+                                </div>
+                                <div className="col-md-3 mt-4">
+                                    <a href="" className="iconProfile3"><img width="50px" src={`../images/linkedin-${props.mode}.png`} id="linkedin" /></a>
+                                </div>
+                                <div className="col-md-3 mt-4">
+                                    <a href="" className="iconProfile4"><img width="50px" src={`../images/git-${props.mode}.png`} id="git" /></a>
+                                </div>
                             </div>
                         </div>
                     </div>
