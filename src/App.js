@@ -45,7 +45,7 @@ class App extends Component {
     let photoCircle = document.getElementById("photo-circle");
     let btnContact = document.getElementById("btn-contact");
     let btnAbout = document.getElementById("btn-about");
-  
+    let btnOpenFooter = document.getElementById("btnOpenFooter")
 
     if (elemento.className === "night") {
 
@@ -71,7 +71,7 @@ class App extends Component {
       elemento2.className = "";
 
       document.body.style.backgroundColor = "#f1ede3";
-
+      btnOpenFooter.style.backgroundColor = "#555";
     }
     else {
 
@@ -93,7 +93,9 @@ class App extends Component {
       } catch{ }
       elemento.className += "night";
       elemento2.className += "switched";
+
       document.body.style.backgroundColor = "#080d17";
+      btnOpenFooter.style.backgroundColor = "#d87093"
 
     }
   }
@@ -239,9 +241,8 @@ class App extends Component {
                 </div>
               </nav>
               <div className={`${this.state.footerOpen ? "closeFooterOpen" : "closeFooterClose"}`} onClick={this.openFooter}>
-                
               </div>
-              <div className="footIcon" onClick={this.openFooter}>
+              <div className="footIcon" id="btnOpenFooter" onClick={this.openFooter}>
                 <img src={`../images/pie-light.png`} width="40px" />
               </div>
                 <div className={`${this.state.footerOpen ? "footerDivOpen" : "footerDivClose"}`} id="footer">
