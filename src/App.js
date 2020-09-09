@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import { Transition, TransitionGroup } from 'react-transition-group';
 import Footer from './components/footer/Footer';
+import Intro from './views/intro/Intro';
 import Home from './views/home/Home';
 import Profile from './views/profile/Profile';
 import Proyects from './views/proyects/Proyects';
@@ -249,6 +250,13 @@ class App extends Component {
                     onExit={(node, appears) => exit(node, appears)}
                     timeout={{ enter: 750, exit: 150 }}
                   >
+                    <Switch location={location} >
+                      <Route
+                        exact path='/'
+                        render={(props) => (
+                          <Intro {...props} mode={this.state.mode} />
+                        )}
+                      />
                     <Switch location={location} >
                       <Route
                         exact path='/home'
