@@ -22,13 +22,14 @@ class App extends Component {
       burger: "",
       index: null,
       menuOpen: false,
+      footerOpen: true,
       active: null
     };
     this.mode = this.mode.bind(this);
     this.handleOpenMenu = this.handleOpenMenu.bind(this);
     this.active = this.active.bind(this);
     this.itenControlSelected = this.itenControlSelected.bind(this);
-    this.showFooter = this.showFooter.bind(this);
+    this.openFooter = this.openFooter.bind(this);
 
 
   };
@@ -173,14 +174,14 @@ class App extends Component {
 
   }
 
-  showFooter(){
-
+  openFooter(){
+     this.setState({ footerOpen: !this.state.footerOpen });
   }
 
   componentDidMount() {
 
     this.itenControlSelected();
-
+    this.openFooter();
   }
 
   render() {
@@ -237,10 +238,11 @@ class App extends Component {
                   <div id="circle" ></div>
                 </div>
               </nav>
-              <div className="footIcon">
+              <div className="closeFooter"></div>
+              <div className="footIcon" onClick={this.openFooter}>
                 <img src={`../images/pie-light.png`} width="40px" />
               </div>
-                <div className="footerDiv">
+                <div className={`${this.state.footerOpen ? "footerDivOpen" : "footerDivClose"}`}>
                   <Footer />
                 </div>
             </div>

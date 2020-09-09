@@ -8,32 +8,52 @@
     background-color: #555;
     border-top-left-radius: 50px;
     cursor: pointer;
-}
+} 
 .footIcon img {
     position: relative;
     top: 15px;
     right: -4px;
-    
+
 }
-.footerDiv  {
+.footerDivOpen  {
+
     position:absolute;
     bottom:0px;
     min-height: auto;
     width: 100%;
     z-index: 1000;
     animation-name: footerOpen;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
+
   }
-  
+
   @keyframes footerOpen {
   
-    from {
-     
-      height: 0px;
+    from {  
+      display: none;
+      bottom: -1000px;
     }
-    to { 
-     
-      height: auto;
+    to {    
+      display: inline-block;
+      bottom: 0px;
+    }
+  }
+
+  .footerDivClose{
+    display: none;
+    animation-name: footerClose;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes footerClose {
+  
+    from {  
+      display: inline-block;
+      bottom: 0px;
+    }
+    to {    
+      display: none;
+      bottom: -1000px;
     }
   }
