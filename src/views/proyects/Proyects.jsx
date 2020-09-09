@@ -22,7 +22,7 @@ const Proyects = (props) => {
         <div className="contentComponent">
           <div className="container">
             <div className="row">
-              <div className="col-md-12">
+              <div className="col-md-12 mt-5">
                 <div className="content">
                   <h1>Trabajos recientes</h1>
                   <div className="lineTitle" style={{ backgroundColor: colorBorder }} />
@@ -58,7 +58,7 @@ const Proyects = (props) => {
                   linkView="https://www.showyourcompany.com/" />
               </div>
             </div>
-            <div className="row mt-5">
+            <div className="row mt-5 pb-5">
               <div className="col-md-12">
                 <div className="content--inner3">
                   <Link href="" className="titlePorfolio"><h2>Este es mi Porfolio<img className="ml-3 iconPorfolio" width="50px" src={`../images/git-${props.mode}.png`} id="git" /></h2></Link>

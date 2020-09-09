@@ -22,7 +22,7 @@ const Contact = (props) => {
               <div className="lineTitle" style={{ backgroundColor: color }}/>
               <div className="content--inner infoContact">
                 <div className="container">
-                  <section class="mb-4 mt-4">
+                  <section class="pb-5 mt-4">
                     <div class="row">
                       <div class="col-md-12 mb-md-0 mb-5">
                         <form id="contact-form" name="contact-form" action="mail.php" method="POST">
