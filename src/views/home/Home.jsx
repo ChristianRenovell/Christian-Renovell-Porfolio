@@ -11,8 +11,15 @@ const Home = (props) => {
                     <div className="content">
                         <div className={`circle-${props.mode} mt-5`} id="photo-circle"></div>
                     </div>
-                    <div className="content--inner">
-                        <Name />
+                    <div className="content--inner nameHome">
+                        <div className="row">
+                            <div className="col-md-6">
+                                <h1>CHRISTIAN</h1>
+                            </div>
+                            <div className="col-md-6">
+                                <h1>RENOVELL</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
