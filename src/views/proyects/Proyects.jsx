@@ -20,17 +20,17 @@ const Proyects = (props) => {
     <div id="fullpage">
       <div className="section">
         <div className="contentComponent">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-12">
-                  <div className="content">
-                    <h1>Trabajos recientes</h1>
-                    <div className="lineTitle" style={{ backgroundColor: colorBorder }}/>
-                  </div>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="content">
+                  <h1>Trabajos recientes</h1>
+                  <div className="lineTitle" style={{ backgroundColor: colorBorder }} />
                 </div>
               </div>
-              <div className="row mt-5 content--inner2">
-                {/*sapau*/}
+            </div>
+            <div className="row mt-5 content--inner2">
+              <div className="col-12 col-md-4">
                 <Card
                   imgUrl="../images/sapau-p.png"
                   color={color}
@@ -38,6 +38,8 @@ const Proyects = (props) => {
                   title="Comercial Sapau.es"
                   description="Comercio de Marcas inportantes de Jardineria y camping."
                   linkView="https://sapau.000webhostapp.com/" />
+              </div>
+              <div className="col-12 col-md-4">
                 <Card
                   imgUrl="../images/be.png"
                   color={color}
@@ -45,6 +47,8 @@ const Proyects = (props) => {
                   title="Be Bangarang"
                   description="Colaborador para agencia deigital en varios proyectos."
                   linkView="https://bebangarang.es/" />
+              </div>
+              <div className="col-12 col-md-4">
                 <Card
                   imgUrl="../images/syc.png"
                   color={color}
@@ -53,15 +57,16 @@ const Proyects = (props) => {
                   description="Empresa de publicidad y marquetin digital en dispositivos moviles."
                   linkView="https://www.showyourcompany.com/" />
               </div>
-              <div className="row mt-5">
-                <div className="col-md-12">
-                  <div className="content--inner3">
-                    <Link href="" className="titlePorfolio"><h2>Este es mi Porfolio<img className="ml-3 iconPorfolio" width="50px" src={`../images/git-${props.mode}.png`} id="git" /></h2></Link>
-                  </div>
+            </div>
+            <div className="row mt-5">
+              <div className="col-md-12">
+                <div className="content--inner3">
+                  <Link href="" className="titlePorfolio"><h2>Este es mi Porfolio<img className="ml-3 iconPorfolio" width="50px" src={`../images/git-${props.mode}.png`} id="git" /></h2></Link>
                 </div>
               </div>
             </div>
-          
+          </div>
+
         </div>
       </div>
     </div>

@@ -3,6 +3,15 @@ import './contact.scss';
 
 const Contact = (props) => {
 
+  let color;
+
+  if (props.mode === "light") {
+      color = "#555";
+  }
+  if (props.mode === "darck") {
+      color = "#d87093";
+  }
+
   return (
     <div id="fullpage">
       <div className="section">
@@ -10,7 +19,7 @@ const Contact = (props) => {
           <div className="fullpage2 mt-4">
             <div className="content">
               <h1>Contacto</h1>
-              <div className="lineTitle" />
+              <div className="lineTitle" style={{ backgroundColor: color }}/>
               <div className="content--inner infoContact">
                 <div className="container">
                   <section class="mb-4 mt-4">

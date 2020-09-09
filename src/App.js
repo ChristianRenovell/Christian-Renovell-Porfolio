@@ -185,13 +185,9 @@ class App extends Component {
     this.itenControlSelected();
     this.openFooter();
   }
-
   render() {
-
     window.onload = this.mode;
-
     return (
-
       <BrowserRouter>
         <div id="fullpage" className="night">
           <div className="section ">
@@ -205,6 +201,7 @@ class App extends Component {
                 </div>
                 <div
                   className={`${this.state.menuOpen ? "showMenu" : "navmenu"}`}
+                  
                 >
                   <div className="">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -220,7 +217,7 @@ class App extends Component {
                       <li className="nav-item">
                         <Link to={`/Knowledge/`} id="nemuIten4" className="navbar-brand lin" onClick={() => this.active(4)}><span>Conocimientos</span></Link>
                       </li>
-                      <li className="nav-item mr-3">
+                      <li className="nav-item">
                         <Link to={`/contact/`} id="nemuIten5" className="navbar-brand lin" onClick={() => this.active(5)}><span>Contacto</span></Link>
                       </li>
                     </ul>
