@@ -5,7 +5,7 @@ function Name(props) {
 
   let color;
   let textColor;
-  
+
   if (props.mode === "light") {
     textColor = "#f1ede3"
     color = "#555";
@@ -14,9 +14,9 @@ function Name(props) {
     textColor = "#080d17";
     color = "#d87093";
   }
-
+  
   return (
-    <div className="footContent" style={{ backgroundColor: color, color: textColor}}>
+    <div className="footContent" style={{ backgroundColor: color, color: textColor }}>
       <div className="container">
         <div className="row">
           <div className="col-sm-6 col-md-4 links">
@@ -29,6 +29,10 @@ function Name(props) {
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
                 </p>
               </ul>
+              <div className="col-md-12">
+                <img src={`../images/es-${props.mode}.png`}  width="35px"></img> 
+                <img src={`../images/eng-${props.mode}.png`} className="ml-2" width="35px"></img>
+              </div>
             </div>
           </div>
           <div className=" col-sm-6 col-md-4 logo">

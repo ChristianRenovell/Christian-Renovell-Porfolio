@@ -223,16 +223,6 @@ class App extends Component {
                       <li className="nav-item mr-3">
                         <Link to={`/contact/`} id="nemuIten5" className="navbar-brand lin" onClick={() => this.active(5)}><span>Contacto</span></Link>
                       </li>
-                      <li className="nav-item">
-                        <div className="row">
-                          <div className="col-12 col-md-6 pt-1">
-                            <img src={`../images/es-${this.state.mode}.png`} width="35px"></img>
-                          </div>
-                          <div className="col-12  col-md-6 pt-1">
-                            <img src={`../images/eng-${this.state.mode}.png`} width="35px"></img>
-                          </div>
-                        </div>
-                      </li>
                     </ul>
                   </div>
                 </div>
