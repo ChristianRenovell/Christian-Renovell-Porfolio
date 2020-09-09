@@ -30,7 +30,7 @@ const Proyects = (props) => {
               </div>
             </div>
             <div className="row mt-5 content--inner2">
-              <div className="col-12 col-md-4">
+              <div className="col-12 col-sm-12 col-md-4">
                 <Card
                   imgUrl={`../images/sapau-${props.mode}.png`}
                   color={color}
@@ -39,7 +39,7 @@ const Proyects = (props) => {
                   description="Comercio de Marcas inportantes de Jardineria y camping."
                   linkView="https://sapau.000webhostapp.com/" />
               </div>
-              <div className="col-12 col-md-4">
+              <div className="col-12 col-sm-12 col-md-4">
                 <Card
                   imgUrl={`../images/bebangarang-${props.mode}.png`}
                   color={color}
@@ -48,7 +48,7 @@ const Proyects = (props) => {
                   description="Colaborador para agencia deigital en varios proyectos."
                   linkView="https://bebangarang.es/" />
               </div>
-              <div className="col-12 col-md-4">
+              <div className="col-12 col-sm-12 col-md-4">
                 <Card
                   imgUrl={`../images/syc-${props.mode}.png`}
                   color={color}
