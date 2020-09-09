@@ -1,4 +1,4 @@
-.foot{
+.footIcon {
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -9,9 +9,29 @@
     border-top-left-radius: 50px;
     cursor: pointer;
 }
-.foot img{
+.footIcon img {
     position: relative;
     top: 15px;
     right: -4px;
     
 }
+.footerDiv  {
+    position:absolute;
+    bottom:0px;
+    height: 300px;
+    width: 100%;
+    z-index: 1000;
+    animation-name: footerOpen;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes footerOpen {
+  
+    from {
+      height: 0px;
+    }
+    to { 
+      height: 300px;
+    }
+  }

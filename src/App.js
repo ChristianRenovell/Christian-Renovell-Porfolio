@@ -28,6 +28,8 @@ class App extends Component {
     this.handleOpenMenu = this.handleOpenMenu.bind(this);
     this.active = this.active.bind(this);
     this.itenControlSelected = this.itenControlSelected.bind(this);
+    this.showFooter = this.showFooter.bind(this);
+
 
   };
 
@@ -171,6 +173,10 @@ class App extends Component {
 
   }
 
+  showFooter(){
+
+  }
+
   componentDidMount() {
 
     this.itenControlSelected();
@@ -231,9 +237,12 @@ class App extends Component {
                   <div id="circle" ></div>
                 </div>
               </nav>
-              <div className="foot">
-                <img src={`../images/pie-light.png`} width="40px"/>
+              <div className="footIcon">
+                <img src={`../images/pie-light.png`} width="40px" />
               </div>
+                <div className="footerDiv">
+                  <Footer />
+                </div>
             </div>
             <Route render={({ location }) => {
               const { pathname, key } = location;
@@ -283,8 +292,6 @@ class App extends Component {
                 </TransitionGroup>
               )
             }} />
-            
-            <Footer />
           </div>
         </div>
       </BrowserRouter>
