@@ -1,9 +1,11 @@
+*{
+    list-style:none
+}
 .footContent {
   padding-top: 30px;
   height: 100%;
   background-color:#555;
   color:#f1ede3;   
-  
 }
 P{
     font-size: 1em;
@@ -19,10 +21,15 @@ a p{
    
 }
 .links{
-    
+    text-align: left;
 }
 .logo{
    
     margin-left: auto;
     margin-right: auto;
+}
+.logo img {
+
+    max-width: 300px;
+    width: 100%;
 }
