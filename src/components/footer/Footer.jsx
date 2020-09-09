@@ -40,17 +40,17 @@ function Name(props) {
                 <p>christianrenovell83@gmail.com</p>
               </li>
             </ul>
-            <div className="row mt=2">            
-                  <div className="col-md-3">
+            <div className="row mt=2 mb-5">            
+                  <div className="col-3 col-md-3">
                     <img src={`../images/instagram-light-footer.png`} width="35px"></img>
                   </div>
-                  <div className="col-md-3">
+                  <div className="col-3 col-md-3">
                     <img src={`../images/linkedin-light-footer.png`} width="35px"></img>
                   </div>
-                  <div className="col-md-3">
+                  <div className="col-3 col-md-3">
                     <img src={`../images/facebook-light-footer.png`} width="35px"></img>
                   </div>
-                  <div className="col-md-3">
+                  <div className="col-3 col-md-3">
                     <img src={`../images/git-light-footer.png`} width="35px"></img>
                   </div>
             </div>

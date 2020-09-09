@@ -18,7 +18,7 @@
 .footerDiv  {
     position:absolute;
     bottom:0px;
-    min-height: 300px;
+    min-height: auto;
     width: 100%;
     z-index: 1000;
     animation-name: footerOpen;
@@ -29,9 +29,11 @@
   @keyframes footerOpen {
   
     from {
+     
       height: 0px;
     }
     to { 
-      height: 300px;
+     
+      height: auto;
     }
   }

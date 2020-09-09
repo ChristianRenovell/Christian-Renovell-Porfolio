@@ -24,7 +24,7 @@ body {
   background: $light;
   color: $light-2;
 	width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 	-webkit-transition: background 0.5s ease-in-out;
 	transition: background 0.5s ease-in-out;
 }
