@@ -1,5 +1,4 @@
 import React from 'react';
-import Name from '../../components/name/Name';
 import './home.scss';
 
 const Home = (props) => {
