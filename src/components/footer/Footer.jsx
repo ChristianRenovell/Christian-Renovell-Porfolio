@@ -3,8 +3,20 @@ import './footer.scss';
 
 function Name(props) {
 
+  let color;
+  let textColor;
+  
+  if (props.mode === "light") {
+    textColor = "#f1ede3"
+    color = "#555";
+  }
+  if (props.mode === "darck") {
+    textColor = "#080d17";
+    color = "#d87093";
+  }
+
   return (
-    <div className="footContent">
+    <div className="footContent" style={{ backgroundColor: color, color: textColor}}>
       <div className="container">
         <div className="row">
           <div className="col-sm-6 col-md-4 links">
@@ -20,7 +32,7 @@ function Name(props) {
             </div>
           </div>
           <div className=" col-sm-6 col-md-4 logo">
-            <img src="./images/miLogo-light.png" alt="logo" className="logoFooter" />
+            <img src={`../images/miLogo-${props.mode}-footer.png`} alt="logo" className="logoFooter" />
           </div>
           <div className="col-sm-12 col-md-4">
             <ul class="list-unstyled mb-0">
@@ -40,24 +52,23 @@ function Name(props) {
                 <p>christianrenovell83@gmail.com</p>
               </li>
             </ul>
-            <div className="row mt=2 mb-5">            
-                  <div className="col-3 col-md-3">
-                    <img src={`../images/instagram-light-footer.png`} width="35px"></img>
-                  </div>
-                  <div className="col-3 col-md-3">
-                    <img src={`../images/linkedin-light-footer.png`} width="35px"></img>
-                  </div>
-                  <div className="col-3 col-md-3">
-                    <img src={`../images/facebook-light-footer.png`} width="35px"></img>
-                  </div>
-                  <div className="col-3 col-md-3">
-                    <img src={`../images/git-light-footer.png`} width="35px"></img>
-                  </div>
+            <div className="row mt=2 mb-5">
+              <div className="col-3 col-md-3">
+                <img src={`../images/instagram-${props.mode}-footer.png`} width="35px"></img>
+              </div>
+              <div className="col-3 col-md-3">
+                <img src={`../images/linkedin-${props.mode}-footer.png`} width="35px"></img>
+              </div>
+              <div className="col-3 col-md-3">
+                <img src={`../images/facebook-${props.mode}-footer.png`} width="35px"></img>
+              </div>
+              <div className="col-3 col-md-3">
+                <img src={`../images/git-${props.mode}-footer.png`} width="35px"></img>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   )
 }

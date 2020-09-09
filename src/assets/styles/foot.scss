@@ -40,20 +40,32 @@
     }
   }
 
-  .footerDivClose{
+  .footerDivClose {
     display: none;
-    animation-name: footerClose;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    position:absolute;
+    bottom:0px;
+    min-height: auto;
+    width: 100%;
+    z-index: 1000;
+    
   }
-  @keyframes footerClose {
-  
-    from {  
-      display: inline-block;
-      bottom: 0px;
-    }
-    to {    
-      display: none;
-      bottom: -1000px;
-    }
+  .closeFooterOpen{
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    
+  }
+  .closeFooterOpen {
+    background-color: black;
+    opacity: 0.3;
+    display: block;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    
+  }
+  .closeFooterClose{
+    display: none;
   }

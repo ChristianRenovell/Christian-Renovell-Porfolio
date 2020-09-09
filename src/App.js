@@ -45,7 +45,7 @@ class App extends Component {
     let photoCircle = document.getElementById("photo-circle");
     let btnContact = document.getElementById("btn-contact");
     let btnAbout = document.getElementById("btn-about");
-
+  
 
     if (elemento.className === "night") {
 
@@ -70,8 +70,8 @@ class App extends Component {
       elemento.className = "";
       elemento2.className = "";
 
-
       document.body.style.backgroundColor = "#f1ede3";
+
     }
     else {
 
@@ -238,12 +238,14 @@ class App extends Component {
                   <div id="circle" ></div>
                 </div>
               </nav>
-              <div className="closeFooter"></div>
+              <div className={`${this.state.footerOpen ? "closeFooterOpen" : "closeFooterClose"}`} onClick={this.openFooter}>
+                
+              </div>
               <div className="footIcon" onClick={this.openFooter}>
                 <img src={`../images/pie-light.png`} width="40px" />
               </div>
-                <div className={`${this.state.footerOpen ? "footerDivOpen" : "footerDivClose"}`}>
-                  <Footer />
+                <div className={`${this.state.footerOpen ? "footerDivOpen" : "footerDivClose"}`} id="footer">
+                  <Footer mode={this.state.mode}/>
                 </div>
             </div>
             <Route render={({ location }) => {
