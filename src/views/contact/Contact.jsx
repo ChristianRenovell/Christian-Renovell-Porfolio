@@ -11,7 +11,6 @@ const Contact = (props) => {
   if (props.mode === "darck") {
       color = "#d87093";
   }
-
   return (
     <div id="fullpage">
       <div className="section">

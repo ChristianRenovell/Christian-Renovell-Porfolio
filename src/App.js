@@ -31,7 +31,6 @@ class App extends Component {
     this.itenControlSelected = this.itenControlSelected.bind(this);
     this.openFooter = this.openFooter.bind(this);
 
-
   };
 
   mode() {
@@ -178,12 +177,17 @@ class App extends Component {
 
   openFooter(){
      this.setState({ footerOpen: !this.state.footerOpen });
+     if(this.state.menuOpen){
+      this.handleOpenMenu()
+    }
   }
 
   componentDidMount() {
 
     this.itenControlSelected();
     this.openFooter();
+
+    
   }
   render() {
     window.onload = this.mode;
@@ -200,10 +204,8 @@ class App extends Component {
                   <div className={this.state.burger} />
                 </div>
                 <div
-                  className={`${this.state.menuOpen ? "showMenu" : "navmenu"}`}
-                  
+                  className={`${this.state.menuOpen ? "showMenu" : "navmenu"}`} 
                 >
-                  <div className="">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                       <li className="nav-item active">
                         <Link to={"/home"} id="nemuIten1" className="navbar-brand lin" onClick={() => this.active(1)}><span>Inicio</span></Link>
@@ -221,7 +223,6 @@ class App extends Component {
                         <Link to={`/contact/`} id="nemuIten5" className="navbar-brand lin" onClick={() => this.active(5)}><span>Contacto</span></Link>
                       </li>
                     </ul>
-                  </div>
                 </div>
                 <div id="switch" onClick={this.mode} >
                   <div id="circle" ></div>
