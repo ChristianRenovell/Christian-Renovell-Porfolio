@@ -12,7 +12,7 @@ const Intro = (props) => {
                                 <h1>CHRISTIAN</h1>
                             </div>
                             <div className="col-md-6">
-                                <h1>RENOVELL</h1>
+                               
                             </div>
                         </div>
                     </div>
