@@ -251,13 +251,13 @@ class App extends Component {
                     timeout={{ enter: 750, exit: 150 }}
                   >
                     <Switch location={location} >
-                      <Route
+              
+                    <Route
                         exact path='/'
                         render={(props) => (
                           <Intro {...props} mode={this.state.mode} />
                         )}
                       />
-                    <Switch location={location} >
                       <Route
                         exact path='/home'
                         render={(props) => (
