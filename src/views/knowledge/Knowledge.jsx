@@ -26,7 +26,7 @@ const Knowledge = (props) => {
                         <div className="content--inner2">
                             <div className="row">
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
-                                    <a href="" className="icon1"><img width="90px" src={`${window.location.origin}/images/html-${props.mode}.png`} id="facebook" data-toggle="tooltip" data-placement="top" title="Javascript" /></a>
+                                    <a href="" className="icon1"><img width="90px" src={`https://5f5a881999477000ab705020--christian-renovell-porfolio.netlify.app/Knowledge/images/html-${props.mode}.png`} id="facebook" data-toggle="tooltip" data-placement="top" title="Javascript" /></a>
                                 </div>
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
                                     <a href="" className="icon2"><img width="90px" src={`../images/css-${props.mode}.png`} id="instagram" /></a>
