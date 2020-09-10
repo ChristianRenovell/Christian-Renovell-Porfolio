@@ -265,25 +265,25 @@ class App extends Component {
                         )}
                       />
                       <Route
-                        exact path='/profile/'
+                        exact path='/profile'
                         render={(props) => (
                           <Profile {...props} mode={this.state.mode} />
                         )}
                       />
                       <Route
-                        exact path='/proyects/'
+                        exact path='/proyects'
                         render={(props) => (
                           <Proyects {...props} mode={this.state.mode} />
                         )}
                       />
                       <Route
-                        exact path='/knowledge/'
+                        exact path='/knowledge'
                         render={(props) => (
                           <Knowledge {...props} mode={this.state.mode} />
                         )}
                       />
                       <Route
-                        exact path='/contact/'
+                        exact path='/contact'
                         render={(props) => (
                           <Contact {...props} mode={this.state.mode} />
                         )}
