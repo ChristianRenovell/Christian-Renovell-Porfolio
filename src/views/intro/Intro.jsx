@@ -9,7 +9,7 @@ const Intro = (props) => {
                     <div className="content--inner nameHome">
                         <div className="row">
                             <div className="col-md-6">
-                                <h1>CHRISTIAN</h1>
+                                <h1>estado</h1>
                             </div>
                             <div className="col-md-6">
                                
