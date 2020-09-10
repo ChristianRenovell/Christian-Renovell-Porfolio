@@ -1,13 +1,13 @@
 {
-  "homepage":"https://ChristianRenovell.github.io/Christian-Renovell-Porfolio",
+  "homepage": "https://ChristianRenovell.github.io/Christian-Renovell-Porfolio",
   "name": "Porfolio",
   "version": "0.1.0",
   "private": true,
-  
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "dotenv": "^8.2.0",
     "gsap": "^3.4.2",
     "loader-utils": "^2.0.0",
     "lodash": "^4.17.20",
@@ -23,8 +23,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "webpack --mode production",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

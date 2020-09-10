@@ -13,7 +13,6 @@ import './assets/styles/App.scss';
 import './assets/styles/stylemenu.scss';
 import './assets/styles/foot.scss';
 
-
 class App extends Component {
 
   constructor() {
