@@ -13,6 +13,8 @@ import './assets/styles/App.scss';
 import './assets/styles/stylemenu.scss';
 import './assets/styles/foot.scss';
 
+const url = process.env.REACT_APP_API_URL;
+
 class App extends Component {
 
   constructor() {
@@ -24,6 +26,7 @@ class App extends Component {
       menuOpen: false,
       footerOpen: true,
       active: null
+     
     };
     this.mode = this.mode.bind(this);
     this.handleOpenMenu = this.handleOpenMenu.bind(this);
@@ -31,6 +34,7 @@ class App extends Component {
     this.itenControlSelected = this.itenControlSelected.bind(this);
     this.openFooter = this.openFooter.bind(this);
 
+    
   };
 
   mode() {
@@ -186,6 +190,7 @@ class App extends Component {
 
     this.itenControlSelected();
     this.openFooter();
+    console.log(url)
 
     
   }
@@ -254,13 +259,13 @@ class App extends Component {
                     <Route
                         exact path='/'
                         render={(props) => (
-                          <Intro {...props} mode={this.state.mode} />
+                          <Intro {...props} mode={this.state.mode} url={url} />
                         )}
                       />
                       <Route
                         exact path='/home'
                         render={(props) => (
-                          <Home {...props} mode={this.state.mode} />
+                          <Home {...props} mode={this.state.mode} url={url}/>
                         )}
                       />
                       <Route

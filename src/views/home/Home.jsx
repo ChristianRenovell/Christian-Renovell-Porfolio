@@ -8,7 +8,7 @@ const Home = (props) => {
             <div className="section">
                 <div className="contentComponent">
                     <div className="content">
-                        <div className={`circle-${props.mode} mt-5`} id="photo-circle"></div>
+                        <div className={`circle-${props.mode} mt-5`} style={{ backgroundImage: `${props.url}christianJapan1-${props.mode}.png`}} id="photo-circle"></div>
                     </div>
                     <div className="content--inner nameHome">
                         <div className="row">
