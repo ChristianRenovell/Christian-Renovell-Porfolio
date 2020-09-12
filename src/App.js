@@ -13,8 +13,6 @@ import './assets/styles/App.scss';
 import './assets/styles/stylemenu.scss';
 import './assets/styles/foot.scss';
 
-const url = process.env.REACT_APP_API_URL;
-
 class App extends Component {
 
   constructor() {
@@ -190,11 +188,11 @@ class App extends Component {
 
     this.itenControlSelected();
     this.openFooter();
-    console.log(url)
 
     
   }
   render() {
+    console.log(process.env.REACT_APP_URL,'wmdoiwqnoiqwdoiqm')
     window.onload = this.mode;
     return (
       <BrowserRouter>
@@ -259,13 +257,13 @@ class App extends Component {
                     <Route
                         exact path='/'
                         render={(props) => (
-                          <Intro {...props} mode={this.state.mode} url={url} />
+                          <Intro {...props} mode={this.state.mode}/>
                         )}
                       />
                       <Route
                         exact path='/home'
                         render={(props) => (
-                          <Home {...props} mode={this.state.mode} url={url}/>
+                          <Home {...props} mode={this.state.mode}/>
                         )}
                       />
                       <Route

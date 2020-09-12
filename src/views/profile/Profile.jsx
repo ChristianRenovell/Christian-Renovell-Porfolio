@@ -12,6 +12,7 @@ const Profile = (props) => {
     color = "#d87093";
   }
 
+ 
     return (
         <div id="fullpage">
             <div className="section">
