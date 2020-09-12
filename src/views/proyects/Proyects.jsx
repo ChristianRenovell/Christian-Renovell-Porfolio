@@ -32,7 +32,7 @@ const Proyects = (props) => {
             <div className="row mt-5 content--inner2">
               <div className="col-12 col-sm-12 col-md-4">
                 <Card
-                  imgUrl={`${process.env.REACT_APP_URL}/sapau-${props.mode}.png`}
+                  imgUrl={`https://christian-renovell-porfolio.netlify.app/sapau-${props.mode}.png`}
                   color={color}
                   colorBorder={colorBorder}
                   title="Comercial Sapau.es"
@@ -41,7 +41,7 @@ const Proyects = (props) => {
               </div>
               <div className="col-12 col-sm-12 col-md-4">
                 <Card
-                  imgUrl={`${process.env.REACT_APP_URL}/bebangarang-${props.mode}.png`}
+                  imgUrl={`https://christian-renovell-porfolio.netlify.app/bebangarang-${props.mode}.png`}
                   color={color}
                   colorBorder={colorBorder}
                   title="Be Bangarang"
@@ -50,7 +50,7 @@ const Proyects = (props) => {
               </div>
               <div className="col-12 col-sm-12 col-md-4">
                 <Card
-                  imgUrl={`${process.env.REACT_APP_URL}/syc-${props.mode}.png`}
+                  imgUrl={`https://christian-renovell-porfolio.netlify.app/syc-${props.mode}.png`}
                   color={color}
                   colorBorder={colorBorder}
                   title="Show Your Company"
@@ -61,7 +61,7 @@ const Proyects = (props) => {
             <div className="row mt-5 pb-5">
               <div className="col-md-12">
                 <div className="content--inner3">
-                  <Link href="" className="titlePorfolio"><h2>Este es mi Porfolio<img className="ml-3 iconPorfolio" width="50px" src={`${process.env.REACT_APP_URL}/git-${props.mode}.png`} id="git" /></h2></Link>
+                  <Link href="" className="titlePorfolio"><h2>Este es mi Porfolio<img className="ml-3 iconPorfolio" width="50px" src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`} id="git" /></h2></Link>
                 </div>
               </div>
             </div>
