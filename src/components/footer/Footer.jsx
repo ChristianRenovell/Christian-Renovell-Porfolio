@@ -8,7 +8,7 @@ function Name(props) {
 
   let color;
   let textColor;
-  let url = process.env.REACT_APP_URL;
+
 
   if (props.mode === "light") {
     textColor = "#f1ede3"
@@ -34,13 +34,13 @@ function Name(props) {
                 </p>
               </ul>
               <div className="col-md-12">
-                <img src={`${url}/es-${props.mode}.png`}  width="35px"></img> 
-                <img src={`${url}/eng-${props.mode}.png`} className="ml-2" width="35px"></img>
+                <img src={`${process.env.REACT_APP_URL}/es-${props.mode}.png`}  width="35px"></img> 
+                <img src={`${process.env.REACT_APP_URL}/eng-${props.mode}.png`} className="ml-2" width="35px"></img>
               </div>
             </div>
           </div>
           <div className=" col-sm-6 col-md-4 logo">
-            <img src={`${url}/miLogo-${props.mode}-footer.png`} alt="logo" className="logoFooter" />
+            <img src={`${process.env.REACT_APP_URL}/miLogo-${props.mode}-footer.png`} alt="logo" className="logoFooter" />
           </div>
           <div className="col-sm-12 col-md-4">
             <ul class="list-unstyled mb-0">
@@ -62,16 +62,16 @@ function Name(props) {
             </ul>
             <div className="row mt=2 mb-5">
               <div className="col-3 col-md-3">
-                <img src={`${url}/instagram-${props.mode}-footer.png`} width="35px"></img>
+                <img src={`${process.env.REACT_APP_URL}/instagram-${props.mode}-footer.png`} width="35px"></img>
               </div>
               <div className="col-3 col-md-3">
-                <img src={`${url}/linkedin-${props.mode}-footer.png`} width="35px"></img>
+                <img src={`${process.env.REACT_APP_URL}/linkedin-${props.mode}-footer.png`} width="35px"></img>
               </div>
               <div className="col-3 col-md-3">
-                <img src={`${url}/facebook-${props.mode}-footer.png`} width="35px"></img>
+                <img src={`${process.env.REACT_APP_URL}/facebook-${props.mode}-footer.png`} width="35px"></img>
               </div>
               <div className="col-3 col-md-3">
-                <img src={`${url}/git-${props.mode}-footer.png`} width="35px"></img>
+                <img src={`${process.env.REACT_APP_URL}/git-${props.mode}-footer.png`} width="35px"></img>
               </div>
             </div>
           </div>
