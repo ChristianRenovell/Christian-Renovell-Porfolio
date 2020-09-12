@@ -34,13 +34,13 @@ function Name(props) {
                 </p>
               </ul>
               <div className="col-md-12">
-                <img src={`${process.env.REACT_APP_URL}/es-${props.mode}.png`}  width="35px"></img> 
-                <img src={`${process.env.REACT_APP_URL}/eng-${props.mode}.png`} className="ml-2" width="35px"></img>
+                <img src={`https://christian-renovell-porfolio.netlify.app/es-${props.mode}.png`}  width="35px"></img> 
+                <img src={`https://christian-renovell-porfolio.netlify.app/eng-${props.mode}.png`} className="ml-2" width="35px"></img>
               </div>
             </div>
           </div>
           <div className=" col-sm-6 col-md-4 logo">
-            <img src={`${process.env.REACT_APP_URL}/miLogo-${props.mode}-footer.png`} alt="logo" className="logoFooter" />
+            <img src={`https://christian-renovell-porfolio.netlify.app/miLogo-${props.mode}-footer.png`} alt="logo" className="logoFooter" />
           </div>
           <div className="col-sm-12 col-md-4">
             <ul class="list-unstyled mb-0">
@@ -62,16 +62,16 @@ function Name(props) {
             </ul>
             <div className="row mt=2 mb-5">
               <div className="col-3 col-md-3">
-                <img src={`${process.env.REACT_APP_URL}/instagram-${props.mode}-footer.png`} width="35px"></img>
+                <img src={`https://christian-renovell-porfolio.netlify.app/instagram-${props.mode}-footer.png`} width="35px"></img>
               </div>
               <div className="col-3 col-md-3">
-                <img src={`${process.env.REACT_APP_URL}/linkedin-${props.mode}-footer.png`} width="35px"></img>
+                <img src={`https://christian-renovell-porfolio.netlify.app/linkedin-${props.mode}-footer.png`} width="35px"></img>
               </div>
               <div className="col-3 col-md-3">
-                <img src={`${process.env.REACT_APP_URL}/facebook-${props.mode}-footer.png`} width="35px"></img>
+                <img src={`https://christian-renovell-porfolio.netlify.app/facebook-${props.mode}-footer.png`} width="35px"></img>
               </div>
               <div className="col-3 col-md-3">
-                <img src={`${process.env.REACT_APP_URL}/git-${props.mode}-footer.png`} width="35px"></img>
+                <img src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}-footer.png`} width="35px"></img>
               </div>
             </div>
           </div>
