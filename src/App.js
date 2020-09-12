@@ -227,14 +227,14 @@ class App extends Component {
                       </li>
                     </ul>
                 </div>
-                <div id="switch" onClick={this.mode} >
+                <div id="switch" onClick={this.mode}>
                   <div id="circle" ></div>
                 </div>
               </nav>
               <div className={`${this.state.footerOpen ? "closeFooterOpen" : "closeFooterClose"}`} onClick={this.openFooter}>
               </div>
               <div className="footIcon" id="btnOpenFooter" onClick={this.openFooter}>
-                <img src={`${process.env.REACT_APP_URL}/pie-light.png`} width="40px" />
+                <img src={`https://christian-renovell-porfolio.netlify.app/pie-light.png`} width="40px" />
               </div>
                 <div className={`${this.state.footerOpen ? "footerDivOpen" : "footerDivClose"}`} id="footer">
                   <Footer mode={this.state.mode }/>
