@@ -239,7 +239,7 @@ class App extends Component {
                 <img src={`../images/pie-light.png`} width="40px" />
               </div>
                 <div className={`${this.state.footerOpen ? "footerDivOpen" : "footerDivClose"}`} id="footer">
-                  <Footer mode={this.state.mode}/>
+                  <Footer mode={this.state.mode }/>
                 </div>
             </div>
             <Route render={({ location }) => {
