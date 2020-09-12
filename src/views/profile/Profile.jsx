@@ -39,16 +39,16 @@ const Profile = (props) => {
                         <div className="container">
                             <div className="row mt-5 pb-5">
                                 <div className="col-6 col-md-3 mt-4">
-                                    <a href="" className="iconProfile1"><img width="50px" src={`../images/facebook-${props.mode}.png`} id="facebook" /></a>
+                                    <a href="" className="iconProfile1"><img width="50px" src={`${process.env.REACT_APP_API}/facebook-${props.mode}.png`} id="facebook" /></a>
                                 </div>
                                 <div className="col-6 col-md-3 mt-4">
-                                    <a href="" className="iconProfile2"><img width="50px" src={`../images/instagram-${props.mode}.png`} id="instagram" /></a>
+                                    <a href="" className="iconProfile2"><img width="50px" src={`${process.env.REACT_APP_API}/instagram-${props.mode}.png`} id="instagram" /></a>
                                 </div>
                                 <div className="col-6 col-md-3 mt-4">
-                                    <a href="" className="iconProfile3"><img width="50px" src={`../images/linkedin-${props.mode}.png`} id="linkedin" /></a>
+                                    <a href="" className="iconProfile3"><img width="50px" src={`${process.env.REACT_APP_API}/linkedin-${props.mode}.png`} id="linkedin" /></a>
                                 </div>
                                 <div className="col-6 col-md-3 mt-4">
-                                    <a href="" className="iconProfile4"><img width="50px" src={`../images/git-${props.mode}.png`} id="git" /></a>
+                                    <a href="" className="iconProfile4"><img width="50px" src={`${process.env.REACT_APP_API}/git-${props.mode}.png`} id="git" /></a>
                                 </div>
                             </div>
                         </div>

@@ -236,7 +236,7 @@ class App extends Component {
               <div className={`${this.state.footerOpen ? "closeFooterOpen" : "closeFooterClose"}`} onClick={this.openFooter}>
               </div>
               <div className="footIcon" id="btnOpenFooter" onClick={this.openFooter}>
-                <img src={`../images/pie-light.png`} width="40px" />
+                <img src={`${process.env.REACT_APP_API}/pie-light.png`} width="40px" />
               </div>
                 <div className={`${this.state.footerOpen ? "footerDivOpen" : "footerDivClose"}`} id="footer">
                   <Footer mode={this.state.mode }/>

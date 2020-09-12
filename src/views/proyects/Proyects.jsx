@@ -32,7 +32,7 @@ const Proyects = (props) => {
             <div className="row mt-5 content--inner2">
               <div className="col-12 col-sm-12 col-md-4">
                 <Card
-                  imgUrl={`../images/sapau-${props.mode}.png`}
+                  imgUrl={`${process.env.REACT_APP_API}/sapau-${props.mode}.png`}
                   color={color}
                   colorBorder={colorBorder}
                   title="Comercial Sapau.es"
@@ -41,7 +41,7 @@ const Proyects = (props) => {
               </div>
               <div className="col-12 col-sm-12 col-md-4">
                 <Card
-                  imgUrl={`../images/bebangarang-${props.mode}.png`}
+                  imgUrl={`${process.env.REACT_APP_API}/bebangarang-${props.mode}.png`}
                   color={color}
                   colorBorder={colorBorder}
                   title="Be Bangarang"
@@ -50,7 +50,7 @@ const Proyects = (props) => {
               </div>
               <div className="col-12 col-sm-12 col-md-4">
                 <Card
-                  imgUrl={`../images/syc-${props.mode}.png`}
+                  imgUrl={`${process.env.REACT_APP_API}/syc-${props.mode}.png`}
                   color={color}
                   colorBorder={colorBorder}
                   title="Show Your Company"
@@ -66,7 +66,6 @@ const Proyects = (props) => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>

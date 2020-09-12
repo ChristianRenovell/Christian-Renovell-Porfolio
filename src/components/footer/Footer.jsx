@@ -8,7 +8,7 @@ function Name(props) {
 
   let color;
   let textColor;
-  let url = process.env.REACT_APP_API_URL;
+  let url = process.env.REACT_APP_URL;
 
   if (props.mode === "light") {
     textColor = "#f1ede3"
