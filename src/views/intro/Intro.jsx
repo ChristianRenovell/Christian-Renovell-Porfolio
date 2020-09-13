@@ -1,26 +1,25 @@
-import React from 'react';
-import { useHistory } from "react-router-dom";
+import React, { Component } from 'react';
 import './intro.scss';
 
-var Router = require('react-router');
+class Intro extends Component {
 
-const Intro = (props) => {
-
-    let history = useHistory();
-
-    setTimeout(function(){ 
-        history.push('/home')  
-    }, 3000);
-
-    return (
-        <div className="divIntro">
-            <div className="logoIntro">
-                <img className="logoimg" src="https://christian-renovell-porfolio.netlify.app/logo.png" alt="logo" />
-                <img className="logoimg2" src="https://christian-renovell-porfolio.netlify.app/logo.png" alt="logo" />          
-            </div>
-            
-        </div>
-    );
-};
+    componentDidMount(){
+        const { history } = this.props;
+        setTimeout(function(){ 
+            history.push('/home')
+        }, 3000);
+    }
+        render() {
+            return (
+                <div className="divIntro">
+                   <div className="logoIntro">
+                        <img className="logoimg" src="https://christian-renovell-porfolio.netlify.app/logo.png" alt="logo" />
+                        <img className="logoimg2" src="https://christian-renovell-porfolio.netlify.app/logo.png" alt="logo" />          
+                    </div>
+                    
+                </div>
+            );
+        }
+    }
 
 export default Intro;
