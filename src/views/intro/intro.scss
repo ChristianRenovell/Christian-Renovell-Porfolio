@@ -1,0 +1,69 @@
+.divIntro{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    z-index: 1000;
+    background-color:#f1ede3;
+    opacity: 1;
+   
+}
+.logo{
+  position: relative;
+  margin-top: 30vh;
+  z-index: 1010;
+  
+}
+.logoimg{
+  opacity: 0.5;
+  position: relative;
+  width: 100%;
+  height: auto;
+  animation-name: showLogo,hidde;
+  animation-delay: 0s,1.5s;
+  animation-duration: 1s,1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showLogo{
+  from{
+
+    left:-1300px
+  }
+  to{
+
+    left: 150px
+  }
+}
+
+.logoimg2{
+  position: absolute;
+  opacity: 0.5;
+  position: relative;
+  width: 100%;
+  height: auto;
+  animation-name: showLogo2,hidde;
+  animation-delay: 0s,1.5s;
+  animation-duration: 1s,1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showLogo2{
+  from{
+    right:-1300px
+  }
+  to{
+
+    right: 150px
+  }
+}
+
+@keyframes hidde{
+  from{
+    opacity: 1;
+  }
+  to{
+
+    opacity: 0;
+  }
+}

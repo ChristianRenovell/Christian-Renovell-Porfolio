@@ -1,23 +1,24 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
+import './intro.scss';
+
+var Router = require('react-router');
 
 const Intro = (props) => {
 
+    let history = useHistory();
+
+    setTimeout(function(){ 
+        history.push('/home')  
+    }, 3000);
+
     return (
-        <div id="fullpage">
-            <div className="section">
-                <div className="contentComponent">
-                    <div className="content--inner nameHome">
-                        <div className="row">
-                            <div className="col-md-6">
-                                <h1>estado</h1>
-                            </div>
-                            <div className="col-md-6">
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div className="divIntro">
+            <div className="logo">
+                <img className="logoimg" src="https://christian-renovell-porfolio.netlify.app/logo.png" alt="logo" />
+                <img className="logoimg2" src="https://christian-renovell-porfolio.netlify.app/logo.png" alt="logo" />          
             </div>
+            
         </div>
     );
 };
