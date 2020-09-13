@@ -18,7 +18,7 @@ const Profile = (props) => {
             <div className="section">
                 <div className="contentComponent">
                     <div className="content pl-5 pr-5">
-                        <div className="container">
+                        <div className="container profileContent">
                             <h1 className="title mt-5 mb-3">¿Quién soy?</h1>
                             <div className="lineTitle" style={{ backgroundColor: color }}/>
                         </div>

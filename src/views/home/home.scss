@@ -6,3 +6,41 @@
     font-weight: bold;
     font-size: 4.5em;
 }
+
+@media (max-width: 600px) {
+    .nameHome h1 {
+
+        font-size: 4em;
+        
+      }
+      .circle-light {
+
+        font-size: 4em;
+        
+      }
+    }
+
+    @media (max-width: 500px) {
+      .nameHome h1 {
+  
+          font-size: 3.5em;
+          
+        }
+        .circle-light {
+  
+          font-size: 3.5em;
+          
+        }
+      }
+      @media (max-width: 400px) {
+        .nameHome h1 {
+    
+            font-size: 3em;
+            
+          }
+          .circle-light {
+    
+            font-size: 3em;
+            
+          }
+        }

@@ -16,7 +16,6 @@ class Intro extends Component {
                         <img className="logoimg" src="https://christian-renovell-porfolio.netlify.app/logo.png" alt="logo" />
                         <img className="logoimg2" src="https://christian-renovell-porfolio.netlify.app/logo.png" alt="logo" />          
                     </div>
-                    
                 </div>
             );
         }

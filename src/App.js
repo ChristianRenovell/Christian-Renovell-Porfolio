@@ -192,7 +192,7 @@ class App extends Component {
     
   }
   render() {
-    console.log(process.env.REACT_APP_URL,'wmdoiwqnoiqwdoiqm')
+
     window.onload = this.mode;
     return (
       <BrowserRouter>

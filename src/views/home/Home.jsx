@@ -8,17 +8,15 @@ const Home = (props) => {
         <div id="fullpage">
             <div className="section">
                 <div className="contentComponent">
-                    <div className="content">
-                        <div className={`circle-${props.mode} mt-5`} id="photo-circle"></div>
-                    </div>
-                    <div className="content--inner nameHome">
-                        <div className="row">
-                            <div className="col-md-6">
-                                <h1>CHRISTIAN</h1>
-                            </div>
-                            <div className="col-md-6">
-                                <h1>RENOVELL</h1>
-                            </div>
+                    <div className="contentComponent">
+                        <div className="content">
+                            <div className={`circle-${props.mode} mt-1`} id="photo-circle"></div>
+                        </div>
+                        <div className="content--inner nameHome mb-5">
+                                <div className="nameHome">
+                                    <h1>CHRISTIAN RENOVELL</h1>
+                                </div>
+                           
                         </div>
                     </div>
                 </div>
