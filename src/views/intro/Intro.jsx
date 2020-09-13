@@ -14,7 +14,7 @@ const Intro = (props) => {
 
     return (
         <div className="divIntro">
-            <div className="logo">
+            <div className="logoIntro">
                 <img className="logoimg" src="https://christian-renovell-porfolio.netlify.app/logo.png" alt="logo" />
                 <img className="logoimg2" src="https://christian-renovell-porfolio.netlify.app/logo.png" alt="logo" />          
             </div>
