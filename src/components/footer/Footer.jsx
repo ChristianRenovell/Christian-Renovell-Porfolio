@@ -2,8 +2,6 @@ import { urlToRequest } from 'loader-utils';
 import React from 'react';
 import './footer.scss';
 
-
-
 function Name(props) {
 
   let color;

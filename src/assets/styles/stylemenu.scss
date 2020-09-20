@@ -112,6 +112,35 @@
     animation-name: slidein;
   
   }
+
+
+
+  @media (max-width: 991px) {
+    .navDivOpen{
+      position: absolute;
+      height: 100vh;
+      width: 100%;
+      opacity: 0.5;
+      z-index: 999;
+      background-color: black;
+      margin-top: 30px; 
+    }
+    .navDivClose{
+      opacity: 0;
+      z-index: 999;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .navmenu{
+      animation-duration: 2s;
+      animation-name: slidein991;
+    }
+    .showMenu{
+      animation-duration: 2s;
+      animation-name: slidein991;
+    }
+  }
   
   @keyframes slidein {
     from {
@@ -131,6 +160,28 @@
     }
     to {
       
+      opacity: 0;
+      left: -300px;
+    }
+  }
+
+  @keyframes slidein991 {
+    from {
+      opacity: 0;
+      
+    }
+    to {
+      opacity: 1;
+      
+    }
+  }
+
+  @keyframes slideout991 {
+    from {
+      opacity: 1;
+      left: 75px;
+    }
+    to {
       opacity: 0;
       left: -300px;
     }
@@ -179,12 +230,10 @@
       position: absolute;
       float: left;
       left: 0px;
-      position: fixed;
       z-index: -1; 
       animation-duration: 0.5s;
-      animation-name: slideoutMedia;
-          
-        }
+      animation-name: slideoutMedia;     
+    }
 
         @keyframes slideinMedia {
           from {
@@ -201,47 +250,17 @@
           from {
             opacity: 1;
             top: 80px;
-            
           }
-          to {
-            
+          to {          
             opacity: 0;
             top: -100px;
           }
         }
     }
 
-    .line-light{
-      opacity: 0;
-      height: 2px;
-      width: 100%;
-      background-color:#555;
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
 
-    .line-darck{
-      opacity: 0;
-      height: 2px;
-      width: 100%;
-      background-color:#d87093;
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-    
-    @media (max-width: 991px) {
-      .line-darck {
-          opacity: 1; 
-        }
-        .line-light {
-          opacity: 1;
-        }
-      }
   
-      @media (max-width: 991px) {
-     
-
-        }
+    
 
   
    

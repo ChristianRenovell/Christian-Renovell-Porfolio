@@ -22,6 +22,7 @@ class App extends Component {
       index: null,
       menuOpen: false,
       footerOpen: true,
+      navOpen: false,
       active: null
      
     };
@@ -102,28 +103,30 @@ class App extends Component {
   }
 
   handleOpenMenu() {
+
     this.setState({ menuOpen: !this.state.menuOpen });
+    this.setState({ navOpen: !this.state.navOpen });
   }
 
   active(index) {
 
     switch (index) {
       case 1:
-        document.getElementById("nemuIten1").className = "navbar-brand lin selectedIten";
+        
         this.setState({ active: 1 });
-
+        document.getElementById("nemuIten1").className = "navbar-brand lin selectedIten";
         document.getElementById("nemuIten2").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten3").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten4").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
 
-        if( window.screen.width < 991 && this.state.checkNav===true){this.handleOpenMenu()}
+        if( window.screen.width < 991 ){this.handleOpenMenu()}
 
         break;
 
       case 2:
-        document.getElementById("nemuIten2").className = "navbar-brand lin selectedIten";
         this.setState({ active: 2 });
+        document.getElementById("nemuIten2").className = "navbar-brand lin selectedIten";
         document.getElementById("nemuIten1").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten3").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten4").className = "navbar-brand lin noSelectedIten";
@@ -217,6 +220,7 @@ class App extends Component {
         <div id="fullpage" className="night">
           <div className="section">
             <div id="intro-text">
+              <div className={`${this.state.navOpen ? "navDivOpen" : "navDivClose"}`} id="navContentClose" onClick={this.handleOpenMenu}/>
               <nav className="navbar navbar-expand-lg">
                 <div
                   className={`menu-btn ${this.state.menuOpen ? "open" : "closed"}`}
@@ -229,20 +233,20 @@ class App extends Component {
                   className={`${this.state.menuOpen ? "showMenu" : "navmenu"}`} 
                 >
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                      <li className="nav-item active">
+                      <li className="nav-item">
                         <Link to={"/home"} id="nemuIten1" className="navbar-brand lin" onClick={() => this.active(1)}><span>Inicio</span></Link>
                       </li>
                       <li className="nav-item">
-                        <Link to={`/profile`} id="nemuIten2" className="navbar-brand lin" onClick={() => this.active(2)}><span>Sobre mí</span></Link>
+                        <Link to={"/profile"} id="nemuIten2" className="navbar-brand lin" onClick={() => this.active(2)}><span>Sobre mí</span></Link>
                       </li>
                       <li className="nav-item">
-                        <Link to={`/proyects`} id="nemuIten3" className="navbar-brand lin" onClick={() => this.active(3)}><span>Proyectos</span></Link>
+                        <Link to={"/proyects"} id="nemuIten3" className="navbar-brand lin" onClick={() => this.active(3)}><span>Proyectos</span></Link>
                       </li>
                       <li className="nav-item">
-                        <Link to={`/Knowledge`} id="nemuIten4" className="navbar-brand lin" onClick={() => this.active(4)}><span>Conocimientos</span></Link>
+                        <Link to={"/Knowledge"} id="nemuIten4" className="navbar-brand lin" onClick={() => this.active(4)}><span>Conocimientos</span></Link>
                       </li>
                       <li className="nav-item">
-                        <Link to={`/contact`} id="nemuIten5" className="navbar-brand lin" onClick={() => this.active(5)}><span>Contacto</span></Link>
+                        <Link to={"/contact"} id="nemuIten5" className="navbar-brand lin" onClick={() => this.active(5)}><span>Contacto</span></Link>
                       </li>
                     </ul>
                    
