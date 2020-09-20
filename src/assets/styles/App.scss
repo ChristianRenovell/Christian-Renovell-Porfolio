@@ -8,8 +8,6 @@ body {
 	  font-family: $theme-font;
     text-align: center;
     min-height: 100vh;
-    //background-color: $light;
-    //background-image: url('../img/background-light.png');
 }
 
 .about-p {
@@ -24,13 +22,12 @@ body {
   background: $light;
   color: $light-2;
 	width: 100%;
-  min-height: 100vh;
-	-webkit-transition: background 0.5s ease-in-out;
-	transition: background 0.5s ease-in-out;
+  min-height: 91.9vh;  
+	
 }
 
 .contentComponent{
-  padding-top: 90px;
+  padding-top: 40px;
 }
 a{
   font-size: 1.4em;
@@ -235,6 +232,11 @@ z-index: 999;
     }
   }
 
+  @media (max-width: 991px) {
+    .section{
+      height: 100vh;
+    }
+    }
 
   @media (max-width: 600px) {
     .circle-darck {

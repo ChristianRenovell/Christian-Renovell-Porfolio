@@ -61,7 +61,7 @@ const Proyects = (props) => {
             <div className="row mt-5 pb-5">
               <div className="col-md-12 mb-5">
                 <div className="content--inner2">
-                  <Link href="" className="titlePorfolio"><h2>Este es mi Portfolio<img className="ml-3 iconPorfolio" width="50px" src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`} id="git" /></h2></Link>
+                  <a target="_blank" href="https://github.com/ChristianRenovell/Christian-Renovell-Porfolio"  className="titlePorfolio"><h2>Este es mi Portfolio<img className="ml-3 iconPorfolio" width="50px" src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`} id="git"/></h2></a>
                 </div>
               </div>
             </div>

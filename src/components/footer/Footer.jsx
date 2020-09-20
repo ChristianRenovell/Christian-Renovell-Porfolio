@@ -28,7 +28,7 @@ function Name(props) {
                   <h4>Sobre mi</h4>
                 </li>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                Soy un programador y desarrollador Web con conocimientos tanto en front-end como en back-end. Apasionado de las tecnologías.
                 </p>
               </ul>
               <div className="col-md-12">

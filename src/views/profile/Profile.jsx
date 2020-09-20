@@ -40,16 +40,16 @@ const Profile = (props) => {
                         <div className="container">
                             <div className="row mt-5 pb-5">
                                 <div className="col-6 col-md-3 mt-4">
-                                    <a href="" className="iconProfile1"><img width="50px" src={`https://christian-renovell-porfolio.netlify.app/facebook-${props.mode}.png`} id="facebook" /></a>
+                                    <a target="_blank" href="https://www.facebook.com/christian.renovell" className="iconProfile1"><img width="50px" src={`https://christian-renovell-porfolio.netlify.app/facebook-${props.mode}.png`} id="facebook" /></a>
                                 </div>
                                 <div className="col-6 col-md-3 mt-4">
-                                    <a href="" className="iconProfile2"><img width="50px" src={`https://christian-renovell-porfolio.netlify.app/instagram-${props.mode}.png`} id="instagram" /></a>
+                                    <a target="_blank" href="https://www.instagram.com/christian_renovell/" className="iconProfile2"><img width="50px" src={`https://christian-renovell-porfolio.netlify.app/instagram-${props.mode}.png`} id="instagram"/></a>
                                 </div>
                                 <div className="col-6 col-md-3 mt-4">
-                                    <a href="" className="iconProfile3"><img width="50px" src={`https://christian-renovell-porfolio.netlify.app/linkedin-${props.mode}.png`} id="linkedin" /></a>
+                                    <a target="_blank" href="https://www.linkedin.com/in/christian-renovell-miralles-896738196/" className="iconProfile3"><img width="50px" src={`https://christian-renovell-porfolio.netlify.app/linkedin-${props.mode}.png`} id="linkedin"/></a>
                                 </div>
                                 <div className="col-6 col-md-3 mt-4 mb-5">
-                                    <a href="" className="iconProfile4"><img width="50px" src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`} id="git" /></a>
+                                    <a target="_blank" href="https://github.com/ChristianRenovell" className="iconProfile4"><img width="50px" src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`} id="git"/></a>
                                 </div>
                             </div>
                         </div>

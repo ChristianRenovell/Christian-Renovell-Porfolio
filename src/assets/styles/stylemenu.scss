@@ -113,8 +113,6 @@
   
   }
 
-
-
   @media (max-width: 991px) {
     .navDivOpen{
       position: absolute;
@@ -126,6 +124,7 @@
       margin-top: 30px; 
     }
     .navDivClose{
+      display: none;
       opacity: 0;
       z-index: 999;
     }
@@ -160,28 +159,6 @@
     }
     to {
       
-      opacity: 0;
-      left: -300px;
-    }
-  }
-
-  @keyframes slidein991 {
-    from {
-      opacity: 0;
-      
-    }
-    to {
-      opacity: 1;
-      
-    }
-  }
-
-  @keyframes slideout991 {
-    from {
-      opacity: 1;
-      left: 75px;
-    }
-    to {
       opacity: 0;
       left: -300px;
     }

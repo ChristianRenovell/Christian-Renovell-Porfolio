@@ -231,7 +231,7 @@ class App extends Component {
                 <div
                   id="contentNav"
                   className={`${this.state.menuOpen ? "showMenu" : "navmenu"}`} 
-                >
+                > 
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                       <li className="nav-item">
                         <Link to={"/home"} id="nemuIten1" className="navbar-brand lin" onClick={() => this.active(1)}><span>Inicio</span></Link>

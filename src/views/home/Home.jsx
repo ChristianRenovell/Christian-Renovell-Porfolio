@@ -5,7 +5,7 @@ import './home.scss';
 const Home = (props) => {
 
     return (
-        <div id="fullpage">
+        <div>
             <div className="section">
                 <div className="contentComponent">
                     <div className="contentComponent">
