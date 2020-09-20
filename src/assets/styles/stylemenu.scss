@@ -112,7 +112,7 @@
     animation-name: slidein;
   
   }
-
+  
   @keyframes slidein {
     from {
       opacity: 0;
@@ -167,12 +167,11 @@
     }
     .showMenu  {
     width: 100%;
-    position: relative;
+    position: absolute;
     float: left;
     left: 0px;
     z-index: -1;
-    
-    animation-duration: 0s;
+    animation-duration: 0.5s;
     animation-name: slideinMedia;
     }
     .navmenu {
@@ -181,9 +180,8 @@
       float: left;
       left: 0px;
       position: fixed;
-     
       z-index: -1; 
-      animation-duration: 0s;
+      animation-duration: 0.5s;
       animation-name: slideoutMedia;
           
         }
@@ -240,6 +238,10 @@
         }
       }
   
+      @media (max-width: 991px) {
+     
+
+        }
 
   
    

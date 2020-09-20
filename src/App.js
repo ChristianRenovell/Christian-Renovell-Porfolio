@@ -44,7 +44,8 @@ class App extends Component {
     let photoCircle = document.getElementById("photo-circle");
     let btnContact = document.getElementById("btn-contact");
     let btnAbout = document.getElementById("btn-about");
-    let btnOpenFooter = document.getElementById("btnOpenFooter")
+    let btnOpenFooter = document.getElementById("btnOpenFooter");
+    let contentNav = document.getElementById("contentNav");
 
     if (elemento.className === "night") {
 
@@ -71,6 +72,7 @@ class App extends Component {
 
       document.body.style.backgroundColor = "#f1ede3";
       btnOpenFooter.style.backgroundColor = "#555";
+      contentNav.style.backgroundColor = "#f1ede3";
     }
     else {
 
@@ -95,7 +97,7 @@ class App extends Component {
 
       document.body.style.backgroundColor = "#080d17";
       btnOpenFooter.style.backgroundColor = "#d87093"
-
+      contentNav.style.backgroundColor = "#080d17";
     }
   }
 
@@ -223,6 +225,7 @@ class App extends Component {
                   <div className={this.state.burger} />
                 </div>
                 <div
+                  id="contentNav"
                   className={`${this.state.menuOpen ? "showMenu" : "navmenu"}`} 
                 >
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -242,12 +245,13 @@ class App extends Component {
                         <Link to={`/contact`} id="nemuIten5" className="navbar-brand lin" onClick={() => this.active(5)}><span>Contacto</span></Link>
                       </li>
                     </ul>
-                    <div className={`line-${this.state.mode}`}/>
+                   
                 </div>
                 <div id="switch" onClick={this.mode}>
                   <div id="circle" ></div>
                 </div>
               </nav>
+             
               <div className={`${this.state.footerOpen ? "closeFooterOpen" : "closeFooterClose"}`} onClick={this.openFooter}>
               </div>
               <div className="footIcon" id="btnOpenFooter" onClick={this.openFooter}>

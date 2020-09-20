@@ -48,7 +48,7 @@ a{
 
 .navbar { 
 width: 100%; 
-position: fixed;
+position: relative;
 z-index: 999;
 }
 
@@ -84,7 +84,6 @@ z-index: 999;
   border: $darck-2 1px solid;
   border-radius: 20px;
 }
-
 
 .night .card {
   border: $darck-2 1px solid;
@@ -218,8 +217,8 @@ z-index: 999;
   background: #e9e5d5;
 }
 .switched {
-  border-color: $darck-2 !important;
-  background: $darck-2 !important;
+  border-color: $darck-2;
+  background: $darck-2;
 }
 .switched #circle {
   margin-left: 55%;
