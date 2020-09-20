@@ -13,7 +13,7 @@ const Knowledge = (props) => {
     }
    
     return (
-        <div id="fullpage">
+        <div id="fullpage" className="transitionComponent">
             <div className="section">
                 <div className="contentComponent">
                     <div className="container">
@@ -23,7 +23,7 @@ const Knowledge = (props) => {
                                 <div className="lineTitle" style={{ backgroundColor: color }}/>
                             </div>
                         </div>
-                        <div className="content--inner2">
+                        <div className="content--inner">
                             <div className="row">
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
                                     <a href="" className="icon1"><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`} id="facebook" data-toggle="tooltip" data-placement="top" title="Javascript" /></a>
@@ -39,7 +39,7 @@ const Knowledge = (props) => {
                                     <a href="" className="icon4"><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/boostrap-${props.mode}.png`} id="git" /></a>
                                 </div>
                             </div>
-                            <div className="row mt-5">
+                            <div className="row mt-5 content--inner2">
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
                                     <a href="" className="icon5"><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/react-${props.mode}.png`} id="git" /></a>
                                 </div>
@@ -53,7 +53,7 @@ const Knowledge = (props) => {
                                     <a href="" className="icon8"><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/mongodb-${props.mode}.png`} id="git" /></a>
                                 </div>
                             </div>
-                            <div className="row">
+                            <div className="row content--inner3">
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
                                     <a href="" className="icon9"><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/java-${props.mode}.png`} id="git" /></a>
                                 </div>

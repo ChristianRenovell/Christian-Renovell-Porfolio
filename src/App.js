@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
-import { Transition, TransitionGroup } from 'react-transition-group';
 import Footer from './components/footer/Footer';
 import Intro from './views/intro/Intro';
 import Home from './views/home/Home';
@@ -8,10 +7,10 @@ import Profile from './views/profile/Profile';
 import Proyects from './views/proyects/Proyects';
 import Knowledge from './views/knowledge/Knowledge';
 import Contact from './views/contact/Contact';
-import { play, exit } from './timelines';
 import './assets/styles/App.scss';
 import './assets/styles/stylemenu.scss';
 import './assets/styles/foot.scss';
+import './assets/styles/transitions.scss';
 
 class App extends Component {
 
@@ -242,18 +241,9 @@ class App extends Component {
             </div>
             <Route render={({ location }) => {
               const { pathname, key } = location;
-
               return (
-                <TransitionGroup component={null} >
-                  <Transition
-                    key={key}
-                    appear={true}
-                    onEnter={(node, appears) => play(pathname, node, appears)}
-                    onExit={(node, appears) => exit(node, appears)}
-                    timeout={{ enter: 750, exit: 150 }}
-                  >
-                    <Switch location={location} >
-              
+                    
+                    <Switch location={location} >             
                     <Route
                         exact path='/'
                         render={(props) => (
@@ -269,30 +259,28 @@ class App extends Component {
                       <Route
                         exact path='/profile'
                         render={(props) => (
-                          <Profile {...props} mode={this.state.mode} />
+                          <Profile {...props} mode={this.state.mode}/>
                         )}
                       />
                       <Route
                         exact path='/proyects'
                         render={(props) => (
-                          <Proyects {...props} mode={this.state.mode} />
+                          <Proyects {...props} mode={this.state.mode}/>
                         )}
                       />
                       <Route
                         exact path='/knowledge'
                         render={(props) => (
-                          <Knowledge {...props} mode={this.state.mode} />
+                          <Knowledge {...props} mode={this.state.mode}/>
                         )}
                       />
                       <Route
                         exact path='/contact'
                         render={(props) => (
-                          <Contact {...props} mode={this.state.mode} />
+                          <Contact {...props} mode={this.state.mode}/>
                         )}
                       />
                     </Switch>
-                  </Transition>
-                </TransitionGroup>
               )
             }} />
           </div>

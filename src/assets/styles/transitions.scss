@@ -1,0 +1,75 @@
+.content{
+    opacity: 0;
+    animation-name: inComponent;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes inComponent {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.content--inner{
+    opacity: 0;
+    animation-name: inComponent-inner;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes inComponent-inner {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.content--inner2{
+    opacity: 0;
+    animation-name: inComponent-inner2;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes inComponent-inner2 {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes inComponent-inner {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.content--inner3{
+    opacity: 0;
+    animation-name: inComponent-inner3;
+    animation-duration: 2s;
+    animation-delay: 2.9s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes inComponent-inner3 {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+

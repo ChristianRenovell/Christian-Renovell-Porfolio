@@ -17,7 +17,7 @@ const Proyects = (props) => {
     colorBorder = "#d87093";
   }
   return (
-    <div id="fullpage">
+    <div id="fullpage" className="transitionComponent">
       <div className="section">
         <div className="contentComponent">
           <div className="container">
@@ -29,7 +29,7 @@ const Proyects = (props) => {
                 </div>
               </div>
             </div>
-            <div className="row mt-5 content--inner2">
+            <div className="row mt-5 content--inner">
               <div className="col-12 col-sm-12 col-md-4">
                 <Card
                   imgUrl={`https://christian-renovell-porfolio.netlify.app/sapau-${props.mode}.png`}
@@ -60,7 +60,7 @@ const Proyects = (props) => {
             </div>
             <div className="row mt-5 pb-5">
               <div className="col-md-12">
-                <div className="content--inner3">
+                <div className="content--inner2">
                   <Link href="" className="titlePorfolio"><h2>Este es mi Porfolio<img className="ml-3 iconPorfolio" width="50px" src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`} id="git" /></h2></Link>
                 </div>
               </div>

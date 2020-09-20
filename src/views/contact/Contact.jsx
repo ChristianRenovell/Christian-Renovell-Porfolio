@@ -12,7 +12,7 @@ const Contact = (props) => {
       color = "#d87093";
   }
   return (
-    <div id="fullpage">
+    <div id="fullpage" className="transitionComponent">
       <div className="section">
         <div className="contentComponent">
           <div className="fullpage2 mt-4">

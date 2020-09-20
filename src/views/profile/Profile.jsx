@@ -14,7 +14,7 @@ const Profile = (props) => {
 
  
     return (
-        <div id="fullpage">
+        <div id="fullpage" className="transitionComponent">
             <div className="section">
                 <div className="contentComponent">
                     <div className="content pl-5 pr-5">

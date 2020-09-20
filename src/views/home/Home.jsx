@@ -15,8 +15,7 @@ const Home = (props) => {
                         <div className="content--inner nameHome mb-5">
                                 <div className="nameHome">
                                     <h1>CHRISTIAN RENOVELL</h1>
-                                </div>
-                           
+                                </div>                           
                         </div>
                     </div>
                 </div>
