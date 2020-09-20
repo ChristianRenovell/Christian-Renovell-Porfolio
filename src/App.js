@@ -250,7 +250,7 @@ class App extends Component {
               <div className={`${this.state.footerOpen ? "closeFooterOpen" : "closeFooterClose"}`} onClick={this.openFooter}>
               </div>
               <div className="footIcon" id="btnOpenFooter" onClick={this.openFooter}>
-                <img src={`https://christian-renovell-porfolio.netlify.app/pie-light.png`} width="40px" />
+                <img src={`https://christian-renovell-porfolio.netlify.app/pie-light.png`} width="40px"/>
               </div>
                 <div className={`${this.state.footerOpen ? "footerDivOpen" : "footerDivClose"}`} id="footer">
                   <Footer mode={this.state.mode }/>
@@ -258,8 +258,7 @@ class App extends Component {
             </div>
             <Route render={({ location }) => {
               const { pathname, key } = location;
-              return (
-                    
+              return (                  
                     <Switch location={location} >             
                     <Route
                         exact path='/'
