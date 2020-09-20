@@ -115,7 +115,11 @@ class App extends Component {
         document.getElementById("nemuIten3").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten4").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
+
+        if( window.screen.width < 991 ){this.handleOpenMenu()}
+        
         break;
+
       case 2:
         document.getElementById("nemuIten2").className = "navbar-brand lin selectedIten";
         this.setState({ active: 2 });
@@ -123,6 +127,9 @@ class App extends Component {
         document.getElementById("nemuIten3").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten4").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
+
+        if( window.screen.width < 991 ){this.handleOpenMenu()}
+        
         break;
       case 3:
         document.getElementById("nemuIten3").className = "navbar-brand lin selectedIten";
@@ -131,6 +138,9 @@ class App extends Component {
         document.getElementById("nemuIten1").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten4").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
+
+        if( window.screen.width < 991 ){this.handleOpenMenu()}
+        
         break;
       case 4:
         document.getElementById("nemuIten4").className = "navbar-brand lin selectedIten";
@@ -139,6 +149,9 @@ class App extends Component {
         document.getElementById("nemuIten3").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten1").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
+
+        if( window.screen.width < 991 ){this.handleOpenMenu()}
+        
         break;
       case 5:
         document.getElementById("nemuIten5").className = "navbar-brand lin selectedIten";
@@ -147,6 +160,9 @@ class App extends Component {
         document.getElementById("nemuIten3").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten4").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten1").className = "navbar-brand lin noSelectedIten";
+
+        if( window.screen.width < 991 ){this.handleOpenMenu()}
+        
         break;
     }
   }
