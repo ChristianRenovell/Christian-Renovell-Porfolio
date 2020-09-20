@@ -48,7 +48,7 @@ const Profile = (props) => {
                                 <div className="col-6 col-md-3 mt-4">
                                     <a href="" className="iconProfile3"><img width="50px" src={`https://christian-renovell-porfolio.netlify.app/linkedin-${props.mode}.png`} id="linkedin" /></a>
                                 </div>
-                                <div className="col-6 col-md-3 mt-4">
+                                <div className="col-6 col-md-3 mt-4 mb-5">
                                     <a href="" className="iconProfile4"><img width="50px" src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`} id="git" /></a>
                                 </div>
                             </div>

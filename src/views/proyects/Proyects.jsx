@@ -59,7 +59,7 @@ const Proyects = (props) => {
               </div>
             </div>
             <div className="row mt-5 pb-5">
-              <div className="col-md-12">
+              <div className="col-md-12 mb-5">
                 <div className="content--inner2">
                   <Link href="" className="titlePorfolio"><h2>Este es mi Porfolio<img className="ml-3 iconPorfolio" width="50px" src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`} id="git" /></h2></Link>
                 </div>

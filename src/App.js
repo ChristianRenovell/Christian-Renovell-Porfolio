@@ -212,9 +212,9 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div id="fullpage" className="night">
-          <div className="section ">
+          <div className="section">
             <div id="intro-text">
-              <nav className="navbar navbar-expand-lg  ">
+              <nav className="navbar navbar-expand-lg">
                 <div
                   className={`menu-btn ${this.state.menuOpen ? "open" : "closed"}`}
                   onClick={this.handleOpenMenu}

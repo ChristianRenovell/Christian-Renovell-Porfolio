@@ -12,7 +12,7 @@ const Contact = (props) => {
       color = "#d87093";
   }
   return (
-    <div id="fullpage" className="transitionComponent">
+    <div id="fullpage">
       <div className="section">
         <div className="contentComponent">
           <div className="fullpage2 mt-4">
@@ -61,7 +61,7 @@ const Contact = (props) => {
                         </div>
                       </div>
                     </div>
-                    <div className="content--inner2">
+                    <div className="content--inner2 mb-5">
                       <div class="col-md-12 text-center mt-4">
                         <ul class="list-unstyled mb-0">
                           <li><i class="fas fa-map-marker-alt fa-2x"></i>
