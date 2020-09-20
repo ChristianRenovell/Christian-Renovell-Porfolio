@@ -117,7 +117,7 @@ class App extends Component {
         document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
 
         if( window.screen.width < 991 ){this.handleOpenMenu()}
-        
+
         break;
 
       case 2:
@@ -129,7 +129,7 @@ class App extends Component {
         document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
 
         if( window.screen.width < 991 ){this.handleOpenMenu()}
-        
+
         break;
       case 3:
         document.getElementById("nemuIten3").className = "navbar-brand lin selectedIten";
@@ -140,7 +140,7 @@ class App extends Component {
         document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
 
         if( window.screen.width < 991 ){this.handleOpenMenu()}
-        
+
         break;
       case 4:
         document.getElementById("nemuIten4").className = "navbar-brand lin selectedIten";
@@ -151,7 +151,7 @@ class App extends Component {
         document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
 
         if( window.screen.width < 991 ){this.handleOpenMenu()}
-        
+
         break;
       case 5:
         document.getElementById("nemuIten5").className = "navbar-brand lin selectedIten";
@@ -162,7 +162,7 @@ class App extends Component {
         document.getElementById("nemuIten1").className = "navbar-brand lin noSelectedIten";
 
         if( window.screen.width < 991 ){this.handleOpenMenu()}
-        
+
         break;
     }
   }
@@ -174,19 +174,19 @@ class App extends Component {
     if (URLactual === "http://localhost:3000/home") {
       this.active(1);
     }
-    if (URLactual === "http://localhost:3000/profile/") {
+    if (URLactual === "http://localhost:3000/profile") {
       this.active(2);
     }
 
-    if (URLactual === "http://localhost:3000/proyects/") {
+    if (URLactual === "http://localhost:3000/proyects") {
       this.active(3);
     }
 
-    if (URLactual === "http://localhost:3000/Knowledge/") {
+    if (URLactual === "http://localhost:3000/Knowledge") {
       this.active(4);
     }
 
-    if (URLactual === "http://localhost:3000/contact/") {
+    if (URLactual === "http://localhost:3000/contact") {
       this.active(5);
     }
 
@@ -241,6 +241,7 @@ class App extends Component {
                         <Link to={`/contact`} id="nemuIten5" className="navbar-brand lin" onClick={() => this.active(5)}><span>Contacto</span></Link>
                       </li>
                     </ul>
+                    <div className={`line-${this.state.mode}`}/>
                 </div>
                 <div id="switch" onClick={this.mode}>
                   <div id="circle" ></div>

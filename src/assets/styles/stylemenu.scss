@@ -212,7 +212,33 @@
           }
         }
     }
+
+    .line-light{
+      opacity: 0;
+      height: 2px;
+      width: 100%;
+      background-color:#555;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .line-darck{
+      opacity: 0;
+      height: 2px;
+      width: 100%;
+      background-color:#d87093;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
     
+    @media (max-width: 991px) {
+      .line-darck {
+          opacity: 1; 
+        }
+        .line-light {
+          opacity: 1;
+        }
+      }
   
 
   
