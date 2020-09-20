@@ -23,7 +23,7 @@ const Profile = (props) => {
                             <div className="lineTitle" style={{ backgroundColor: color }}/>
                         </div>
                         <div className="p1 mt-3">
-                            Soy un programador y desarollador Web con conocimientos tanto en <span className="textRelt">front-end</span> como en <span className="textRelt">back-end.</span>
+                            Soy un programador y desarrollador Web con conocimientos tanto en <span className="textRelt">front-end</span> como en <span className="textRelt">back-end.</span>
                         </div>
                         <div className="p3 mt-2">
                             <span className="textRelt3">Capacidad de adaptación</span> en un mercado online que evoluciona constantemente.
@@ -35,7 +35,7 @@ const Profile = (props) => {
                             <span className="textRelt3"></span>Buenas <span className="textRelt3">habilidades comunicativas</span> para el trabajo en equipo.
                         </div>
                         <div className="p4 mt-2">
-                            Me considero una persona <span className="textRelt">resolutiva</span> y autonoma con buenas aptitudes de <span className="textRelt">autoaprendizaje.</span>
+                            Me considero una persona <span className="textRelt">resolutiva</span> y autónoma con buenas aptitudes de <span className="textRelt">autoaprendizaje.</span>
                         </div>
                         <div className="container">
                             <div className="row mt-5 pb-5">

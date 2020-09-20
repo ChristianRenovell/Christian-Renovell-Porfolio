@@ -30,8 +30,7 @@ class App extends Component {
     this.active = this.active.bind(this);
     this.itenControlSelected = this.itenControlSelected.bind(this);
     this.openFooter = this.openFooter.bind(this);
-
-    
+  
   };
 
   mode() {
@@ -116,7 +115,7 @@ class App extends Component {
         document.getElementById("nemuIten4").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
 
-        if( window.screen.width < 991 ){this.handleOpenMenu()}
+        if( window.screen.width < 991 && this.state.checkNav===true){this.handleOpenMenu()}
 
         break;
 
@@ -171,22 +170,24 @@ class App extends Component {
 
     let URLactual = window.location.href;
 
-    if (URLactual === "http://localhost:3000/home") {
+    console.log(process.env.REACT_APP_URL,"variable de entor")
+
+    if (URLactual === `${process.env.REACT_APP_URL}/home`) {
       this.active(1);
     }
-    if (URLactual === "http://localhost:3000/profile") {
+    if (URLactual === `${process.env.REACT_APP_URL}/profile`) {
       this.active(2);
     }
 
-    if (URLactual === "http://localhost:3000/proyects") {
+    if (URLactual === `${process.env.REACT_APP_URL}/proyects`) {
       this.active(3);
     }
 
-    if (URLactual === "http://localhost:3000/Knowledge") {
+    if (URLactual === `${process.env.REACT_APP_URL}/Knowledge`) {
       this.active(4);
     }
 
-    if (URLactual === "http://localhost:3000/contact") {
+    if (URLactual === `${process.env.REACT_APP_URL}/contact`) {
       this.active(5);
     }
 

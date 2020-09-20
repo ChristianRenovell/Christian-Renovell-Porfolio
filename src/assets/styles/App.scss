@@ -197,6 +197,7 @@ z-index: 999;
           transition: all 0.4s cubic-bezier(0.54, 1.6, 0.5, 1);
 } 
 #switch {
+  
   position: absolute;
   right: 25px;
   top: 20px;
@@ -205,6 +206,7 @@ z-index: 999;
   border: 2px solid $light-2;
   border-radius: 27px;
   background: $light-2;
+  cursor: pointer;
   
 }
 #circle {
