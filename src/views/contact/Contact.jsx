@@ -47,7 +47,7 @@ const Contact = (props) => {
                           <div className="row">
                             <div className="col-md-6">
                               <div className="md-form mb-4">
-                                <label>Name</label>
+                                <label>Nombre</label>
                                 <input type="text" name="name" className="form-control bg-transparent" />
                               </div>
                             </div>
@@ -80,13 +80,13 @@ const Contact = (props) => {
                       <div class="col-md-12 text-center mt-4">
                         <ul class="list-unstyled mb-0">
                           <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                            <p>Candelaria, Santa cruz de Tenerife, España</p>
+                            <p><a target="_blank" href="https://goo.gl/maps/vwfawwRL83fcsg1t5">Candelaria, Santa cruz de Tenerife, España</a></p>
                           </li>
                           <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                            <p>+34 679985955</p>
+                          <p><a target="_blank" href="tel: +34679985955">+34 679985955</a></p>
                           </li>
                           <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                            <p>christianrenovell83@gmail.com</p>
+                          <p><a target="_blank" href="mailto: christianrenovell83@gmail.com">christianrenovell83@gmail.com</a></p>
                           </li>
                         </ul>
                       </div>
