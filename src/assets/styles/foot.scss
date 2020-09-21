@@ -1,5 +1,5 @@
 .footIcon {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     right: 0px;
     height: 60px;
@@ -16,7 +16,7 @@
 }
 .footerDivOpen  {
 
-    position:absolute;
+    position:fixed;
     bottom:0px;
     min-height: auto;
     width: 100%;

@@ -8,7 +8,7 @@ const Home = (props) => {
         <div>
             <div className="section">
                 <div className="contentComponent">
-                    <div className="contentComponent">
+                   
                         <div className="content">
                             <div className={`circle-${props.mode} mt-1`} id="photo-circle"></div>
                         </div>
@@ -17,7 +17,7 @@ const Home = (props) => {
                                     <h1>CHRISTIAN RENOVELL</h1>
                                 </div>                           
                         </div>
-                    </div>
+                   
                 </div>
             </div>
         </div>

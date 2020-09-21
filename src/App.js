@@ -198,7 +198,7 @@ class App extends Component {
 
   }
 
-  openFooter(){
+  openFooter() {
      this.setState({ footerOpen: !this.state.footerOpen });
      if(this.state.menuOpen){
       this.handleOpenMenu()

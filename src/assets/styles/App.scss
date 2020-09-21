@@ -16,19 +16,20 @@ body {
   
 }
 .section {
-  position: relative;
+  position: absolute;
 	font-size: 1em;
 	text-align: center;
   background: $light;
   color: $light-2;
-	width: 100%;
-  min-height: 91.9vh;  
-	
+  width: 100%;
+  min-height: 100vh;  
+  height: 100%;
 }
 
-.contentComponent{
-  padding-top: 40px;
+.contentComponent {
+  padding-top: 120px;
 }
+
 a{
   font-size: 1.4em;
 }
@@ -45,7 +46,7 @@ a{
 
 .navbar { 
 width: 100%; 
-position: relative;
+position: absolute;
 z-index: 999;
 }
 
