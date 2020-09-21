@@ -55,10 +55,10 @@ const Contact = (props) => {
                               </div>
                             </div>
                           </div>
-                        </form>
-                        <div class="text-center text-md-center">
-                          <div className={`btn-profile-${props.mode}`} id="btn-contact" onclick="document.getElementById('contact-form').submit();">Enviar</div>
+                          <div class="text-center text-md-center">
+                          <div className={`btn-profile-${props.mode}`} id="btn-contact" type="submit">Enviar</div>
                         </div>
+                        </form>
                       </div>
                     </div>
                     <div className="content--inner2 mb-5">
