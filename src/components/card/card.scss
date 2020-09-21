@@ -11,6 +11,7 @@
 }
 
 .overlay {
+  padding: 25px;
   width: 100%;
   height: 100%;
   display: grid;
@@ -21,14 +22,14 @@
 }
 
 .head {
-  font-size: 30px;
+  font-size: 2em;
   line-height: 40px;
   transform: translateY(40px);
   transition: all 0.7s;
 }
 
 .description {
-  font-size: 22px; 
+  font-size: 1.3em; 
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.7s;

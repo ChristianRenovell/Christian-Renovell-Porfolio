@@ -1,4 +1,5 @@
 import React from 'react';
+import Icons from '../../components/icons/Icons';
 import './knowledge.scss';
 
 const Knowledge = (props) => {
@@ -26,8 +27,8 @@ const Knowledge = (props) => {
                         <div className="content--inner">
                             <div className="row">
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
-                                    <a href=""><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`} id="facebook" data-toggle="tooltip" data-placement="top" title="Javascript" /></a>
-                                    {}
+                                    <Icons src = {`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`}/>
+                                    {/*<a href=""><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`} id="facebook"/></a>*/}
                                 </div>
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
                                     <a href=""><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/css-${props.mode}.png`} id="instagram" /></a>
