@@ -150,6 +150,8 @@ z-index: 999;
   background-color: $darck; 
 }
 .btn-profile-light {
+    background-color: transparent;
+    color:$light-2;
     margin-left: auto;
     margin-right: auto;
     font-size: 1em;
@@ -169,6 +171,8 @@ z-index: 999;
   background-color: $light-btn;
 }
 .btn-profile-darck {
+    background-color: transparent;
+    color:$darck-2;
     margin-left: auto;
     margin-right: auto;
     font-size: 1em;

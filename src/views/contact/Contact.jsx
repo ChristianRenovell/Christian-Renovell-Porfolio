@@ -1,4 +1,6 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
+
 import './contact.scss';
 
 const Contact = (props) => {
@@ -6,11 +8,26 @@ const Contact = (props) => {
   let color;
 
   if (props.mode === "light") {
-      color = "#555";
+    color = "#555";
   }
   if (props.mode === "darck") {
-      color = "#d87093";
+    color = "#d87093";
   }
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('gmail', 'template_ikb6q8a', e.target, 'user_LEK70rFXXjXuDvy77FcGY')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    e.target.reset();
+  }
+
+
+
   return (
     <div id="fullpage">
       <div className="section">
@@ -18,46 +35,44 @@ const Contact = (props) => {
           <div className="fullpage2 mt-4">
             <div className="content">
               <h1>Contacto</h1>
-              <div className="lineTitle" style={{ backgroundColor: color }}/>
+              <div className="lineTitle" style={{ backgroundColor: color }} />
               <div className="content--inner infoContact">
                 <div className="container">
                   <section class="pb-5 mt-4">
                     <div class="row">
                       <div class="col-md-12 mb-md-0 mb-5">
-                        <form id="contact-form" name="contact" method="POST">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <div class="md-form mb-4">
-                                <label for="name" className="">Nombre</label>
-                                <input type="text" id="name" name="name" class="form-control bg-transparent" />
+
+                        <form onSubmit={sendEmail}>
+                          <input type="hidden" name="contact_number" />
+                          <div className="row">
+                            <div className="col-md-6">
+                              <div className="md-form mb-4">
+                                <label>Name</label>
+                                <input type="text" name="name" className="form-control bg-transparent" />
                               </div>
                             </div>
-                            <div class="col-md-6">
-                              <div class="md-form mb-4">
-                                <label for="email" class="">Email</label>
-                                <input type="text" id="email" name="email" class="form-control bg-transparent" />
+                            <div className="col-md-6">
+                              <div className="md-form mb-4">
+                                <label>Email</label>
+                                <input type="email" name="email" className="form-control bg-transparent" />
                               </div>
                             </div>
                           </div>
                           <div class="row">
                             <div class="col-md-12 mb-4">
                               <div class="md-form mb-0">
-                                <label for="subject" class="">Asunto</label>
-                                <input type="text" id="subject" name="subject" class="form-control bg-transparent" />
+                                <label>Asunto</label>
+                                <input type="text" name="subject" class="form-control bg-transparent" />
                               </div>
                             </div>
                           </div>
                           <div class="row mb-4">
-                            <div class="col-md-12">
-                              <div class="md-form">
-                                <label for="message">Mensaje</label>
-                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea bg-transparent"></textarea>
-                              </div>
+                            <div className="col-md-12">
+                              <label>Mensaje</label>
+                              <textarea name="message" className="form-control md-textarea bg-transparent"/>
                             </div>
                           </div>
-                          <div class="text-center text-md-center">
-                          <div className={`btn-profile-${props.mode}`} id="btn-contact" type="submit">Enviar</div>
-                        </div>
+                         <input type="submit" value="Enviar" className={`btn-profile-${props.mode}`}/>
                         </form>
                       </div>
                     </div>
@@ -83,7 +98,7 @@ const Contact = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 export default Contact;
