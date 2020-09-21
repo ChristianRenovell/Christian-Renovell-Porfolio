@@ -41,35 +41,35 @@ function Name(props) {
             <img src={`https://christian-renovell-porfolio.netlify.app/miLogo-${props.mode}-footer.png`} alt="logo" className="logoFooter" />
           </div>
           <div className="col-sm-12 col-md-4">
-            <ul class="list-unstyled mb-0">
+            <ul className="list-unstyled mb-0">
               <li>
                 <h4>Contacto</h4>
               </li>
               <li>
-                <i class="fas fa-map-marker-alt fa-2x"></i>
+                <i className="fas fa-map-marker-alt fa-2x"></i>
                 <p>Candelaria, Santa cruz de Tenerife, España</p>
               </li>
               <li>
-                <i class="fas fa-phone mt-4 fa-2x"></i>
+                <i className="fas fa-phone mt-4 fa-2x"></i>
                 <p>+34 679985955</p>
               </li>
               <li>
-                <i class="fas fa-envelope mt-4 fa-2x"></i>
-                <p>christianrenovell83@gmail.com</p>
+                <i className="fas fa-envelope mt-4 fa-2x"></i>
+               <p>christianrenovell83@gmail.com</p>
               </li>
             </ul>
             <div className="row mt=2 mb-5">
               <div className="col-3 col-md-3">
-                <img src={`https://christian-renovell-porfolio.netlify.app/instagram-${props.mode}-footer.png`} width="35px"></img>
+                <a target="_blank" href="https://www.instagram.com/christian_renovell/"><img src={`https://christian-renovell-porfolio.netlify.app/instagram-${props.mode}-footer.png`} width="35px"></img></a>
               </div>
               <div className="col-3 col-md-3">
-                <img src={`https://christian-renovell-porfolio.netlify.app/linkedin-${props.mode}-footer.png`} width="35px"></img>
+                <a target="_blank" href="https://www.linkedin.com/in/christian-renovell-miralles-896738196/"><img src={`https://christian-renovell-porfolio.netlify.app/linkedin-${props.mode}-footer.png`} width="35px"></img></a>
               </div>
               <div className="col-3 col-md-3">
-                <img src={`https://christian-renovell-porfolio.netlify.app/facebook-${props.mode}-footer.png`} width="35px"></img>
+                <a target="_blank" href="https://www.facebook.com/christian.renovell"><img src={`https://christian-renovell-porfolio.netlify.app/facebook-${props.mode}-footer.png`} width="35px"></img></a>
               </div>
               <div className="col-3 col-md-3">
-                <img src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}-footer.png`} width="35px"></img>
+                <a target="_blank" href="https://github.com/ChristianRenovell"><img src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}-footer.png`} width="35px"></img></a>
               </div>
             </div>
           </div>

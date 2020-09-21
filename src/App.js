@@ -74,6 +74,7 @@ class App extends Component {
       document.body.style.backgroundColor = "#f1ede3";
       btnOpenFooter.style.backgroundColor = "#555";
       contentNav.style.backgroundColor = "#f1ede3";
+      elemento2.style.backgroundColor = "#555";
     }
     else {
 
@@ -99,6 +100,7 @@ class App extends Component {
       document.body.style.backgroundColor = "#080d17";
       btnOpenFooter.style.backgroundColor = "#d87093"
       contentNav.style.backgroundColor = "#080d17";
+      elemento2.style.backgroundColor = "#d87093";
     }
   }
 
@@ -252,7 +254,7 @@ class App extends Component {
                    
                 </div>
                 <div id="switch" onClick={this.mode}>
-                  <div id="circle" ></div>
+                  <div id="circle"></div>
                 </div>
               </nav>
              
