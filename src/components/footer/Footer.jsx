@@ -27,7 +27,7 @@ function Name(props) {
                 <li>
                   <h4>Sobre mi</h4>
                 </li>
-                <p>
+                <p id="aboutFooter">
                 Soy un programador y desarrollador Web con conocimientos tanto en front-end como en back-end. Apasionado de las tecnologías.
                 </p>
               </ul>
@@ -47,15 +47,15 @@ function Name(props) {
               </li>
               <li>
                 <i className="fas fa-map-marker-alt fa-2x"></i>
-                <p>Candelaria, Santa cruz de Tenerife, España</p>
+                <p><a target="_blank" href="https://goo.gl/maps/vwfawwRL83fcsg1t5" style={{ color: textColor }}>Candelaria, Santa cruz de Tenerife, España</a></p>
               </li>
               <li>
                 <i className="fas fa-phone mt-4 fa-2x"></i>
-                <p>+34 679985955</p>
+                <p><a target="_blank" href="tel: +34679985955" style={{ color: textColor }}>+34 679985955</a></p>
               </li>
               <li>
                 <i className="fas fa-envelope mt-4 fa-2x"></i>
-               <p>christianrenovell83@gmail.com</p>
+               <p><a target="_blank" href="mailto: christianrenovell83@gmail.com" style={{ color: textColor }}>christianrenovell83@gmail.com</a></p>
               </li>
             </ul>
             <div className="row mt=2 mb-5">
