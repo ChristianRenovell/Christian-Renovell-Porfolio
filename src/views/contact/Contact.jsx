@@ -24,7 +24,7 @@ const Contact = (props) => {
                   <section class="pb-5 mt-4">
                     <div class="row">
                       <div class="col-md-12 mb-md-0 mb-5">
-                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        <form id="contact-form" name="contact" method="POST" data-netlify="true">
                           <div class="row">
                             <div class="col-md-6">
                               <div class="md-form mb-4">
