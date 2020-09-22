@@ -5,7 +5,12 @@ import Modal from '../modal/Modal'
 
 class Icons extends React.Component {
 
-    state = {showModal: false}
+    constructor(props){
+        super();
+        this.state = {showModal: false}
+    }
+
+    
     handleShowMessageClick = () => this.setState({showModal: true})
     handleCloseModal = () => this.setState({showModal: false})
     render() {
@@ -24,12 +29,11 @@ class Icons extends React.Component {
               position: 'relative',
             }}
           >
-            <button onClick={this.handleShowMessageClick}>
-              Show Secret Modal
-            </button>
+            <img src = {this.props.src} onClick={this.handleShowMessageClick} width="100px"/>
             {this.state.showModal ? (
-              <Modal onClose={this.handleCloseModal}>
-                
+              <Modal onClose={this.handleCloseModal}
+                     src = {this.props.src}>
+                   
               </Modal>
             ) : null}
           </div>
