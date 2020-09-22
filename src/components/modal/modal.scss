@@ -13,8 +13,8 @@
 }
 .modal{
     padding: 20;
-    background: #fff;
-    border-radius: 2px;
+    background: #f1ede3;
+    //border-radius: 2px;
     display: inline-block;
     height: 600px;
     width: 800px;
@@ -25,6 +25,18 @@
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     min-width: 300px;
-    box-shadow: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)';
+    box-shadow: rgb(85, 85, 85) 0px 0px 5px;
     justify-self: center;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
