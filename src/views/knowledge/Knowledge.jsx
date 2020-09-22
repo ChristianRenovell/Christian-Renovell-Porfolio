@@ -27,7 +27,9 @@ const Knowledge = (props) => {
                         <div className="content--inner">
                             <div className="row">
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
-                                    <Icons src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`} />
+                                    <Icons src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`} 
+                                           title= "Git"
+                                        />
                                 </div>
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
                                     <Icons src={`https://christian-renovell-porfolio.netlify.app/css-${props.mode}.png`} />

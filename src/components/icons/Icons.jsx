@@ -20,13 +20,14 @@ class Icons extends Component  {
     }
 
     render() {    
-
+console.log(this.props.title)
     return (
         <div className="divIcon">
            <div onClick={() => this.openCloud()}>
                 <img width="90px" src={this.props.src}/>
             </div>
            <div className={`${this.state.openCloud ? "IconOpen" : "IconClose"}`}>   
+            <h1>{this.props.title}</h1>
            </div>
            <div onClick={() => this.openCloud()}
                 className={`${this.state.divClose ? "backOpen" : "backClose"}`}>
