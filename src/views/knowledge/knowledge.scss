@@ -9,6 +9,10 @@
     animation-name: lineShoswTitle;
     animation-fill-mode: forwards;
 }
+
+.ico{
+  cursor: pointer;
+}
 @keyframes lineShoswTitle {
   from {
     opacity: 0;

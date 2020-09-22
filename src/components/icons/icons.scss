@@ -1,8 +1,6 @@
 
-.ico{
-    cursor: pointer;
-}
 .IconOpen {
+
     display: block;
     width: 500px;
     margin-left: -250px;
@@ -13,7 +11,6 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index: 1000;
     animation-name: cloudOpen;
     animation-duration: 1s;
     animation-fill-mode: forwards;   
@@ -31,7 +28,6 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index: 100;
     animation-name: cloudclose;    
     animation-delay: 0s;
     animation-duration: 1s;
@@ -73,17 +69,16 @@
     animation-name: backOpen;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    z-index: 99; 
+   
 }
 
 .backClose{
-
-  
+    
     display: none;
     
 }
 
-@keyframes backOpen{
+@keyframes backOpen {
     from{
         opacity: 0;
     }

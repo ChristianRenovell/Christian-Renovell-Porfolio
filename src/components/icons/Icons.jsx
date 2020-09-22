@@ -1,39 +1,41 @@
-import React, { Component } from "react";
-import './icons.scss';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Modal from '../modal/Modal'
 
-class Icons extends Component  {
 
-    constructor(props) {
-        super();
-        this.state = {
-            openCloud:false,
-            divClose:false
-        };
+class Icons extends React.Component {
 
-        this.openCloud = this.openCloud.bind(this);
-    }
-
-    openCloud() {
-
-        this.setState({openCloud: !this.state.openCloud})
-        this.setState({divClose: !this.state.divClose})
-    }
-
-    render() {    
-console.log(this.props.title)
-    return (
-        <div className="divIcon">
-           <div onClick={() => this.openCloud()}>
-                <img width="90px" src={this.props.src}/>
-            </div>
-           <div className={`${this.state.openCloud ? "IconOpen" : "IconClose"}`}>   
-            <h1>{this.props.title}</h1>
-           </div>
-           <div onClick={() => this.openCloud()}
-                className={`${this.state.divClose ? "backOpen" : "backClose"}`}>
-           </div>
+    state = {showModal: false}
+    handleShowMessageClick = () => this.setState({showModal: true})
+    handleCloseModal = () => this.setState({showModal: false})
+    render() {
+      return (
+        <div
+          style={{
+            height: '100%',
+            display: 'grid',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <div
+            style={{
+              maxWidth: 400,
+              position: 'relative',
+            }}
+          >
+            <button onClick={this.handleShowMessageClick}>
+              Show Secret Modal
+            </button>
+            {this.state.showModal ? (
+              <Modal onClose={this.handleCloseModal}>
+                
+              </Modal>
+            ) : null}
+          </div>
         </div>
-        )
-    };
-}
-export default Icons;
+      )
+    }
+  }
+  
+export default Icons
