@@ -1,24 +1,65 @@
-.hoverIconOpen {
+
+.ico{
+    cursor: pointer;
+}
+.IconOpen {
     display: block;
     width: 500px;
+    margin-left: -250px;
     height: 500px;
-    width: 500px;
-    height: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: -250px;
     background-color: red;
+    border-radius: 20px;
     position: fixed;
-    z-index: 999;
-    animation-name: showCloud;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    animation-name: cloudOpen;
     animation-duration: 1s;
     animation-fill-mode: inherit;   
 }
 
-.hoverIconClose{
-    display: none;
+.IconClose{
+    
+    opacity: 0;
+    display: block;
+    width: 500px;
+    margin-left: -250px;
+    height: 500px;
+    margin-top: -250px;
+    background-color: red;
+    border-radius: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    animation-name: cloudclose;
+    animation-duration: 1s;
+    animation-fill-mode: inherit; 
 }
 
-.divCloseOpen {
+@keyframes cloudOpen{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes cloudclose {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+
+
+
+.backOpen {
     display: block;
     position: fixed;
     top: 0px;
@@ -27,18 +68,42 @@
     height: 100%;
     background-color: black;
     opacity: 0.4;
+    animation-name: backOpen;
+    animation-duration: 1s;
+    animation-fill-mode: inherit; 
 }
 
-.divCloseClose{
-    display:none;
+.backClose{
+
+    display: block;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    animation-name: backClose;
+    animation-duration: 1s;
+    animation-fill-mode: inherit; 
     
 }
 
-@keyframes showCloud{
+@keyframes backOpen{
     from{
         opacity: 0;
     }
     to{
-        opacity: 1;
+        opacity: 0.4;
     }
 }
+
+@keyframes backClose {
+    from{
+        opacity: 0.4;
+    }
+    to{
+        opacity: 0;
+    }
+}
+

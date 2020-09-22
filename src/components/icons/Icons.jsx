@@ -19,24 +19,20 @@ class Icons extends Component  {
         this.setState({divClose: !this.state.divClose})
     }
 
-
-
     render() {    
 
     return (
         <div className="divIcon">
            <div onClick={() => this.openCloud()}>
-                    <img width="90px" src={this.props.src} id="facebook"/>
+                <img width="90px" src={this.props.src}/>
             </div>
-           <div className={`${this.state.openCloud ? "hoverIconOpen" : "hoverIconClose"}`}>   
+           <div className={`${this.state.openCloud ? "IconOpen" : "IconClose"}`}>   
            </div>
            <div onClick={() => this.openCloud()}
-                className={`${this.state.divClose ? "divCloseOpen" : "divCloseClose"}`}>
-
+                className={`${this.state.divClose ? "backOpen" : "backClose"}`}>
            </div>
         </div>
         )
-   
     };
 }
 export default Icons;

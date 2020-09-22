@@ -27,59 +27,58 @@ const Knowledge = (props) => {
                         <div className="content--inner">
                             <div className="row">
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
-                                    <Icons src = {`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`}/>
-                                    {/*<a href=""><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`} id="facebook"/></a>*/}
+                                    <Icons src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`} />
                                 </div>
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
-                                    <a href=""><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/css-${props.mode}.png`} id="instagram" /></a>
+                                    <Icons src={`https://christian-renovell-porfolio.netlify.app/css-${props.mode}.png`} />
                                 </div>
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
-                                    <a href=""><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/javascript-${props.mode}.png`} id="linkedin" /></a>
+                                    <Icons src={`https://christian-renovell-porfolio.netlify.app/javascript-${props.mode}.png`} />
                                 </div>
                                 <div className="col-6 col-sm-6 col-sm-2 col-md-3 mt-4">
-                                    <a href=""><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/boostrap-${props.mode}.png`} id="git" /></a>
+                                    <Icons src={`https://christian-renovell-porfolio.netlify.app/boostrap-${props.mode}.png`} />
                                 </div>
                             </div>
                             <div className="row mt-5 content--inner2">
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
-                                    <a href=""><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/react-${props.mode}.png`} id="git" /></a>
+                                    <Icons src={`https://christian-renovell-porfolio.netlify.app/react-${props.mode}.png`} />
                                 </div>
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
-                                    <a href=""><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/php-${props.mode}.png`} id="git" /></a>
+                                    <Icons src={`https://christian-renovell-porfolio.netlify.app/php-${props.mode}.png`} />
                                 </div>
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
-                                    <a href=""><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/node-${props.mode}.png`} id="git" /></a>
+                                    <Icons src={`https://christian-renovell-porfolio.netlify.app/node-${props.mode}.png`} />
                                 </div>
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
-                                    <a href=""><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/mongodb-${props.mode}.png`} id="git" /></a>
+                                    <Icons src={`https://christian-renovell-porfolio.netlify.app/mongodb-${props.mode}.png`} />
                                 </div>
                             </div>
                             <div className="row content--inner3">
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
-                                    <a href=""><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/java-${props.mode}.png`} id="git" /></a>
+                                    <Icons src={`https://christian-renovell-porfolio.netlify.app/java-${props.mode}.png`} />
                                 </div>
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
-                                    <a href=""><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/mysql-${props.mode}.png`} id="git" /></a>
+                                    <Icons src={`https://christian-renovell-porfolio.netlify.app/mysql-${props.mode}.png`} />
                                 </div>
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
-                                    <a href=""><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/vue-${props.mode}.png`} id="git" /></a>
+                                    <Icons src={`https://christian-renovell-porfolio.netlify.app/vue-${props.mode}.png`} />
                                 </div>
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
-                                    <a href=""><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/graphQL-${props.mode}.png`} id="git" /></a>
+                                    <Icons src={`https://christian-renovell-porfolio.netlify.app/graphQL-${props.mode}.png`} />
                                 </div>
                             </div>
                             <div className=" row content--inner4">
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
-                                    <a href=""><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/stripe-${props.mode}.png`} id="git" /></a>
+                                    <Icons src={`https://christian-renovell-porfolio.netlify.app/stripe-${props.mode}.png`} />
                                 </div>
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
-                                    <a href=""><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/firebase-${props.mode}.png`} id="git" /></a>
+                                    <Icons src={`https://christian-renovell-porfolio.netlify.app/firebase-${props.mode}.png`} />
                                 </div>
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
-                                    <a href=""><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/supersaas-${props.mode}.png`} id="git" /></a>
+                                    <Icons src={`https://christian-renovell-porfolio.netlify.app/supersaas-${props.mode}.png`} />
                                 </div>
                                 <div className="col-6 col-sm-6 col-md-3 mt-4">
-                                    <a href=""><img width="90px" src={`https://christian-renovell-porfolio.netlify.app/amazon-${props.mode}.png`} id="git" /></a>
+                                    <Icons src={`https://christian-renovell-porfolio.netlify.app/amazon-${props.mode}.png`} />
                                 </div>
                             </div>
                         </div>
