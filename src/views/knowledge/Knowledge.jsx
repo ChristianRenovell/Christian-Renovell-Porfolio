@@ -5,11 +5,14 @@ import './knowledge.scss';
 const Knowledge = (props) => {
 
     let color;
+    let modalColor;
 
     if (props.mode === "light") {
+        modalColor = "#f1ede3";
         color = "#555";
     }
     if (props.mode === "darck") {
+        modalColor = "#080d17";
         color = "#d87093";
     }
 
@@ -27,7 +30,12 @@ const Knowledge = (props) => {
                         <div className="row mt-5 content--inner">                          
                                 <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
                                     <Icons src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`}
+                                        modalcolor = {modalColor}
+                                        color = {color}
                                         title="Git"
+                                        description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
+                                        diplomaTitle = "OpenWebinas"
+                                        diplomaSrc = ""
                                     />
                                 </div>
                                 <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
