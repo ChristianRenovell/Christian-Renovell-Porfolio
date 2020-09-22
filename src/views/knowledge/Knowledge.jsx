@@ -34,8 +34,8 @@ const Knowledge = (props) => {
                                         color = {color}
                                         title="Git"
                                         description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
-                                        diplomaTitle = "OpenWebinas"
-                                        diplomaSrc = ""
+                                        diplomaTitle = "OpenWebinars"
+                                        diplomaSrc = {`./images/diploma-git-${props.mode}.png`}
                                     />
                                 </div>
                                 <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
