@@ -179,7 +179,7 @@ class App extends Component {
 
     console.log(process.env.REACT_APP_URL,"variable de entor")
 
-    if (URLactual === `${process.env.REACT_APP_URL}/home`) {
+    if (URLactual === `https://christian-renovell-porfolio.netlify.app/home`) {
       this.active(1);
     }
     if (URLactual === `${process.env.REACT_APP_URL}/profile`) {
