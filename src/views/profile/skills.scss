@@ -1,0 +1,43 @@
+.skills .progress {
+    height: 50px;
+    display: block;
+    background: none;
+  }
+  
+  .skills .progress .skill {
+    padding: 10px 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-size: 1.6em;
+    
+  }
+  
+  .skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+  }
+  
+  .skills .progress-bar-wrap {
+    background: rgba(0, 0, 0, 0.15);
+  }
+  
+  .skills .progress-bar {
+    width: 0%;  
+    height: 15px;
+    background-color: #18d26e;
+    animation-name: progres;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes progres{
+      from{
+        width: 0%;
+      }
+      to{
+        width: 75%;
+      }
+  }

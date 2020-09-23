@@ -76,7 +76,7 @@ const Contact = (props) => {
                         </form>
                       </div>
                     </div>
-                    <div className="content--inner2 mb-5">
+                    <div className="content--inner2 mb-2">
                       <div class="col-md-12 text-center mt-4">
                         <ul class="list-unstyled mb-0">
                           <li><i class="fas fa-map-marker-alt fa-2x"></i>
@@ -91,6 +91,22 @@ const Contact = (props) => {
                         </ul>
                       </div>
                     </div>
+                    <div className="container">
+                            <div className="row mt-3 ">
+                                <div className="col-6 col-md-3 mt-4">
+                                    <a target="_blank" href="https://www.facebook.com/christian.renovell" className="iconProfile1"><img width="50px" src={`https://christian-renovell-porfolio.netlify.app/facebook-${props.mode}.png`} id="facebook" /></a>
+                                </div>
+                                <div className="col-6 col-md-3 mt-4">
+                                    <a target="_blank" href="https://www.instagram.com/christian_renovell/" className="iconProfile2"><img width="50px" src={`https://christian-renovell-porfolio.netlify.app/instagram-${props.mode}.png`} id="instagram"/></a>
+                                </div>
+                                <div className="col-6 col-md-3 mt-4">
+                                    <a target="_blank" href="https://www.linkedin.com/in/christian-renovell-miralles-896738196/" className="iconProfile3"><img width="50px" src={`https://christian-renovell-porfolio.netlify.app/linkedin-${props.mode}.png`} id="linkedin"/></a>
+                                </div>
+                                <div className="col-6 col-md-3 mt-4 mb-5">
+                                    <a target="_blank" href="https://github.com/ChristianRenovell" className="iconProfile4"><img width="50px" src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`} id="git"/></a>
+                                </div>
+                            </div>
+                        </div>
                   </section>
                 </div>
               </div>

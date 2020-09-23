@@ -1,18 +1,19 @@
-import React from 'react';
-import './profile.scss';
+import React from 'react'
+
+import './profile.scss'
+import './skills.scss'
 
 const Profile = (props) => {
 
-  let color;
-  
-  if (props.mode === "light") {
-    color = "#555";
-  }
-  if (props.mode === "darck") {
-    color = "#d87093";
-  }
+    let color;
 
- 
+    if (props.mode === "light") {
+        color = "#555";
+    }
+    if (props.mode === "darck") {
+        color = "#d87093";
+    }
+
     return (
         <div id="fullpage" className="transitionComponent">
             <div className="section">
@@ -20,7 +21,7 @@ const Profile = (props) => {
                     <div className="content pl-5 pr-5">
                         <div className="container profileContent">
                             <h1 className="title mt-5 mb-3">¿Quién soy?</h1>
-                            <div className="lineTitle" style={{ backgroundColor: color }}/>
+                            <div className="lineTitle" style={{ backgroundColor: color }} />
                         </div>
                         <div className="p1 mt-3">
                             Soy un programador y desarrollador Web con conocimientos tanto en <span className="textRelt">front-end</span> como en <span className="textRelt">back-end.</span>
@@ -37,19 +38,52 @@ const Profile = (props) => {
                         <div className="p4 mt-2">
                             Me considero una persona <span className="textRelt">resolutiva</span> y autónoma con buenas aptitudes de <span className="textRelt">autoaprendizaje.</span>
                         </div>
-                        <div className="container">
-                            <div className="row mt-5 pb-5">
-                                <div className="col-6 col-md-3 mt-4">
-                                    <a target="_blank" href="https://www.facebook.com/christian.renovell" className="iconProfile1"><img width="50px" src={`https://christian-renovell-porfolio.netlify.app/facebook-${props.mode}.png`} id="facebook" /></a>
+                        <div className="container mt-3 content--inner4">
+                            <div className="skills container">
+                                <div className="section-title mt-5">
+                                    <h2>Skills</h2>
                                 </div>
-                                <div className="col-6 col-md-3 mt-4">
-                                    <a target="_blank" href="https://www.instagram.com/christian_renovell/" className="iconProfile2"><img width="50px" src={`https://christian-renovell-porfolio.netlify.app/instagram-${props.mode}.png`} id="instagram"/></a>
-                                </div>
-                                <div className="col-6 col-md-3 mt-4">
-                                    <a target="_blank" href="https://www.linkedin.com/in/christian-renovell-miralles-896738196/" className="iconProfile3"><img width="50px" src={`https://christian-renovell-porfolio.netlify.app/linkedin-${props.mode}.png`} id="linkedin"/></a>
-                                </div>
-                                <div className="col-6 col-md-3 mt-4 mb-5">
-                                    <a target="_blank" href="https://github.com/ChristianRenovell" className="iconProfile4"><img width="50px" src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`} id="git"/></a>
+                                <div className="row skills-content">
+                                    <div className="col-lg-6">
+                                        <div className="progress">
+                                            <span className="skill">HTML <i className="val">100%</i></span>
+                                            <div className="progress-bar-wrap">
+                                                <div className="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div className="progress">
+                                            <span className="skill">CSS <i className="val">90%</i></span>
+                                            <div className="progress-bar-wrap">
+                                                <div className="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div className="progress">
+                                            <span className="skill">JavaScript <i class="val">75%</i></span>
+                                            <div className="progress-bar-wrap">
+                                                <div className="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6">
+                                        <div className="progress">
+                                            <span className="skill">PHP <i className="val">80%</i></span>
+                                            <div className="progress-bar-wrap">
+                                                <div className="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div className="progress">
+                                            <span className="skill">WordPress/CMS <i class="val">90%</i></span>
+                                            <div class="progress-bar-wrap">
+                                                <div className="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div className="progress">
+                                            <span className="skill">Photoshop <i class="val">55%</i></span>
+                                            <div className="progress-bar-wrap">
+                                                <div className="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
