@@ -35,6 +35,7 @@ class Icons extends React.Component {
                      description = {this.props.description}
                      diplomaTitle = {this.props.diplomaTitle}
                      diplomaSrc = {this.props.diplomaSrc}
+                     diplomaLink = {this.props.diplomaLink}
                      >
                          
               </Modal>
