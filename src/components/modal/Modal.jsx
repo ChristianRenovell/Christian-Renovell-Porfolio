@@ -20,11 +20,12 @@ class Modal extends Component {
         }}>
           {this.props.children}
           <h1>{this.props.title}</h1>
+          <div className="lineModal mb-3" style={{backgroundColor: this.props.color}}/>
           <div className="descriptionModal">
             <p>{this.props.description}</p>
           </div>
           <div className="diploma">
-            <h2>{this.props.diplomaTitle}</h2>
+            <h2 className="mb-4 mt-4">{this.props.diplomaTitle}</h2>
             <a href={this.props.diplomaLink} target="_blank"><img src={this.props.diplomaSrc} width="300px"/></a>
           </div>
 

@@ -12,7 +12,7 @@
     z-index: 1000;
 }
 .modal{
-    padding: 20px;
+    padding: 20px 40px;
     display: inline-block;
     height: 600px;
     width: 800px;
@@ -43,4 +43,12 @@
 .descriptionModal{
     text-align: left;
     font-size: 2em;
+}
+
+.lineModal{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 6px;
+    width: 104px;
 }
