@@ -6,12 +6,22 @@ class Icons extends React.Component {
 
     constructor(props){
         super();
-        this.state = {showModal: false}
+        this.state = {
+          showModal: false
+        }
+        this.handleShowMessageClick = this.handleShowMessageClick.bind(this);
+        this.handleCloseModal = this.handleCloseModal.bind(this);
     }
 
     
-    handleShowMessageClick = () => this.setState({showModal: true})
-    handleCloseModal = () => this.setState({showModal: false})
+    handleShowMessageClick  () {
+      this.setState({showModal: true})
+    } 
+      
+    handleCloseModal() {
+      this.setState({showModal: false})
+    }
+
     render() {
       return (
           <div>
