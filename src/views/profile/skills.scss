@@ -26,18 +26,102 @@
   .skills .progress-bar {
     width: 0%;  
     height: 15px;
-    background-color: #18d26e;
-    animation-name: progres;
+    background-color: #555;
+    
+  }
+
+  .html{
+    animation-name: progresHtml;
     animation-delay: 5s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
   }
 
-  @keyframes progres{
+  @keyframes progresHtml{
+      from{
+        width: 0%;
+      }
+      to{
+        width: 100%;
+      }
+  }
+
+  .css{
+    animation-name: progresCss;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes progresCss{
+      from{
+        width: 0%;
+      }
+      to{
+        width: 90%;
+      }
+  }
+
+  .javascript{
+    animation-name: progresJavascript;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes progresJavascript{
       from{
         width: 0%;
       }
       to{
         width: 75%;
+      }
+  }
+
+  .php{
+    animation-name: progresPhp;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes progresPhp{
+      from{
+        width: 0%;
+      }
+      to{
+        width: 65%;
+      }
+  }
+
+  .react{
+    animation-name: progresReact;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes progresReact{
+      from{
+        width: 0%;
+      }
+      to{
+        width: 75%;
+      }
+  }
+
+  .node{
+    animation-name: progresNode;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes progresNode{
+      from{
+        width: 0%;
+      }
+      to{
+        width: 65%;
       }
   }
