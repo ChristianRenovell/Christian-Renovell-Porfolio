@@ -59,7 +59,7 @@ const Knowledge = (props) => {
                                     diplomaSrc={`https://christian-renovell-porfolio.netlify.app/diploma-git-${props.mode}.png`}
                                     diplomaLink={"https://openwebinars.net/certificacion/YxEj4Gdo?type=pdf&r=818e03d96}&t="} />
                             </div>
-                            <div className="col-6 col-sm-6 col-sm-2 col-md-3 mt-4 ico">
+                            <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
                                 <Icons src={`https://christian-renovell-porfolio.netlify.app/boostrap-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
@@ -71,7 +71,7 @@ const Knowledge = (props) => {
                                 />
                             </div>
                         </div>
-                        <div className="row mt-5 content--inner2">
+                        <div className="row content--inner2">
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
                                 <Icons src={`https://christian-renovell-porfolio.netlify.app/react-${props.mode}.png`}
                                     modalcolor={modalColor}
@@ -155,7 +155,7 @@ const Knowledge = (props) => {
                                     diplomaLink={"https://openwebinars.net/certificacion/YxEj4Gdo?type=pdf&r=818e03d96}&t="} />
                             </div>
                         </div>
-                        <div className=" row content--inner4">
+                        <div className=" row content--inner4 mb-5">
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
                                 <Icons src={`https://christian-renovell-porfolio.netlify.app/stripe-${props.mode}.png`}
                                     modalcolor={modalColor}

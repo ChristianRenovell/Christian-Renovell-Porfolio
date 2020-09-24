@@ -26,7 +26,7 @@ class Modal extends Component {
           </div>
           <div className="diploma">
             <h2 className="mb-4 mt-4">{this.props.diplomaTitle}</h2>
-            <a href={this.props.diplomaLink} target="_blank"><img src={this.props.diplomaSrc} width="300px"/></a>
+            <a href={this.props.diplomaLink} target="_blank"><img src={this.props.diplomaSrc}/></a>
           </div>
         </div>
       </div>,

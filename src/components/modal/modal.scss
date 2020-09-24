@@ -15,10 +15,11 @@
 .modal{
     padding: 20px 40px;
     display: inline-block;
-    height: 600px;
-    width: 800px;
+    min-height: 600px;
+    height: auto;
+    width: 70%;
     margin: 1rem;
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -30,6 +31,10 @@
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     
+}
+
+.modal img {
+    width: 300px;
 }
 
 @keyframes fadeIn{
@@ -53,3 +58,16 @@
     height: 6px;
     width: 104px;
 }
+
+@media (max-width: 600px) {
+
+    .modal{
+        font-size: 0.8em;
+        margin: 0;
+    }
+
+    .modal img {
+        width: 200px;
+    }
+
+    }
