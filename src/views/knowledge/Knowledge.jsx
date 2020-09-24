@@ -46,8 +46,8 @@ const Knowledge = (props) => {
                                     title="CSS"
                                     description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/diploma-git-${props.mode}.png`}
-                                    diplomaLink={"https://openwebinars.net/certificacion/YxEj4Gdo?type=pdf&r=818e03d96}&t="} />
+                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/css-${props.mode}.png`}
+                                    diplomaLink={"#"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
                                 <Icons src={`https://christian-renovell-porfolio.netlify.app/javascript-${props.mode}.png`}
@@ -56,8 +56,8 @@ const Knowledge = (props) => {
                                     title="Javascript"
                                     description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/diploma-git-${props.mode}.png`}
-                                    diplomaLink={"https://openwebinars.net/certificacion/YxEj4Gdo?type=pdf&r=818e03d96}&t="} />
+                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/diploma-javascript-${props.mode}.png`}
+                                    diplomaLink={"https://openwebinars.net/certificado/0vRQneQV?t=1598524817&type=pdf"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
                                 <Icons src={`https://christian-renovell-porfolio.netlify.app/boostrap-${props.mode}.png`}
@@ -66,8 +66,8 @@ const Knowledge = (props) => {
                                     title="Boostrap"
                                     description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/diploma-git-${props.mode}.png`}
-                                    diplomaLink={"https://openwebinars.net/certificacion/YxEj4Gdo?type=pdf&r=818e03d96}&t="}
+                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/boostrap-${props.mode}.png`}
+                                    diplomaLink={"#"}
                                 />
                             </div>
                         </div>
@@ -89,8 +89,8 @@ const Knowledge = (props) => {
                                     title="PHP"
                                     description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/diploma-git-${props.mode}.png`}
-                                    diplomaLink={"https://openwebinars.net/certificacion/YxEj4Gdo?type=pdf&r=818e03d96}&t="} />
+                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/diploma-php-${props.mode}.png`}
+                                    diplomaLink={"https://openwebinars.net/certificado/bx9LwLNv?t=1598524817&type=pdf"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
                                 <Icons src={`https://christian-renovell-porfolio.netlify.app/node-${props.mode}.png`}
@@ -99,8 +99,8 @@ const Knowledge = (props) => {
                                     title="Node"
                                     description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/diploma-git-${props.mode}.png`}
-                                    diplomaLink={"https://openwebinars.net/certificacion/YxEj4Gdo?type=pdf&r=818e03d96}&t="} />
+                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/node-${props.mode}.png`}
+                                    diplomaLink={"#"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
                                 <Icons src={`https://christian-renovell-porfolio.netlify.app/mongodb-${props.mode}.png`}
@@ -109,8 +109,8 @@ const Knowledge = (props) => {
                                     title="Mongodb"
                                     description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/diploma-git-${props.mode}.png`}
-                                    diplomaLink={"https://openwebinars.net/certificacion/YxEj4Gdo?type=pdf&r=818e03d96}&t="} />
+                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/mongodb-${props.mode}.png`}
+                                    diplomaLink={"#"} />
                             </div>
                         </div>
                         <div className="row content--inner3">
@@ -121,8 +121,8 @@ const Knowledge = (props) => {
                                     title="Java"
                                     description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/diploma-git-${props.mode}.png`}
-                                    diplomaLink={"https://openwebinars.net/certificacion/YxEj4Gdo?type=pdf&r=818e03d96}&t="} />
+                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/java-${props.mode}.png`}
+                                    diplomaLink={"#"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
                                 <Icons src={`https://christian-renovell-porfolio.netlify.app/mysql-${props.mode}.png`}
@@ -131,8 +131,8 @@ const Knowledge = (props) => {
                                     title="Mysql"
                                     description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/diploma-git-${props.mode}.png`}
-                                    diplomaLink={"https://openwebinars.net/certificacion/YxEj4Gdo?type=pdf&r=818e03d96}&t="} />
+                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/mysql-${props.mode}.png`}
+                                    diplomaLink={"#"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
                                 <Icons src={`https://christian-renovell-porfolio.netlify.app/vue-${props.mode}.png`}
@@ -141,8 +141,8 @@ const Knowledge = (props) => {
                                     title="Vue"
                                     description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/diploma-git-${props.mode}.png`}
-                                    diplomaLink={"https://openwebinars.net/certificacion/YxEj4Gdo?type=pdf&r=818e03d96}&t="} />
+                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/vue-${props.mode}.png`}
+                                    diplomaLink={"#"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
                                 <Icons src={`https://christian-renovell-porfolio.netlify.app/graphQL-${props.mode}.png`}
@@ -151,8 +151,8 @@ const Knowledge = (props) => {
                                     title="GraphQL"
                                     description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/diploma-git-${props.mode}.png`}
-                                    diplomaLink={"https://openwebinars.net/certificacion/YxEj4Gdo?type=pdf&r=818e03d96}&t="} />
+                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/graphQL-${props.mode}.png`}
+                                    diplomaLink={"#"} />
                             </div>
                         </div>
                         <div className=" row content--inner4 mb-5">
@@ -164,7 +164,7 @@ const Knowledge = (props) => {
                                     description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
                                     diplomaSrc={`https://christian-renovell-porfolio.netlify.app/stripe-${props.mode}.png`}
-                                    diplomaLink={"https://openwebinars.net/certificacion/YxEj4Gdo?type=pdf&r=818e03d96}&t="} />
+                                    diplomaLink={"#"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
                                 <Icons src={`https://christian-renovell-porfolio.netlify.app/firebase-${props.mode}.png`}
@@ -174,7 +174,7 @@ const Knowledge = (props) => {
                                     description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
                                     diplomaSrc={`https://christian-renovell-porfolio.netlify.app/firebase-${props.mode}.png`}
-                                    diplomaLink={"https://openwebinars.net/certificacion/YxEj4Gdo?type=pdf&r=818e03d96}&t="} />
+                                    diplomaLink={"#"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
                                 <Icons src={`https://christian-renovell-porfolio.netlify.app/supersaas-${props.mode}.png`}
@@ -184,7 +184,7 @@ const Knowledge = (props) => {
                                     description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
                                     diplomaSrc={`https://christian-renovell-porfolio.netlify.app/supersaas-${props.mode}.png`}
-                                    diplomaLink={"https://openwebinars.net/certificacion/YxEj4Gdo?type=pdf&r=818e03d96}&t="} />
+                                    diplomaLink={"#"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
                                 <Icons src={`https://christian-renovell-porfolio.netlify.app/amazon-${props.mode}.png`}
@@ -194,7 +194,7 @@ const Knowledge = (props) => {
                                     description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
                                     diplomaSrc={`https://christian-renovell-porfolio.netlify.app/amazon-${props.mode}.png`}
-                                    diplomaLink={"https://openwebinars.net/certificacion/YxEj4Gdo?type=pdf&r=818e03d96}&t="} />
+                                    diplomaLink={"#"}/>
                             </div>
                         </div>
 
