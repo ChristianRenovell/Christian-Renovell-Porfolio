@@ -28,7 +28,6 @@ class Modal extends Component {
             <h2 className="mb-4 mt-4">{this.props.diplomaTitle}</h2>
             <a href={this.props.diplomaLink} target="_blank"><img src={this.props.diplomaSrc} width="300px"/></a>
           </div>
-
         </div>
       </div>,
       modalRoot,
