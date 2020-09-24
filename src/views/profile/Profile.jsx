@@ -44,7 +44,7 @@ const Profile = (props) => {
                                     <h1>Skills</h1>
                                     <div className="lineTitle mb-4" style={{ backgroundColor: color }} />
                                 </div>
-                                <div className="row skills-content">
+                                <div className="row skills-content mb-5">
                                     <div className="col-lg-6">
                                         <div className="progress">
                                             <span className="skill">HTML <i className="val">100%</i></span>

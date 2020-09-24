@@ -177,24 +177,26 @@ class App extends Component {
 
     let URLactual = window.location.href;
 
-    console.log(process.env.REACT_APP_URL,"variable de entor")
+    if (URLactual === `https://christian-renovell-porfolio.netlify.app/intro`) {
+      this.active(1);
+    }
 
     if (URLactual === `https://christian-renovell-porfolio.netlify.app/home`) {
       this.active(1);
     }
-    if (URLactual === `${process.env.REACT_APP_URL}/profile`) {
+    if (URLactual === `https://christian-renovell-porfolio.netlify.app/profile`) {
       this.active(2);
     }
 
-    if (URLactual === `${process.env.REACT_APP_URL}/proyects`) {
+    if (URLactual === `https://christian-renovell-porfolio.netlify.app/proyects`) {
       this.active(3);
     }
 
-    if (URLactual === `${process.env.REACT_APP_URL}/Knowledge`) {
+    if (URLactual === `https://christian-renovell-porfolio.netlify.app/Knowledge`) {
       this.active(4);
     }
 
-    if (URLactual === `${process.env.REACT_APP_URL}/contact`) {
+    if (URLactual === `https://christian-renovell-porfolio.netlify.app/contact`) {
       this.active(5);
     }
 

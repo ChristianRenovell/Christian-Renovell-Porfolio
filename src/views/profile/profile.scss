@@ -344,54 +344,7 @@ to {
   }
 }
 
-.iconProfile1{
-  opacity: 0;
-  animation: shIcon1 1s forwards 5.2s;
-}
-@keyframes shIcon1{
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
-.iconProfile2{
-  opacity: 0;
-  animation: shIcon2 1s forwards 5.5s;
-}
-@keyframes shIcon2{
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
-.iconProfile3{
-  opacity: 0;
-  animation: shIcon3 1s forwards 5.8s;
-}
-@keyframes shIcon3{
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
-.iconProfile4{
-  opacity: 0;
-  animation: shIcon4 1s forwards 6.1s;
-}
-@keyframes shIcon4{
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
+
 
 @media (max-width: 700px) {
   
