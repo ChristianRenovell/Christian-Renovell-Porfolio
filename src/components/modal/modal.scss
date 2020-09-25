@@ -13,11 +13,10 @@
     height: 100%;
 }
 .modal{
-    padding: 20px 40px;
+    padding: 50px 40px;
     display: inline-block;
-    min-height: 600px;
     height: auto;
-    width: 70%;
+    width: 30%;
     margin: 1rem;
     position: fixed;
     left: 50%;
@@ -26,6 +25,7 @@
     -webkit-transform: translate(-50%, -50%);
     min-width: 300px;
     box-shadow: rgb(85, 85, 85) 0px 0px 5px;
+    border-radius: 5px;
     justify-self: center;
     animation-name: fadeIn;
     animation-duration: 0.5s;

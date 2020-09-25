@@ -22,178 +22,160 @@ const Knowledge = (props) => {
                 <div className="contentComponent">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-12 content mt-4 mb-4">
+                            <div className="col-md-12 content ">
                                 <h1>Conocimientos</h1>
                                 <div className="lineTitle" style={{ backgroundColor: color }} />
                             </div>
                         </div>
                         <div className="row mt-5 content--inner">
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
-                                <Icons src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}.png`}
+                                <Icons src={`${props.url}/assets/git-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
                                     title="Git"
-                                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/diploma-git-${props.mode}.png`}
+                                    diplomaSrc={`${props.url}/assets/diploma-git-${props.mode}.png`}
                                     diplomaLink={"https://openwebinars.net/certificacion/YxEj4Gdo?type=pdf&r=818e03d96}&t="}
                                 />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
-                                <Icons src={`https://christian-renovell-porfolio.netlify.app/css-${props.mode}.png`}
+                                <Icons src={`${props.url}/assets/css-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
                                     title="CSS"
-                                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
-                                    diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/css-${props.mode}.png`}
+                                    diplomaSrc={`${props.url}/assets/css-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
-                                <Icons src={`https://christian-renovell-porfolio.netlify.app/javascript-${props.mode}.png`}
+                                <Icons src={`${props.url}/assets/javascript-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
                                     title="Javascript"
-                                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
-                                    diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/diploma-javascript-${props.mode}.png`}
+                                    diplomaTitle="Platzi"                                   
+                                    diplomaSrc={`${props.url}/assets/diploma-javascript-${props.mode}.png`}
                                     diplomaLink={"https://openwebinars.net/certificado/0vRQneQV?t=1598524817&type=pdf"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
-                                <Icons src={`https://christian-renovell-porfolio.netlify.app/boostrap-${props.mode}.png`}
+                                <Icons src={`${props.url}/assets/boostrap-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
                                     title="Boostrap"
-                                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
-                                    diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/boostrap-${props.mode}.png`}
+                                    diplomaSrc={`${props.url}/assets/boostrap-${props.mode}.png`}
                                     diplomaLink={"#"}
                                 />
                             </div>
                         </div>
                         <div className="row content--inner2">
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
-                                <Icons src={`https://christian-renovell-porfolio.netlify.app/react-${props.mode}.png`}
+                                <Icons src={`${props.url}/assets/react-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
-                                    title="React"
-                                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
-                                    diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/diploma-react-${props.mode}.png`}
+                                    title="React"  
+                                    diplomaTitle="Platzi"
+                                    diplomaSrc={`${props.url}/assets/diploma-react-${props.mode}.png`}
                                     diplomaLink={"https://openwebinars.net/certificacion/YxEj4Gdo?type=pdf&r=818e03d96}&t="} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
-                                <Icons src={`https://christian-renovell-porfolio.netlify.app/php-${props.mode}.png`}
+                                <Icons src={`${props.url}/assets/php-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
                                     title="PHP"
-                                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/diploma-php-${props.mode}.png`}
+                                    diplomaSrc={`${props.url}/assets/diploma-php-${props.mode}.png`}
                                     diplomaLink={"https://openwebinars.net/certificado/bx9LwLNv?t=1598524817&type=pdf"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
-                                <Icons src={`https://christian-renovell-porfolio.netlify.app/node-${props.mode}.png`}
+                                <Icons src={`${props.url}/assets/node-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
                                     title="Node"
-                                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
-                                    diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/node-${props.mode}.png`}
+                                    diplomaTitle=""
+                                    diplomaSrc={`${props.url}/assets/node-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
-                                <Icons src={`https://christian-renovell-porfolio.netlify.app/mongodb-${props.mode}.png`}
+                                <Icons src={`${props.url}/assets/mongodb-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
                                     title="Mongodb"
-                                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
-                                    diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/mongodb-${props.mode}.png`}
+                                    diplomaTitle=""
+                                    diplomaSrc={`${props.url}/assets/mongodb-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
                         </div>
                         <div className="row content--inner3">
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
-                                <Icons src={`https://christian-renovell-porfolio.netlify.app/java-${props.mode}.png`}
+                                <Icons src={`${props.url}/assets/java-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
                                     title="Java"
-                                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
-                                    diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/java-${props.mode}.png`}
+                                    diplomaTitle=""
+                                    diplomaSrc={`${props.url}/assets/java-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
-                                <Icons src={`https://christian-renovell-porfolio.netlify.app/mysql-${props.mode}.png`}
+                                <Icons src={`${props.url}/assets/mysql-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
                                     title="Mysql"
-                                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/mysql-${props.mode}.png`}
+                                    diplomaSrc={`${props.url}/assets/mysql-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
-                                <Icons src={`https://christian-renovell-porfolio.netlify.app/vue-${props.mode}.png`}
+                                <Icons src={`${props.url}/assets/vue-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
                                     title="Vue"
-                                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/vue-${props.mode}.png`}
+                                    diplomaSrc={`${props.url}/assets/vue-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
-                                <Icons src={`https://christian-renovell-porfolio.netlify.app/graphQL-${props.mode}.png`}
+                                <Icons src={`${props.url}/assets/graphQL-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
                                     title="GraphQL"
-                                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/graphQL-${props.mode}.png`}
+                                    diplomaSrc={`${props.url}/assets/graphQL-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
                         </div>
                         <div className=" row content--inner4 mb-5">
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
-                                <Icons src={`https://christian-renovell-porfolio.netlify.app/stripe-${props.mode}.png`}
+                                <Icons src={`${props.url}/assets/stripe-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
                                     title="Stripe"
-                                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/stripe-${props.mode}.png`}
+                                    diplomaSrc={`${props.url}/assets/stripe-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
-                                <Icons src={`https://christian-renovell-porfolio.netlify.app/firebase-${props.mode}.png`}
+                                <Icons src={`${props.url}/assets/firebase-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
                                     title="Firebase"
-                                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/firebase-${props.mode}.png`}
+                                    diplomaSrc={`${props.url}/assets/firebase-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
-                                <Icons src={`https://christian-renovell-porfolio.netlify.app/supersaas-${props.mode}.png`}
+                                <Icons src={`${props.url}/assets/supersaas-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
                                     title="Supersaas"
-                                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/supersaas-${props.mode}.png`}
+                                    diplomaSrc={`${props.url}/assets/supersaas-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
-                                <Icons src={`https://christian-renovell-porfolio.netlify.app/amazon-${props.mode}.png`}
+                                <Icons src={`${props.url}/assets/amazon-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
                                     title="Amazon"
-                                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
                                     diplomaTitle="OpenWebinars"
-                                    diplomaSrc={`https://christian-renovell-porfolio.netlify.app/amazon-${props.mode}.png`}
+                                    diplomaSrc={`${props.url}/assets/amazon-${props.mode}.png`}
                                     diplomaLink={"#"}/>
                             </div>
                         </div>

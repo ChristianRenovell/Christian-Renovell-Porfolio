@@ -24,14 +24,14 @@ class App extends Component {
       footerOpen: true,
       navOpen: false,
       active: null
-     
+
     };
     this.mode = this.mode.bind(this);
     this.handleOpenMenu = this.handleOpenMenu.bind(this);
     this.active = this.active.bind(this);
     this.itenControlSelected = this.itenControlSelected.bind(this);
     this.openFooter = this.openFooter.bind(this);
-  
+
   };
 
   mode() {
@@ -57,14 +57,14 @@ class App extends Component {
         insta.src = "../images/instagram-light.png";
         linke.src = "../images/linkedin-light.png";
         git.src = "../images/git-light.png";
-      } catch{ }
+      } catch { }
       //profile
       try {
         photoCircle.src = "../images/christian-light.png";
         photoCircle.className = "circle-profile-light";
         btnAbout.className = "btn-profile-light";
 
-      } catch{ }
+      } catch { }
       this.setState({ mode: "light" });
       this.setState({ burger: "burger" });
 
@@ -87,13 +87,13 @@ class App extends Component {
         insta.src = "../images/instagram-darck.png";
         linke.src = "../images/linkedin-darck.png";
         git.src = "../images/git-darck.png";
-      } catch{ }
+      } catch { }
       //profile
       try {
         photoCircle.src = "../images/christian-darck.png";
         photoCircle.className = "circle-profile-darck";
         btnAbout.className = "btn-profile-darck";
-      } catch{ }
+      } catch { }
       elemento.className += "night";
       elemento2.className += "switched";
 
@@ -114,7 +114,7 @@ class App extends Component {
 
     switch (index) {
       case 1:
-        
+
         this.setState({ active: 1 });
         document.getElementById("nemuIten1").className = "navbar-brand lin selectedIten";
         document.getElementById("nemuIten2").className = "navbar-brand lin noSelectedIten";
@@ -122,7 +122,7 @@ class App extends Component {
         document.getElementById("nemuIten4").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
 
-        if( window.screen.width < 991 ){this.handleOpenMenu()}
+        if (window.screen.width < 991) { this.handleOpenMenu() }
 
         break;
 
@@ -134,7 +134,7 @@ class App extends Component {
         document.getElementById("nemuIten4").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
 
-        if( window.screen.width < 991 ){this.handleOpenMenu()}
+        if (window.screen.width < 991) { this.handleOpenMenu() }
 
         break;
       case 3:
@@ -145,7 +145,7 @@ class App extends Component {
         document.getElementById("nemuIten4").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
 
-        if( window.screen.width < 991 ){this.handleOpenMenu()}
+        if (window.screen.width < 991) { this.handleOpenMenu() }
 
         break;
       case 4:
@@ -156,7 +156,7 @@ class App extends Component {
         document.getElementById("nemuIten1").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
 
-        if( window.screen.width < 991 ){this.handleOpenMenu()}
+        if (window.screen.width < 991) { this.handleOpenMenu() }
 
         break;
       case 5:
@@ -167,7 +167,7 @@ class App extends Component {
         document.getElementById("nemuIten4").className = "navbar-brand lin noSelectedIten";
         document.getElementById("nemuIten1").className = "navbar-brand lin noSelectedIten";
 
-        if( window.screen.width < 991 ){this.handleOpenMenu()}
+        if (window.screen.width < 991) { this.handleOpenMenu() }
 
         break;
     }
@@ -177,34 +177,34 @@ class App extends Component {
 
     let URLactual = window.location.href;
 
-    if (URLactual === `https://christian-renovell-porfolio.netlify.app/intro`) {
+    if (URLactual === `${process.env.REACT_APP_URL}/intro`) {
       this.active(1);
     }
 
-    if (URLactual === `https://christian-renovell-porfolio.netlify.app/home`) {
+    if (URLactual === `${process.env.REACT_APP_URL}/home`) {
       this.active(1);
     }
-    if (URLactual === `https://christian-renovell-porfolio.netlify.app/profile`) {
+    if (URLactual === `${process.env.REACT_APP_URL}/profile`) {
       this.active(2);
     }
 
-    if (URLactual === `https://christian-renovell-porfolio.netlify.app/proyects`) {
+    if (URLactual === `${process.env.REACT_APP_URL}/proyects`) {
       this.active(3);
     }
 
-    if (URLactual === `https://christian-renovell-porfolio.netlify.app/Knowledge`) {
+    if (URLactual === `${process.env.REACT_APP_URL}/Knowledge`) {
       this.active(4);
     }
 
-    if (URLactual === `https://christian-renovell-porfolio.netlify.app/contact`) {
+    if (URLactual === `${process.env.REACT_APP_URL}/contact`) {
       this.active(5);
     }
 
   }
 
   openFooter() {
-     this.setState({ footerOpen: !this.state.footerOpen });
-     if(this.state.menuOpen){
+    this.setState({ footerOpen: !this.state.footerOpen });
+    if (this.state.menuOpen) {
       this.handleOpenMenu()
     }
   }
@@ -214,9 +214,10 @@ class App extends Component {
     this.itenControlSelected();
     this.openFooter();
 
-    
+
   }
   render() {
+
 
     window.onload = this.mode;
     return (
@@ -224,7 +225,7 @@ class App extends Component {
         <div id="fullpage" className="night">
           <div className="section">
             <div id="intro-text">
-              <div className={`${this.state.navOpen ? "navDivOpen" : "navDivClose"}`} id="navContentClose" onClick={this.handleOpenMenu}/>
+              <div className={`${this.state.navOpen ? "navDivOpen" : "navDivClose"}`} id="navContentClose" onClick={this.handleOpenMenu} />
               <nav className="navbar navbar-expand-lg">
                 <div
                   className={`menu-btn ${this.state.menuOpen ? "open" : "closed"}`}
@@ -234,82 +235,89 @@ class App extends Component {
                 </div>
                 <div
                   id="contentNav"
-                  className={`${this.state.menuOpen ? "showMenu" : "navmenu"}`} 
-                > 
-                    <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                      <li className="nav-item">
-                        <Link to={"/home"} id="nemuIten1" className="navbar-brand lin" onClick={() => this.active(1)}><span>Inicio</span></Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link to={"/profile"} id="nemuIten2" className="navbar-brand lin" onClick={() => this.active(2)}><span>Sobre mí</span></Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link to={"/proyects"} id="nemuIten3" className="navbar-brand lin" onClick={() => this.active(3)}><span>Proyectos</span></Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link to={"/Knowledge"} id="nemuIten4" className="navbar-brand lin" onClick={() => this.active(4)}><span>Conocimientos</span></Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link to={"/contact"} id="nemuIten5" className="navbar-brand lin" onClick={() => this.active(5)}><span>Contacto</span></Link>
-                      </li>
-                    </ul>
-                   
+                  className={`${this.state.menuOpen ? "showMenu" : "navmenu"}`}
+                >
+                  <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li className="nav-item">
+                      <Link to={"/home"} id="nemuIten1" className="navbar-brand lin" onClick={() => this.active(1)}><span>Inicio</span></Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link to={"/profile"} id="nemuIten2" className="navbar-brand lin" onClick={() => this.active(2)}><span>Sobre mí</span></Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link to={"/proyects"} id="nemuIten3" className="navbar-brand lin" onClick={() => this.active(3)}><span>Proyectos</span></Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link to={"/Knowledge"} id="nemuIten4" className="navbar-brand lin" onClick={() => this.active(4)}><span>Conocimientos</span></Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link to={"/contact"} id="nemuIten5" className="navbar-brand lin" onClick={() => this.active(5)}><span>Contacto</span></Link>
+                    </li>
+                  </ul>
+
                 </div>
                 <div id="switch" onClick={this.mode}>
                   <div id="circle"></div>
                 </div>
               </nav>
-             
+
               <div className={`${this.state.footerOpen ? "closeFooterOpen" : "closeFooterClose"}`} onClick={this.openFooter}>
               </div>
               <div className="footIcon" id="btnOpenFooter" onClick={this.openFooter}>
-                <img src={`https://christian-renovell-porfolio.netlify.app/pie-light.png`} width="40px"/>
+                <img src={`${process.env.REACT_APP_URL}/assets/pie-light.png`} width="40px" />
               </div>
-                <div className={`${this.state.footerOpen ? "footerDivOpen" : "footerDivClose"}`} id="footer">
-                  <Footer mode={this.state.mode }/>
-                </div>
+              <div className={`${this.state.footerOpen ? "footerDivOpen" : "footerDivClose"}`} id="footer">
+                <Footer mode={this.state.mode} />
+              </div>
             </div>
             <Route render={({ location }) => {
               const { pathname, key } = location;
-              return (                  
-                    <Switch location={location} >             
-                    <Route
-                        exact path='/'
-                        render={(props) => (
-                          <Intro {...props} mode={this.state.mode}/>
-                        )}
-                      />
-                      <Route
-                        exact path='/home'
-                        render={(props) => (
-                          <Home {...props} mode={this.state.mode}/>
-                        )}
-                      />
-                      <Route
-                        exact path='/profile'
-                        render={(props) => (
-                          <Profile {...props} mode={this.state.mode}/>
-                        )}
-                      />
-                      <Route
-                        exact path='/proyects'
-                        render={(props) => (
-                          <Proyects {...props} mode={this.state.mode}/>
-                        )}
-                      />
-                      <Route
-                        exact path='/knowledge'
-                        render={(props) => (
-                          <Knowledge {...props} mode={this.state.mode}/>
-                        )}
-                      />
-                      <Route
-                        exact path='/contact'
-                        render={(props) => (
-                          <Contact {...props} mode={this.state.mode}/>
-                        )}
-                      />
-                    </Switch>
+              return (
+                <Switch location={location} >
+                  <Route
+                    exact path='/'
+                    render={(props) => (
+                      <Intro {...props} mode={this.state.mode}
+                        url={process.env.REACT_APP_URL} />
+                    )}
+                  />
+                  <Route
+                    exact path='/home'
+                    render={(props) => (
+                      <Home {...props} mode={this.state.mode}
+                        url={process.env.REACT_APP_URL} />
+                    )}
+                  />
+                  <Route
+                    exact path='/profile'
+                    render={(props) => (
+                      <Profile {...props} mode={this.state.mode}
+                        url={process.env.REACT_APP_URL} />
+                    )}
+                  />
+                  <Route
+                    exact path='/proyects'
+                    render={(props) => (
+                      <Proyects {...props}
+                        mode={this.state.mode}
+                        url={process.env.REACT_APP_URL} />
+                    )}
+                  />
+                  <Route
+                    exact path='/knowledge'
+                    render={(props) => (
+                      <Knowledge {...props} mode={this.state.mode}
+                        url={process.env.REACT_APP_URL} />
+                    )}
+                  />
+                  <Route
+                    exact path='/contact'
+                    render={(props) => (
+                      <Contact {...props} mode={this.state.mode}
+                        url={process.env.REACT_APP_URL} />
+                    )}
+                  />
+                </Switch>
               )
             }} />
           </div>

@@ -32,13 +32,13 @@ function Name(props) {
                 </p>
               </ul>
               <div className="col-md-12">
-                <img src={`https://christian-renovell-porfolio.netlify.app/es-${props.mode}.png`}  width="35px"></img> 
-                <img src={`https://christian-renovell-porfolio.netlify.app/eng-${props.mode}.png`} className="ml-2" width="35px"></img>
+                <img src={`${process.env.REACT_APP_URL}/assets/es-${props.mode}.png`}  width="35px"></img> 
+                <img src={`${process.env.REACT_APP_URL}/assets/eng-${props.mode}.png`} className="ml-2" width="35px"></img>
               </div>
             </div>
           </div>
           <div className=" col-sm-6 col-md-4 logo">
-            <img src={`https://christian-renovell-porfolio.netlify.app/miLogo-${props.mode}-footer.png`} alt="logo" className="logoFooter" />
+            <img src={`${process.env.REACT_APP_URL}/assets/miLogo-${props.mode}-footer.png`} alt="logo" className="logoFooter" />
           </div>
           <div className="col-sm-12 col-md-4">
             <ul className="list-unstyled mb-0">
@@ -60,16 +60,16 @@ function Name(props) {
             </ul>
             <div className="row mt=2 mb-5">
               <div className="col-3 col-md-3">
-                <a target="_blank" href="https://www.instagram.com/christian_renovell/"><img src={`https://christian-renovell-porfolio.netlify.app/instagram-${props.mode}-footer.png`} width="35px"></img></a>
+                <a target="_blank" href="https://www.instagram.com/christian_renovell/"><img src={`${process.env.REACT_APP_URL}/assets/instagram-${props.mode}-footer.png`} width="35px"></img></a>
               </div>
               <div className="col-3 col-md-3">
-                <a target="_blank" href="https://www.linkedin.com/in/christian-renovell-miralles-896738196/"><img src={`https://christian-renovell-porfolio.netlify.app/linkedin-${props.mode}-footer.png`} width="35px"></img></a>
+                <a target="_blank" href="https://www.linkedin.com/in/christian-renovell-miralles-896738196/"><img src={`${process.env.REACT_APP_URL}/assets/linkedin-${props.mode}-footer.png`} width="35px"></img></a>
               </div>
               <div className="col-3 col-md-3">
-                <a target="_blank" href="https://www.facebook.com/christian.renovell"><img src={`https://christian-renovell-porfolio.netlify.app/facebook-${props.mode}-footer.png`} width="35px"></img></a>
+                <a target="_blank" href="https://www.facebook.com/christian.renovell"><img src={`${process.env.REACT_APP_URL}/assets/facebook-${props.mode}-footer.png`} width="35px"></img></a>
               </div>
               <div className="col-3 col-md-3">
-                <a target="_blank" href="https://github.com/ChristianRenovell"><img src={`https://christian-renovell-porfolio.netlify.app/git-${props.mode}-footer.png`} width="35px"></img></a>
+                <a target="_blank" href="https://github.com/ChristianRenovell"><img src={`${process.env.REACT_APP_URL}/assets/git-${props.mode}-footer.png`} width="35px"></img></a>
               </div>
             </div>
           </div>
