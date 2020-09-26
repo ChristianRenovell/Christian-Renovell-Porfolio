@@ -53,7 +53,10 @@ const Knowledge = (props) => {
                                     title="Javascript"
                                     diplomaTitle="Platzi"                                   
                                     diplomaSrc={`${props.url}/assets/diploma-javascript-${props.mode}.png`}
-                                    diplomaLink={"https://openwebinars.net/certificado/0vRQneQV?t=1598524817&type=pdf"} />
+                                    diplomaSrc2={`${props.url}/assets/diploma-ecma-${props.mode}.png`}
+                                    diplomaLink={"https://openwebinars.net/certificado/0vRQneQV?t=1598524817&type=pdf"} 
+                                    diplomaLink2={"https://platzi.com/@christiancand/curso/1815-ecmascript-6/diploma/detalle/"} />
+                                    
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
                                 <Icons src={`${props.url}/assets/boostrap-${props.mode}.png`}
@@ -109,8 +112,8 @@ const Knowledge = (props) => {
                                     modalcolor={modalColor}
                                     color={color}
                                     title="Java"
-                                    diplomaTitle=""
-                                    diplomaSrc={`${props.url}/assets/java-${props.mode}.png`}
+                                    diplomaTitle="OpenWebinars"
+                                    diplomaSrc={`${props.url}/assets/diploma-java-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">

@@ -12,8 +12,7 @@ const Profile = (props) => {
         //color = " #81d3a7"
     }
     if (props.mode === "darck") {
-        color = "#d87093";
-        
+        color = "#d87093";  
     }
 
     return (
