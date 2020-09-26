@@ -177,26 +177,26 @@ class App extends Component {
 
     let URLactual = window.location.href;
 
-    if (URLactual === `${process.env.REACT_APP_URL}/intro`) {
+    if (URLactual === `https://christianrenovell.com/intro`) {
       this.active(1);
     }
 
-    if (URLactual === `${process.env.REACT_APP_URL}/home`) {
+    if (URLactual === `https://christianrenovell.com/home`) {
       this.active(1);
     }
-    if (URLactual === `${process.env.REACT_APP_URL}/profile`) {
+    if (URLactual === `https://christianrenovell.com/profile`) {
       this.active(2);
     }
 
-    if (URLactual === `${process.env.REACT_APP_URL}/proyects`) {
+    if (URLactual === `https://christianrenovell.com/proyects`) {
       this.active(3);
     }
 
-    if (URLactual === `${process.env.REACT_APP_URL}/Knowledge`) {
+    if (URLactual === `https://christianrenovell.com/Knowledge`) {
       this.active(4);
     }
 
-    if (URLactual === `${process.env.REACT_APP_URL}/contact`) {
+    if (URLactual === `https://christianrenovell.com/contact`) {
       this.active(5);
     }
 
@@ -264,10 +264,11 @@ class App extends Component {
               <div className={`${this.state.footerOpen ? "closeFooterOpen" : "closeFooterClose"}`} onClick={this.openFooter}>
               </div>
               <div className="footIcon" id="btnOpenFooter" onClick={this.openFooter}>
-                <img src={`${process.env.REACT_APP_URL}/assets/pie-light.png`} width="40px" />
+                <img src={`https://christianrenovell.com/assets/pie-light.png`} width="40px" />
               </div>
               <div className={`${this.state.footerOpen ? "footerDivOpen" : "footerDivClose"}`} id="footer">
-                <Footer mode={this.state.mode} />
+                <Footer mode={this.state.mode} 
+                        url ={"https://christianrenovell.com"}/>
               </div>
             </div>
             <Route render={({ location }) => {
@@ -278,21 +279,21 @@ class App extends Component {
                     exact path='/'
                     render={(props) => (
                       <Intro {...props} mode={this.state.mode}
-                        url={process.env.REACT_APP_URL} />
+                        url={"https://christianrenovell.com"} />
                     )}
                   />
                   <Route
                     exact path='/home'
                     render={(props) => (
                       <Home {...props} mode={this.state.mode}
-                        url={process.env.REACT_APP_URL} />
+                        url={"https://christianrenovell.com"} />
                     )}
                   />
                   <Route
                     exact path='/profile'
                     render={(props) => (
                       <Profile {...props} mode={this.state.mode}
-                        url={process.env.REACT_APP_URL} />
+                        url={"https://christianrenovell.com"} />
                     )}
                   />
                   <Route
@@ -300,21 +301,21 @@ class App extends Component {
                     render={(props) => (
                       <Proyects {...props}
                         mode={this.state.mode}
-                        url={process.env.REACT_APP_URL} />
+                        url={"https://christianrenovell.com"} />
                     )}
                   />
                   <Route
                     exact path='/knowledge'
                     render={(props) => (
                       <Knowledge {...props} mode={this.state.mode}
-                        url={process.env.REACT_APP_URL} />
+                        url={"https://christianrenovell.com"} />
                     )}
                   />
                   <Route
                     exact path='/contact'
                     render={(props) => (
                       <Contact {...props} mode={this.state.mode}
-                        url={process.env.REACT_APP_URL} />
+                        url={"https://christianrenovell.com"} />
                     )}
                   />
                 </Switch>

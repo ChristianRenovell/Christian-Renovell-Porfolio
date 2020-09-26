@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../../components/card/Card';
-import { Link } from 'react-router-dom';
+
 import './proyects.scss';
 
 const Proyects = (props) => {
@@ -32,7 +32,7 @@ const Proyects = (props) => {
             <div className="row mt-5 content--inner">
               <div className="col-12 col-sm-12 col-md-4">
                 <Card
-                  imgUrl={`${process.env.REACT_APP_URL}/assets//sapau-${props.mode}.png`}
+                  imgUrl={`${props.url}/assets//sapau-${props.mode}.png`}
                   color={color}
                   colorBorder={colorBorder}
                   title="Comercial Sapau.es"
@@ -41,7 +41,7 @@ const Proyects = (props) => {
               </div>
               <div className="col-12 col-sm-12 col-md-4">
                 <Card
-                  imgUrl={`${process.env.REACT_APP_URL}/assets/bebangarang-${props.mode}.png`}
+                  imgUrl={`${props.url}/assets/bebangarang-${props.mode}.png`}
                   color={color}
                   colorBorder={colorBorder}
                   title="Be Bangarang"
@@ -50,7 +50,7 @@ const Proyects = (props) => {
               </div>
               <div className="col-12 col-sm-12 col-md-4">
                 <Card
-                  imgUrl={`${process.env.REACT_APP_URL}/assets/syc-${props.mode}.png`}
+                  imgUrl={`${props.url}/assets/syc-${props.mode}.png`}
                   color={color}
                   colorBorder={colorBorder}
                   title="Show Your Company"
@@ -61,7 +61,7 @@ const Proyects = (props) => {
             <div className="row mt-5 pb-5">
               <div className="col-md-12 mb-5">
                 <div className="content--inner2">
-                  <a target="_blank" href="https://github.com/ChristianRenovell/Christian-Renovell-Porfolio"  className="titlePorfolio"><h2>Este es mi Portfolio<img className="ml-3 iconPorfolio" width="50px" src={`${process.env.REACT_APP_URL}/assets/git-${props.mode}.png`} id="git"/></h2></a>
+                  <a target="_blank" href="https://github.com/ChristianRenovell/Christian-Renovell-Porfolio"  className="titlePorfolio"><h2>Este es mi Portfolio<img className="ml-3 iconPorfolio" width="50px" src={`${props.url}/assets/git-${props.mode}.png`} id="git"/></h2></a>
                 </div>
               </div>
             </div>

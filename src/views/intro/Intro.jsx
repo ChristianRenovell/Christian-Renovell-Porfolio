@@ -13,8 +13,8 @@ class Intro extends Component {
             return (
                 <div className="divIntro">
                    <div className="logoIntro">
-                        <img className="logoimg" src={`${process.env.REACT_APP_URL}/assets/logo.png`}alt="logo" />
-                        <img className="logoimg2" src={`${process.env.REACT_APP_URL}/assets/logo.png`} alt="logo" />          
+                        <img className="logoimg" src={`https://christianrenovell.com/assets/logo.png`}alt="logo" />
+                        <img className="logoimg2" src={`https://christianrenovell.com/assets/logo.png`} alt="logo" />          
                     </div>
                 </div>
             );

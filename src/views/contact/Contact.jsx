@@ -94,16 +94,16 @@ const Contact = (props) => {
                     <div className="container content--inner">
                             <div className="row mt-3 ">
                                 <div className="col-6 col-md-3 mt-4">
-                                    <a target="_blank" href="https://www.facebook.com/christian.renovell" className="iconSocialNet1"><img width="50px" src={`${process.env.REACT_APP_URL}/assets/facebook-${props.mode}.png`} id="facebook" /></a>
+                                    <a target="_blank" href="https://www.facebook.com/christian.renovell" className="iconSocialNet1"><img width="50px" src={`${props.url}/assets/facebook-${props.mode}.png`} id="facebook" /></a>
                                 </div>
                                 <div className="col-6 col-md-3 mt-4">
-                                    <a target="_blank" href="https://www.instagram.com/christian_renovell/" className="iconSocialNet2"><img width="50px" src={`${process.env.REACT_APP_URL}/assets/instagram-${props.mode}.png`} id="instagram"/></a>
+                                    <a target="_blank" href="https://www.instagram.com/christian_renovell/" className="iconSocialNet2"><img width="50px" src={`${props.url}/assets/instagram-${props.mode}.png`} id="instagram"/></a>
                                 </div>
                                 <div className="col-6 col-md-3 mt-4">
-                                    <a target="_blank" href="https://www.linkedin.com/in/christian-renovell-miralles-896738196/" className="iconSocialNet3"><img width="50px" src={`${process.env.REACT_APP_URL}/assets/linkedin-${props.mode}.png`} id="linkedin"/></a>
+                                    <a target="_blank" href="https://www.linkedin.com/in/christian-renovell-miralles-896738196/" className="iconSocialNet3"><img width="50px" src={`${props.url}/assets/linkedin-${props.mode}.png`} id="linkedin"/></a>
                                 </div>
                                 <div className="col-6 col-md-3 mt-4 mb-5">
-                                    <a target="_blank" href="https://github.com/ChristianRenovell" className="iconSocialNet4"><img width="50px" src={`${process.env.REACT_APP_URL}/assets/git-${props.mode}.png`} id="git"/></a>
+                                    <a target="_blank" href="https://github.com/ChristianRenovell" className="iconSocialNet4"><img width="50px" src={`${props.url}/assets/git-${props.mode}.png`} id="git"/></a>
                                 </div>
                             </div>
                         </div>

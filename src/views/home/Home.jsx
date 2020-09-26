@@ -8,7 +8,6 @@ const Home = (props) => {
         <div>
             <div className="section">
                 <div className="contentComponent">
-                   
                         <div className="content">
                             <div className={`circle-${props.mode} mt-1`} id="photo-circle"></div>
                         </div>
