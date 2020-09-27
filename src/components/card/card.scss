@@ -50,8 +50,15 @@
 
 @media (max-width: 1000px) {
   .containerCard {
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
+    }
+    .head {
+      font-size: 1.8em;
+    }
+    .description {
+      font-size: 1.1em; 
+     
     }
   }
 
