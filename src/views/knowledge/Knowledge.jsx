@@ -76,7 +76,7 @@ const Knowledge = (props) => {
                                     title="React"  
                                     diplomaTitle="Platzi"
                                     diplomaSrc={`${props.url}/assets/diploma-react-${props.mode}.png`}
-                                    diplomaLink={"https://openwebinars.net/certificacion/YxEj4Gdo?type=pdf&r=818e03d96}&t="} />
+                                    diplomaLink={"https://platzi.com/@christiancand/curso/1548-react/diploma/detalle/"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
                                 <Icons src={`${props.url}/assets/php-${props.mode}.png`}
@@ -114,14 +114,14 @@ const Knowledge = (props) => {
                                     title="Java"
                                     diplomaTitle="OpenWebinars"
                                     diplomaSrc={`${props.url}/assets/diploma-java-${props.mode}.png`}
-                                    diplomaLink={"#"} />
+                                    diplomaLink={"https://openwebinars.net/certificado/MvPgJGXV?t=1598524817&type=pdf"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
                                 <Icons src={`${props.url}/assets/mysql-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
                                     title="Mysql"
-                                    diplomaTitle="OpenWebinars"
+                                    diplomaTitle=""
                                     diplomaSrc={`${props.url}/assets/mysql-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
@@ -130,7 +130,7 @@ const Knowledge = (props) => {
                                     modalcolor={modalColor}
                                     color={color}
                                     title="Vue"
-                                    diplomaTitle="OpenWebinars"
+                                    diplomaTitle=""
                                     diplomaSrc={`${props.url}/assets/vue-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
@@ -139,7 +139,7 @@ const Knowledge = (props) => {
                                     modalcolor={modalColor}
                                     color={color}
                                     title="GraphQL"
-                                    diplomaTitle="OpenWebinars"
+                                    diplomaTitle=""
                                     diplomaSrc={`${props.url}/assets/graphQL-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
@@ -150,7 +150,7 @@ const Knowledge = (props) => {
                                     modalcolor={modalColor}
                                     color={color}
                                     title="Stripe"
-                                    diplomaTitle="OpenWebinars"
+                                    diplomaTitle=""
                                     diplomaSrc={`${props.url}/assets/stripe-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
@@ -159,7 +159,7 @@ const Knowledge = (props) => {
                                     modalcolor={modalColor}
                                     color={color}
                                     title="Firebase"
-                                    diplomaTitle="OpenWebinars"
+                                    diplomaTitle=""
                                     diplomaSrc={`${props.url}/assets/firebase-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
@@ -168,7 +168,7 @@ const Knowledge = (props) => {
                                     modalcolor={modalColor}
                                     color={color}
                                     title="Supersaas"
-                                    diplomaTitle="OpenWebinars"
+                                    diplomaTitle=""
                                     diplomaSrc={`${props.url}/assets/supersaas-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
@@ -177,7 +177,7 @@ const Knowledge = (props) => {
                                     modalcolor={modalColor}
                                     color={color}
                                     title="Amazon"
-                                    diplomaTitle="OpenWebinars"
+                                    diplomaTitle=""
                                     diplomaSrc={`${props.url}/assets/amazon-${props.mode}.png`}
                                     diplomaLink={"#"}/>
                             </div>
