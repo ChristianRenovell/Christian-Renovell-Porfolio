@@ -88,13 +88,13 @@ const Contact = (props) => {
                             <div className="col-md-6">
                               <div className="md-form mb-4">
                                 <label>Nombre</label>
-                                <input type="text" name="name" className="form-control bg-transparent" required/>
+                                <input type="text" name="name" className={`inForm-${props.mode}`} required/>
                               </div>
                             </div>
                             <div className="col-md-6">
                               <div className="md-form mb-4">
                                 <label>Email</label>
-                                <input type="email" name="email" className="form-control bg-transparent" required/>
+                                <input type="email" name="email" className={`inForm-${props.mode}`} required/>
                               </div>
                             </div>
                           </div>
@@ -102,14 +102,14 @@ const Contact = (props) => {
                             <div class="col-md-12 mb-4">
                               <div class="md-form mb-0">
                                 <label>Asunto</label>
-                                <input type="text" name="subject" class="form-control bg-transparent" required/>
+                                <input type="text" name="subject" className={`inForm-${props.mode}`} required/>
                               </div>
                             </div>
                           </div>
                           <div class="row mb-4">
                             <div className="col-md-12">
                               <label>Mensaje</label>
-                              <textarea name="message" className="form-control md-textarea bg-transparent" required/>
+                              <textarea name="message"  className={`inForm-${props.mode} texA md-textarea`} required/>
                             </div>
                           </div>
                          <input type="submit" value="Enviar" className={`btn-profile-${props.mode}`}/>

@@ -97,3 +97,34 @@
     color: #0f182b;
     border-radius: 25px;
   }
+
+  .inForm-light {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 38px;
+    width: 100%;
+    background-color: transparent;
+  }
+  .inForm-light:focus{
+    background-color: #fffcf2;
+  }
+  .inForm-darck {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 38px;
+    width: 100%;
+    background-color: transparent;
+  }
+  .inForm-darck:focus{
+    background-color: #0f182b;
+  }
+  .texA{
+    height: 80px;
+  }
+
+  textarea:focus, input:focus{ 
+    outline: none;
+    
+  } 
