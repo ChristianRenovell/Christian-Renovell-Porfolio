@@ -8,6 +8,8 @@ body {
 	  font-family: $theme-font;
     text-align: center;
     min-height: 100vh;
+    cursor: url(../static/cursor-light.cur), pointer;
+    
 }
 
 .about-p {
@@ -160,7 +162,7 @@ z-index: 999;
     border-radius: 50px;
     text-align: center;
     width: 200px;
-    cursor: pointer;
+    cursor: url(../static/cursor-light.cur), pointer;
     -webkit-transition: background-color 1s ease-out;
     -moz-transition: background-color 1s ease-out;
     -o-transition: background-color 1s ease-out;

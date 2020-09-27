@@ -7,6 +7,7 @@ import Profile from './views/profile/Profile';
 import Proyects from './views/proyects/Proyects';
 import Knowledge from './views/knowledge/Knowledge';
 import Contact from './views/contact/Contact';
+
 import './assets/styles/App.scss';
 import './assets/styles/stylemenu.scss';
 import './assets/styles/foot.scss';

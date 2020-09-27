@@ -6,7 +6,7 @@
     width: 55px;
     z-index: 1000;
     border-top-left-radius: 50px;
-    cursor: pointer;
+    cursor: url(../static/click-light.cur), pointer;
 } 
 .footIcon img {
     position: relative;

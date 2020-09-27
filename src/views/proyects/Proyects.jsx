@@ -17,6 +17,7 @@ const Proyects = (props) => {
     colorBorder = "#d87093";
   }
   return (
+    
     <div id="fullpage" className="transitionComponent">
       <div className="section">
         <div className="contentComponent">

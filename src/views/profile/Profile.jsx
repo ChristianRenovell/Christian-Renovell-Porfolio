@@ -42,7 +42,7 @@ const Profile = (props) => {
                         <div className="container mt-3 content--inner4">
                             <div className="skills container">
                                 <div className="section-title mt-5 mb-3">
-                                    <h1>Skills</h1>
+                                    <h1>Habilidades</h1>
                                     <div className="lineTitle mb-4" style={{ backgroundColor: color }} />
                                 </div>
                                 <div className="row skills-content mb-5">
