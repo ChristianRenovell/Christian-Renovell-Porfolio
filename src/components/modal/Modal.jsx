@@ -24,16 +24,9 @@ class Modal extends Component {
           <div className="descriptionModal">
             <p>{this.props.description}</p>
           </div>
-              <h2 className="mb-4 mt-4">{this.props.diplomaTitle}</h2>
-          <div className="row diploma">
-            <div className="col-md-6 ">
-              <a href={this.props.diplomaLink} target="_blank"><img src={this.props.diplomaSrc} /></a>
-            </div>
-            <div className="col-md-6">
-              <a href={this.props.diplomaLink2} target="_blank"><img src={this.props.diplomaSrc2} /></a>
-            </div>
-          </div>
-
+          <h2 className="mb-4 mt-4">{this.props.diplomaTitle}</h2>
+            <a href={this.props.diplomaLink} target="_blank"><img src={this.props.diplomaSrc} className="mb-4"/></a>
+            <a href={this.props.diplomaLink2} target="_blank"><img src={this.props.diplomaSrc2} className="mb-4"/></a>
         </div>
       </div>,
       modalRoot,

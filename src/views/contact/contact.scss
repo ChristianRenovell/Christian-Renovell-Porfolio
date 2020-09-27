@@ -1,5 +1,4 @@
 .lineTitle {
-
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -73,4 +72,28 @@
     to{
       opacity: 1;
     }
+  }
+
+  .style-toast-ok-light{
+    background-color:#fffcf2;
+    color: #555;
+    border-radius: 25px;
+  }
+
+  .style-toast-ok-darck{
+    background-color:  #0f182b;
+    color:  #d87093;
+    border-radius: 25px;
+  }
+
+  .style-toast-error-light{
+    background-color:#555;
+    color: #fffcf2;
+    border-radius: 25px;
+  }
+
+  .style-toast-error-darck{
+    background-color:   #d87093;
+    color: #0f182b;
+    border-radius: 25px;
   }

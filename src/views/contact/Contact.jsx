@@ -1,9 +1,45 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+import {toast} from 'react-toastify'; 
+import { Slide, Zoom, Flip, Bounce } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css'; 
 
 import './contact.scss';
 
+toast.configure() 
+
 const Contact = (props) => {
+
+    const notify = ()=>{  
+      toast.error('Error al enviar el correo.', {
+        className: `style-toast-error-${props.mode}`,
+        position: "top-center",
+        autoClose: 5000,
+        transition: Zoom,
+        hideProgressBar: true,
+        closeOnClick: true,
+        closeButton: false,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+        }); 
+      }
+
+      const notifyOK = ()=>{  
+        toast.success('Mensaje enviado.', {
+          className: `style-toast-ok-${props.mode}`,
+          position: "top-center",
+          autoClose: 5000,
+          transition: Zoom,
+          hideProgressBar: true,
+          closeOnClick: true,
+          closeButton: false,
+          pauseOnHover: false,
+          draggable: false,
+          progress: undefined,
+          });
+        }
 
   let color;
 
@@ -19,9 +55,13 @@ const Contact = (props) => {
 
     emailjs.sendForm('gmail', 'template_ikb6q8a', e.target, 'user_LEK70rFXXjXuDvy77FcGY')
       .then((result) => {
+        notifyOK();
         console.log(result.text);
+
       }, (error) => {
+        notify();
         console.log(error.text);
+
       });
     e.target.reset();
   }
@@ -48,13 +88,13 @@ const Contact = (props) => {
                             <div className="col-md-6">
                               <div className="md-form mb-4">
                                 <label>Nombre</label>
-                                <input type="text" name="name" className="form-control bg-transparent" />
+                                <input type="text" name="name" className="form-control bg-transparent"/>
                               </div>
                             </div>
                             <div className="col-md-6">
                               <div className="md-form mb-4">
                                 <label>Email</label>
-                                <input type="email" name="email" className="form-control bg-transparent" />
+                                <input type="email" name="email" className="form-control bg-transparent"/>
                               </div>
                             </div>
                           </div>
@@ -62,7 +102,7 @@ const Contact = (props) => {
                             <div class="col-md-12 mb-4">
                               <div class="md-form mb-0">
                                 <label>Asunto</label>
-                                <input type="text" name="subject" class="form-control bg-transparent" />
+                                <input type="text" name="subject" class="form-control bg-transparent"/>
                               </div>
                             </div>
                           </div>
