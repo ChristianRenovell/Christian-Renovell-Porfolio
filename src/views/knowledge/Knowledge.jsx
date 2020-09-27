@@ -126,13 +126,13 @@ const Knowledge = (props) => {
                                     diplomaLink={"#"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
-                                <Icons src={`${props.url}/assets/vue-${props.mode}.png`}
+                                <Icons src={`${props.url}/assets/laravel-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
-                                    title="Vue"
-                                    diplomaTitle=""
-                                    diplomaSrc={`${props.url}/assets/vue-${props.mode}.png`}
-                                    diplomaLink={"#"} />
+                                    title="Laravel 5"
+                                    diplomaTitle="OpenWebinars"
+                                    diplomaSrc={`${props.url}/assets/diploma-laravel-${props.mode}.png`}
+                                    diplomaLink={"https://openwebinars.net/certificado/wvXaBp8x?t=1598524817&type=pdf"} />
                             </div>
                             <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
                                 <Icons src={`${props.url}/assets/graphQL-${props.mode}.png`}
