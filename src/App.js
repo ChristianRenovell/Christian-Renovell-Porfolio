@@ -38,6 +38,8 @@ class App extends Component {
 
   mode() {
 
+    this.setState({menuOpen: false})
+
     let elemento = document.getElementById("fullpage");
     let elemento2 = document.getElementById("switch");
     let photoCircle = document.getElementById("photo-circle");
@@ -70,7 +72,8 @@ class App extends Component {
       this.setState({ burger: "burger" });
 
       elemento.className = "";
-      elemento2.className = "swich-light";
+      elemento2.className = "";
+      elemento2.className += "swich-light";
 
       document.body.style.backgroundColor = "#f1ede3";
       btnOpenFooter.style.backgroundColor = "#555";
@@ -96,7 +99,8 @@ class App extends Component {
         btnAbout.className = "btn-profile-darck";
       } catch { }
       elemento.className += "night";
-      elemento2.className += "switched swich-darck";
+      elemento2.className = "switched swich-darck";
+      
 
       document.body.style.backgroundColor = "#080d17";
       btnOpenFooter.style.backgroundColor = "#d87093"
