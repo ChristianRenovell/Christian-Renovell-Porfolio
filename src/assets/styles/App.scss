@@ -1,6 +1,7 @@
 @import "./Vars.scss";
 @import "./Media.scss";
 @import "./colors.scss";
+
 body {
     overflow-x: hidden;
     padding: 0;
@@ -8,9 +9,17 @@ body {
 	  font-family: $theme-font;
     text-align: center;
     min-height: 100vh;
-    cursor: url(../static/cursor-light.cur), pointer;
-    
+  
 }
+
+.body-light{
+  cursor: url(../static/cursor-light.cur), default;
+ 
+}
+.body-darck{
+  cursor: url(../static/cursor-darck.cur), default;
+}
+
 
 .about-p {
   font-size: 1.3em;
@@ -51,6 +60,14 @@ width: 100%;
 position: absolute;
 z-index: 999;
 }
+
+.navIten-light{
+  cursor: url(../static/click-light.cur), pointer;
+}
+.navIten-darck{
+  cursor: url(../static/click-darck.cur), pointer;
+}
+
 
 .section a{
   text-decoration: none;
@@ -119,6 +136,7 @@ z-index: 999;
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .circle-light:hover{
@@ -162,11 +180,11 @@ z-index: 999;
     border-radius: 50px;
     text-align: center;
     width: 200px;
-    cursor: url(../static/cursor-light.cur), pointer;
     -webkit-transition: background-color 1s ease-out;
     -moz-transition: background-color 1s ease-out;
     -o-transition: background-color 1s ease-out;
     transition: background-color 1s ease-out;
+  
 }
 
 .btn-profile-light:hover {
@@ -182,7 +200,6 @@ z-index: 999;
     border: $darck-2 1px solid;
     border-radius: 100px;
     width: 200px;
-    cursor: pointer;
     -webkit-transition: background-color 1s ease-out;
     -moz-transition: background-color 1s ease-out;
     -o-transition: background-color 1s ease-out;
@@ -200,7 +217,6 @@ z-index: 999;
           transition: all 0.4s cubic-bezier(0.54, 1.6, 0.5, 1);
 } 
 #switch {
-  
   position: absolute;
   right: 25px;
   top: 20px;
@@ -209,8 +225,14 @@ z-index: 999;
   border: 2px solid $light-2;
   border-radius: 27px;
   background: $light-2;
-  cursor: pointer;
   
+  
+}
+.swich-light{
+  cursor: url(../static/click-light.cur), pointer;
+}
+.swich-darck{
+  cursor: url(../static/click-darck.cur), pointer;
 }
 #circle {
   margin-top: 5%;

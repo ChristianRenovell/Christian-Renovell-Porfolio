@@ -5,8 +5,13 @@
     align-items: center;
     width: 70px;
     height: 60px;
-    cursor: url(../static/click-light.cur), pointer;
     transition: all 0.5s ease-in-out;
+  }
+  .btn-burger-light{
+    cursor: url(../static/click-light.cur), pointer;
+  }
+  .btn-burger-darck{
+    cursor: url(../static/click-darck.cur), pointer;
   }
   
   .burger {
@@ -15,6 +20,7 @@
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
     background: #555;
+    cursor: url(../static/click-light.cur), pointer;
   }
   
   .burger:before,
@@ -26,6 +32,7 @@
     background: #555;
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
+    cursor: url(../static/click-light.cur), pointer;
   }
   
   .burger:before {
@@ -57,6 +64,7 @@
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
     background: #d87093;
+    cursor: url(../static/click-darck.cur), pointer;
   }
   
   .burger2:before,
@@ -67,7 +75,7 @@
     height: 4px;
     background: #d87093;
     border-radius: 5px;
-   
+    cursor: url(../static/click-darck.cur), pointer;
     transition: all 0.5s ease-in-out;
   }
   
@@ -98,7 +106,7 @@
     top: 15px;
     left: 75px;
     display: inline;
-    animation-duration: 0.5s;
+    animation-duration: 0.8s;
     animation-name: slideout;
     
   }
@@ -108,7 +116,7 @@
     top: 15px;
     left: 75px;
     display: inline;
-    animation-duration: 0.5s;
+    animation-duration: 0.8s;
     animation-name: slidein;
   
   }
@@ -144,7 +152,7 @@
   @keyframes slidein {
     from {
       opacity: 0;
-      left: -300px;
+      left: -900px;
     }
     to {
       opacity: 1;
@@ -160,7 +168,7 @@
     to {
       
       opacity: 0;
-      left: -300px;
+      left: -900px;
     }
   }
 

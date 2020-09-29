@@ -13,6 +13,7 @@ import './assets/styles/stylemenu.scss';
 import './assets/styles/foot.scss';
 import './assets/styles/transitions.scss';
 
+
 class App extends Component {
 
   constructor() {
@@ -39,64 +40,63 @@ class App extends Component {
 
     let elemento = document.getElementById("fullpage");
     let elemento2 = document.getElementById("switch");
-    let face = document.getElementById("facebook");
-    let insta = document.getElementById("instagram");
-    let linke = document.getElementById("linkedin");
-    let git = document.getElementById("git");
     let photoCircle = document.getElementById("photo-circle");
     let btnContact = document.getElementById("btn-contact");
     let btnAbout = document.getElementById("btn-about");
     let btnOpenFooter = document.getElementById("btnOpenFooter");
     let contentNav = document.getElementById("contentNav");
+    //cursor mode
+    let bodyContent = document.getElementById("body")
+    let btnBurger = document.getElementById("btn-burger");
+    let navItem = document.getElementsByClassName("lin")
 
     if (elemento.className === "night") {
 
+      //cursor mode
+       bodyContent.className ="body-light";
+       btnBurger.className += "btn-burger-light";
+       navItem.className += "navIten-light";
       //contact
       try {
         btnContact.className = "btn-profile-light";
-        face.src = "../images/facebook-light.png";
-        insta.src = "../images/instagram-light.png";
-        linke.src = "../images/linkedin-light.png";
-        git.src = "../images/git-light.png";
       } catch { }
       //profile
       try {
         photoCircle.src = "../images/christian-light.png";
-        photoCircle.className = "circle-profile-light";
         btnAbout.className = "btn-profile-light";
-
+        
       } catch { }
       this.setState({ mode: "light" });
       this.setState({ burger: "burger" });
 
       elemento.className = "";
-      elemento2.className = "";
+      elemento2.className = "swich-light";
 
       document.body.style.backgroundColor = "#f1ede3";
       btnOpenFooter.style.backgroundColor = "#555";
       contentNav.style.backgroundColor = "#f1ede3";
       elemento2.style.backgroundColor = "#555";
+
     }
     else {
+      //cursor mode
+      bodyContent.className ="body-darck";
+      btnBurger.className += "btn-burger-darck";
+      navItem.className += "navIten-darck";
 
       this.setState({ mode: "darck" });
       this.setState({ burger: "burger2" });
       //contact
       try {
         btnContact.className = "btn-profile-darck";
-        face.src = "../images/facebook-darck.png";
-        insta.src = "../images/instagram-darck.png";
-        linke.src = "../images/linkedin-darck.png";
-        git.src = "../images/git-darck.png";
       } catch { }
       //profile
       try {
         photoCircle.src = "../images/christian-darck.png";
-        photoCircle.className = "circle-profile-darck";
         btnAbout.className = "btn-profile-darck";
       } catch { }
       elemento.className += "night";
-      elemento2.className += "switched";
+      elemento2.className += "switched swich-darck";
 
       document.body.style.backgroundColor = "#080d17";
       btnOpenFooter.style.backgroundColor = "#d87093"
@@ -229,6 +229,7 @@ class App extends Component {
               <div className={`${this.state.navOpen ? "navDivOpen" : "navDivClose"}`} id="navContentClose" onClick={this.handleOpenMenu} />
               <nav className="navbar navbar-expand-lg">
                 <div
+                  id="btn-burger"
                   className={`menu-btn ${this.state.menuOpen ? "open" : "closed"}`}
                   onClick={this.handleOpenMenu}
                 >
