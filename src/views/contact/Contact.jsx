@@ -134,10 +134,10 @@ const Contact = (props) => {
                     <div className="container content--inner">
                             <div className="row mt-3 ">
                                 <div className="col-6 col-md-3 mt-4">
-                                    <a target="_blank" href="https://www.facebook.com/christian.renovell" className={`iconSocialNet1 cursor-${props.mode}`}><img width="50px" src={`${props.url}/assets/telegram-${props.mode}.png`} id="facebook" /></a>
+                                    <a target="_blank" href="https://t.me/Christianrenovell" className={`iconSocialNet1 cursor-${props.mode}`}><img width="50px" src={`${props.url}/assets/telegram-${props.mode}.png`} id="facebook" /></a>
                                 </div>
                                 <div className="col-6 col-md-3 mt-4">
-                                    <a target="_blank" href="https://www.instagram.com/christian_renovell/" className={`iconSocialNet2 cursor-${props.mode}`}><img width="50px" src={`${props.url}/assets/twitter-${props.mode}.png`} id="instagram"/></a>
+                                    <a target="_blank" href="https://twitter.com/ChristianRenov2" className={`iconSocialNet2 cursor-${props.mode}`}><img width="50px" src={`${props.url}/assets/twitter-${props.mode}.png`} id="instagram"/></a>
                                 </div>
                                 <div className="col-6 col-md-3 mt-4">
                                     <a target="_blank" href="https://www.linkedin.com/in/christian-renovell-miralles-896738196/" className={`iconSocialNet3 cursor-${props.mode}`}><img width="50px" src={`${props.url}/assets/linkedin-${props.mode}.png`} id="linkedin"/></a>
