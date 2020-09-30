@@ -60,13 +60,13 @@ function Name(props) {
             </ul>
             <div className="row mt=2 mb-5">
               <div className="col-3 col-md-3">
-                <a target="_blank" href="https://www.instagram.com/christian_renovell/" className={`cursor-${props.mode}`}><img src={`${props.url}/assets/instagram-${props.mode}-footer.png`} width="35px"></img></a>
+                <a target="_blank" href="https://www.instagram.com/christian_renovell/" className={`cursor-${props.mode}`}><img src={`${props.url}/assets/telegram-${props.mode}-footer.png`} width="35px"></img></a>
               </div>
               <div className="col-3 col-md-3">
                 <a target="_blank" href="https://www.linkedin.com/in/christian-renovell-miralles-896738196/" className={`cursor-${props.mode}`}><img src={`${props.url}/assets/linkedin-${props.mode}-footer.png`} width="35px"></img></a>
               </div>
               <div className="col-3 col-md-3">
-                <a target="_blank" href="https://www.facebook.com/christian.renovell" className={`cursor-${props.mode}`}><img src={`${props.url}/assets/facebook-${props.mode}-footer.png`} width="35px"></img></a>
+                <a target="_blank" href="https://www.facebook.com/christian.renovell" className={`cursor-${props.mode}`}><img src={`${props.url}/assets/twitter-${props.mode}-footer.png`} width="35px"></img></a>
               </div>
               <div className="col-3 col-md-3">
                 <a target="_blank" href="https://github.com/ChristianRenovell" className={`cursor-${props.mode}`}><img src={`${props.url}/assets/git-${props.mode}-footer.png`} width="35px"></img></a>
