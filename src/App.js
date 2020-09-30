@@ -50,14 +50,17 @@ class App extends Component {
     //cursor mode
     let bodyContent = document.getElementById("body")
     let btnBurger = document.getElementById("btn-burger");
-    let navItem = document.getElementsByClassName("lin")
+    let navItem = document.getElementsByClassName("nav-item");
+    let iten = document.getElementById("nemuIten1");
+
 
     if (elemento.className === "night") {
 
       //cursor mode
        bodyContent.className ="body-light";
        btnBurger.className += "btn-burger-light";
-       navItem.className += "navIten-light";
+       navItem.className = "nav-item navIten-light";
+       iten.classNameb = "navIten-light"
       //contact
       try {
         btnContact.className = "btn-profile-light";
@@ -121,11 +124,11 @@ class App extends Component {
       case 1:
 
         this.setState({ active: 1 });
-        document.getElementById("nemuIten1").className = "navbar-brand lin selectedIten";
-        document.getElementById("nemuIten2").className = "navbar-brand lin noSelectedIten";
-        document.getElementById("nemuIten3").className = "navbar-brand lin noSelectedIten";
-        document.getElementById("nemuIten4").className = "navbar-brand lin noSelectedIten";
-        document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten1").className = `navbar-brand lin selectedIten cursor-${this.state.mode}`;
+        document.getElementById("nemuIten2").className = `navbar-brand lin noSelectedIten cursor-${this.state.mode}`;
+        document.getElementById("nemuIten3").className = `navbar-brand lin noSelectedIten cursor-${this.state.mode}`;
+        document.getElementById("nemuIten4").className = `navbar-brand lin noSelectedIten cursor-${this.state.mode}`;
+        document.getElementById("nemuIten5").className = `navbar-brand lin noSelectedIten cursor-${this.state.mode}`;
 
         if (window.screen.width < 991) { this.handleOpenMenu() }
 
@@ -133,44 +136,44 @@ class App extends Component {
 
       case 2:
         this.setState({ active: 2 });
-        document.getElementById("nemuIten2").className = "navbar-brand lin selectedIten";
-        document.getElementById("nemuIten1").className = "navbar-brand lin noSelectedIten";
-        document.getElementById("nemuIten3").className = "navbar-brand lin noSelectedIten";
-        document.getElementById("nemuIten4").className = "navbar-brand lin noSelectedIten";
-        document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten2").className = `navbar-brand lin selectedIten cursor-${this.state.mode}`;
+        document.getElementById("nemuIten1").className = `navbar-brand lin noSelectedIten cursor-${this.state.mode}`;
+        document.getElementById("nemuIten3").className = `navbar-brand lin noSelectedIten cursor-${this.state.mode}`;
+        document.getElementById("nemuIten4").className = `navbar-brand lin noSelectedIten cursor-${this.state.mode}`;
+        document.getElementById("nemuIten5").className = `navbar-brand lin noSelectedIten cursor-${this.state.mode}`;
 
         if (window.screen.width < 991) { this.handleOpenMenu() }
 
         break;
       case 3:
-        document.getElementById("nemuIten3").className = "navbar-brand lin selectedIten";
+        document.getElementById("nemuIten3").className = `navbar-brand lin selectedIten cursor-${this.state.mode}`;
         this.setState({ active: 3 });
-        document.getElementById("nemuIten2").className = "navbar-brand lin noSelectedIten";
-        document.getElementById("nemuIten1").className = "navbar-brand lin noSelectedIten";
-        document.getElementById("nemuIten4").className = "navbar-brand lin noSelectedIten";
-        document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten2").className = `navbar-brand lin noSelectedIten cursor-${this.state.mode}`;
+        document.getElementById("nemuIten1").className = `navbar-brand lin noSelectedIten cursor-${this.state.mode}`;
+        document.getElementById("nemuIten4").className = `navbar-brand lin noSelectedIten cursor-${this.state.mode}`;
+        document.getElementById("nemuIten5").className = `navbar-brand lin noSelectedIten cursor-${this.state.mode}`;
 
         if (window.screen.width < 991) { this.handleOpenMenu() }
 
         break;
       case 4:
-        document.getElementById("nemuIten4").className = "navbar-brand lin selectedIten";
+        document.getElementById("nemuIten4").className = `navbar-brand lin selectedIten cursor-${this.state.mode}`;
         this.setState({ active: 4 });
-        document.getElementById("nemuIten2").className = "navbar-brand lin noSelectedIten";
-        document.getElementById("nemuIten3").className = "navbar-brand lin noSelectedIten";
-        document.getElementById("nemuIten1").className = "navbar-brand lin noSelectedIten";
-        document.getElementById("nemuIten5").className = "navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten2").className = `navbar-brand lin noSelectedIten cursor-${this.state.mode}`;
+        document.getElementById("nemuIten3").className = `navbar-brand lin noSelectedIten cursor-${this.state.mode}`;
+        document.getElementById("nemuIten1").className = `navbar-brand lin noSelectedIten cursor-${this.state.mode}`;
+        document.getElementById("nemuIten5").className = `navbar-brand lin noSelectedIten cursor-${this.state.mode}`;
 
         if (window.screen.width < 991) { this.handleOpenMenu() }
 
         break;
       case 5:
-        document.getElementById("nemuIten5").className = "navbar-brand lin selectedIten";
+        document.getElementById("nemuIten5").className = `navbar-brand lin selectedIten cursor-${this.state.mode}`;
         this.setState({ active: 5 });
-        document.getElementById("nemuIten2").className = "navbar-brand lin noSelectedIten";
-        document.getElementById("nemuIten3").className = "navbar-brand lin noSelectedIten";
-        document.getElementById("nemuIten4").className = "navbar-brand lin noSelectedIten";
-        document.getElementById("nemuIten1").className = "navbar-brand lin noSelectedIten";
+        document.getElementById("nemuIten2").className = `navbar-brand lin noSelectedIten cursor-${this.state.mode}`;
+        document.getElementById("nemuIten3").className = `navbar-brand lin noSelectedIten cursor-${this.state.mode}`;
+        document.getElementById("nemuIten4").className = `navbar-brand lin noSelectedIten cursor-${this.state.mode}`;
+        document.getElementById("nemuIten1").className = `navbar-brand lin noSelectedIten cursor-${this.state.mode}`;
 
         if (window.screen.width < 991) { this.handleOpenMenu() }
 
@@ -234,7 +237,7 @@ class App extends Component {
               <nav className="navbar navbar-expand-lg">
                 <div
                   id="btn-burger"
-                  className={`menu-btn ${this.state.menuOpen ? "open" : "closed"}`}
+                  className={` menu-btn ${this.state.menuOpen ? "open" : "closed"}`}  
                   onClick={this.handleOpenMenu}
                 >
                   <div className={this.state.burger} />
@@ -245,19 +248,19 @@ class App extends Component {
                 >
                   <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li className="nav-item">
-                      <Link to={"/home"} id="nemuIten1" className="navbar-brand lin" onClick={() => this.active(1)}><span>Inicio</span></Link>
+                      <Link to={"/home"} id="nemuIten1" className={`navbar-brand lin cursor-${this.state.mode}`} onClick={() => this.active(1)}><span>Inicio</span></Link>
                     </li>
                     <li className="nav-item">
-                      <Link to={"/profile"} id="nemuIten2" className="navbar-brand lin" onClick={() => this.active(2)}><span>Sobre mí</span></Link>
+                      <Link to={"/profile"} id="nemuIten2" className={`navbar-brand lin cursor-${this.state.mode}`} onClick={() => this.active(2)}><span>Sobre mí</span></Link>
                     </li>
                     <li className="nav-item">
-                      <Link to={"/proyects"} id="nemuIten3" className="navbar-brand lin" onClick={() => this.active(3)}><span>Proyectos</span></Link>
+                      <Link to={"/proyects"} id="nemuIten3" className={`navbar-brand lin cursor-${this.state.mode}`} onClick={() => this.active(3)}><span>Proyectos</span></Link>
                     </li>
                     <li className="nav-item">
-                      <Link to={"/Knowledge"} id="nemuIten4" className="navbar-brand lin" onClick={() => this.active(4)}><span>Conocimientos</span></Link>
+                      <Link to={"/Knowledge"} id="nemuIten4" className={`navbar-brand lin cursor-${this.state.mode}`} onClick={() => this.active(4)}><span>Conocimientos</span></Link>
                     </li>
                     <li className="nav-item">
-                      <Link to={"/contact"} id="nemuIten5" className="navbar-brand lin" onClick={() => this.active(5)}><span>Contacto</span></Link>
+                      <Link to={"/contact"} id="nemuIten5" className={`navbar-brand lin cursor-${this.state.mode}`} onClick={() => this.active(5)}><span>Contacto</span></Link>
                     </li>
                   </ul>
 
@@ -269,8 +272,8 @@ class App extends Component {
 
               <div className={`${this.state.footerOpen ? "closeFooterOpen" : "closeFooterClose"}`} onClick={this.openFooter}>
               </div>
-              <div className="footIcon" id="btnOpenFooter" onClick={this.openFooter}>
-                <img src={`https://christianrenovell.com/assets/pie-light.png`} width="40px" />
+              <div className={`footIcon cursor-${this.state.mode}`} id="btnOpenFooter" onClick={this.openFooter}>
+                <img src={`https://christianrenovell.com/assets/pie-light.png`} width="40px"/>
               </div>
               <div className={`${this.state.footerOpen ? "footerDivOpen" : "footerDivClose"}`} id="footer">
                 <Footer mode={this.state.mode} 

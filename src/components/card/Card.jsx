@@ -4,10 +4,10 @@ import './card.scss';
 const Card = (props) => {
 
     return (
-        <div className="col-md-4 ">
+        <div className={`col-md-4`}>
             <a href={props.linkView} target="_blank">
                 <div className="containerCard" style={{ backgroundImage: `url(${props.imgUrl})`, boxShadow: "0 0 5px" + props.colorBorder + "" }}>
-                    <div className="overlay" style={{ backgroundColor: props.color }}>
+                    <div className={`overlay cursor-${props.mode}`} style={{ backgroundColor: props.color }}>
                         <div className="items"></div>
                         <div className="items head">
                             <p>{props.title}</p>

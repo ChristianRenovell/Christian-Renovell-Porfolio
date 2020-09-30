@@ -28,7 +28,7 @@ const Knowledge = (props) => {
                             </div>
                         </div>
                         <div className="row mt-5 content--inner">
-                            <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
+                            <div className={`col-6 col-sm-6 col-md-3 mt-4 ico cursor-${props.mode}`}>
                                 <Icons src={`${props.url}/assets/git-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
@@ -38,7 +38,7 @@ const Knowledge = (props) => {
                                     diplomaLink={"https://openwebinars.net/certificacion/YxEj4Gdo?type=pdf&r=818e03d96}&t="}
                                 />
                             </div>
-                            <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
+                            <div className={`col-6 col-sm-6 col-md-3 mt-4 ico cursor-${props.mode}`}>
                                 <Icons src={`${props.url}/assets/css-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
@@ -46,7 +46,7 @@ const Knowledge = (props) => {
                                     diplomaSrc={`${props.url}/assets/css-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
-                            <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
+                            <div className={`col-6 col-sm-6 col-md-3 mt-4 ico cursor-${props.mode}`}>
                                 <Icons src={`${props.url}/assets/javascript-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
@@ -58,7 +58,7 @@ const Knowledge = (props) => {
                                     diplomaLink2={"https://platzi.com/@christiancand/curso/1815-ecmascript-6/diploma/detalle/"} />
                                     
                             </div>
-                            <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
+                            <div className={`col-6 col-sm-6 col-md-3 mt-4 ico cursor-${props.mode}`}>
                                 <Icons src={`${props.url}/assets/boostrap-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
@@ -69,7 +69,7 @@ const Knowledge = (props) => {
                             </div>
                         </div>
                         <div className="row content--inner2">
-                            <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
+                            <div className={`col-6 col-sm-6 col-md-3 mt-4 ico cursor-${props.mode}`}>
                                 <Icons src={`${props.url}/assets/react-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
@@ -78,7 +78,7 @@ const Knowledge = (props) => {
                                     diplomaSrc={`${props.url}/assets/diploma-react-${props.mode}.png`}
                                     diplomaLink={"https://platzi.com/@christiancand/curso/1548-react/diploma/detalle/"} />
                             </div>
-                            <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
+                            <div className={`col-6 col-sm-6 col-md-3 mt-4 ico cursor-${props.mode}`}>
                                 <Icons src={`${props.url}/assets/php-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
@@ -87,7 +87,7 @@ const Knowledge = (props) => {
                                     diplomaSrc={`${props.url}/assets/diploma-php-${props.mode}.png`}
                                     diplomaLink={"https://openwebinars.net/certificado/bx9LwLNv?t=1598524817&type=pdf"} />
                             </div>
-                            <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
+                            <div className={`col-6 col-sm-6 col-md-3 mt-4 ico cursor-${props.mode}`}>
                                 <Icons src={`${props.url}/assets/node-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
@@ -96,7 +96,7 @@ const Knowledge = (props) => {
                                     diplomaSrc={`${props.url}/assets/node-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
-                            <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
+                            <div className={`col-6 col-sm-6 col-md-3 mt-4 ico cursor-${props.mode}`}>
                                 <Icons src={`${props.url}/assets/mongodb-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
@@ -107,7 +107,7 @@ const Knowledge = (props) => {
                             </div>
                         </div>
                         <div className="row content--inner3">
-                            <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
+                            <div className={`col-6 col-sm-6 col-md-3 mt-4 ico cursor-${props.mode}`}>
                                 <Icons src={`${props.url}/assets/java-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
@@ -116,7 +116,7 @@ const Knowledge = (props) => {
                                     diplomaSrc={`${props.url}/assets/diploma-java-${props.mode}.png`}
                                     diplomaLink={"https://openwebinars.net/certificado/MvPgJGXV?t=1598524817&type=pdf"} />
                             </div>
-                            <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
+                            <div className={`col-6 col-sm-6 col-md-3 mt-4 ico cursor-${props.mode}`}>
                                 <Icons src={`${props.url}/assets/mysql-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
@@ -125,7 +125,7 @@ const Knowledge = (props) => {
                                     diplomaSrc={`${props.url}/assets/mysql-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
-                            <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
+                            <div className={`col-6 col-sm-6 col-md-3 mt-4 ico cursor-${props.mode}`}>
                                 <Icons src={`${props.url}/assets/laravel-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
@@ -134,7 +134,7 @@ const Knowledge = (props) => {
                                     diplomaSrc={`${props.url}/assets/diploma-laravel-${props.mode}.png`}
                                     diplomaLink={"https://openwebinars.net/certificado/wvXaBp8x?t=1598524817&type=pdf"} />
                             </div>
-                            <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
+                            <div className={`col-6 col-sm-6 col-md-3 mt-4 ico cursor-${props.mode}`}>
                                 <Icons src={`${props.url}/assets/graphQL-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
@@ -145,7 +145,7 @@ const Knowledge = (props) => {
                             </div>
                         </div>
                         <div className=" row content--inner4 mb-5">
-                            <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
+                            <div className={`col-6 col-sm-6 col-md-3 mt-4 ico cursor-${props.mode}`}>
                                 <Icons src={`${props.url}/assets/stripe-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
@@ -154,7 +154,7 @@ const Knowledge = (props) => {
                                     diplomaSrc={`${props.url}/assets/stripe-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
-                            <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
+                            <div className={`col-6 col-sm-6 col-md-3 mt-4 ico cursor-${props.mode}`}>
                                 <Icons src={`${props.url}/assets/firebase-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
@@ -163,7 +163,7 @@ const Knowledge = (props) => {
                                     diplomaSrc={`${props.url}/assets/firebase-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
-                            <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
+                            <div className={`col-6 col-sm-6 col-md-3 mt-4 ico cursor-${props.mode}`}>
                                 <Icons src={`${props.url}/assets/supersaas-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}
@@ -172,7 +172,7 @@ const Knowledge = (props) => {
                                     diplomaSrc={`${props.url}/assets/supersaas-${props.mode}.png`}
                                     diplomaLink={"#"} />
                             </div>
-                            <div className="col-6 col-sm-6 col-md-3 mt-4 ico">
+                            <div className={`col-6 col-sm-6 col-md-3 mt-4 ico cursor-${props.mode}`}>
                                 <Icons src={`${props.url}/assets/amazon-${props.mode}.png`}
                                     modalcolor={modalColor}
                                     color={color}

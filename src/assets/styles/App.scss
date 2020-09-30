@@ -1,5 +1,4 @@
 @import "./Vars.scss";
-@import "./Media.scss";
 @import "./colors.scss";
 
 body {
@@ -18,6 +17,14 @@ body {
 }
 .body-darck{
   cursor: url(../static/cursor-darck.cur), default;
+}
+
+.cursor-light{
+  cursor: url(../static/click-light.cur), pointer;
+}
+
+.cursor-darck{
+  cursor: url(../static/click-darck.cur), pointer;
 }
 
 
@@ -189,6 +196,7 @@ z-index: 999;
 
 .btn-profile-light:hover {
   background-color: $light-btn;
+  cursor: url(../static/click-light.cur), pointer;
 }
 .btn-profile-darck {
     background-color: transparent;
@@ -208,6 +216,7 @@ z-index: 999;
 
 .btn-profile-darck:hover {
   background-color: $darck-btn;
+  cursor: url(../static/click-darck.cur), pointer;
 }
 
 #switch,

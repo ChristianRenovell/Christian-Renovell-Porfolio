@@ -112,7 +112,7 @@ const Contact = (props) => {
                               <textarea name="message"  className={`inForm-${props.mode} texA md-textarea`} required/>
                             </div>
                           </div>
-                         <input type="submit" value="Enviar" className={`btn-profile-${props.mode}`}/>
+                         <input type="submit" value="Enviar" className={`btn-profile-${props.mode} cursor-${props.mode}`}/>
                         </form>
                       </div>
                     </div>
@@ -120,13 +120,13 @@ const Contact = (props) => {
                       <div class="col-md-12 text-center mt-4">
                         <ul class="list-unstyled mb-0">
                           <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                            <p><a target="_blank" href="https://goo.gl/maps/vwfawwRL83fcsg1t5">Candelaria, Santa cruz de Tenerife, España</a></p>
+                            <p><a target="_blank" href="https://goo.gl/maps/vwfawwRL83fcsg1t5" className={`cursor-${props.mode}`}>Candelaria, Santa cruz de Tenerife, España</a></p>
                           </li>
                           <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                          <p><a target="_blank" href="tel: +34679985955">+34 679985955</a></p>
+                          <p><a target="_blank" href="tel: +34679985955" className={`cursor-${props.mode}`}>+34 679985955</a></p>
                           </li>
                           <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                          <p><a target="_blank" href="mailto: christianrenovell83@gmail.com">christianrenovell83@gmail.com</a></p>
+                          <p><a target="_blank" href="mailto: christianrenovell83@gmail.com" className={`cursor-${props.mode}`}>christianrenovell83@gmail.com</a></p>
                           </li>
                         </ul>
                       </div>
@@ -134,16 +134,16 @@ const Contact = (props) => {
                     <div className="container content--inner">
                             <div className="row mt-3 ">
                                 <div className="col-6 col-md-3 mt-4">
-                                    <a target="_blank" href="https://www.facebook.com/christian.renovell" className="iconSocialNet1"><img width="50px" src={`${props.url}/assets/facebook-${props.mode}.png`} id="facebook" /></a>
+                                    <a target="_blank" href="https://www.facebook.com/christian.renovell" className={`iconSocialNet1 cursor-${props.mode}`}><img width="50px" src={`${props.url}/assets/facebook-${props.mode}.png`} id="facebook" /></a>
                                 </div>
                                 <div className="col-6 col-md-3 mt-4">
-                                    <a target="_blank" href="https://www.instagram.com/christian_renovell/" className="iconSocialNet2"><img width="50px" src={`${props.url}/assets/instagram-${props.mode}.png`} id="instagram"/></a>
+                                    <a target="_blank" href="https://www.instagram.com/christian_renovell/" className={`iconSocialNet2 cursor-${props.mode}`}><img width="50px" src={`${props.url}/assets/instagram-${props.mode}.png`} id="instagram"/></a>
                                 </div>
                                 <div className="col-6 col-md-3 mt-4">
-                                    <a target="_blank" href="https://www.linkedin.com/in/christian-renovell-miralles-896738196/" className="iconSocialNet3"><img width="50px" src={`${props.url}/assets/linkedin-${props.mode}.png`} id="linkedin"/></a>
+                                    <a target="_blank" href="https://www.linkedin.com/in/christian-renovell-miralles-896738196/" className={`iconSocialNet3 cursor-${props.mode}`}><img width="50px" src={`${props.url}/assets/linkedin-${props.mode}.png`} id="linkedin"/></a>
                                 </div>
                                 <div className="col-6 col-md-3 mt-4 mb-5">
-                                    <a target="_blank" href="https://github.com/ChristianRenovell" className="iconSocialNet4"><img width="50px" src={`${props.url}/assets/git-${props.mode}.png`} id="git"/></a>
+                                    <a target="_blank" href="https://github.com/ChristianRenovell" className={`iconSocialNet4 cursor-${props.mode}`}><img width="50px" src={`${props.url}/assets/git-${props.mode}.png`} id="git"/></a>
                                 </div>
                             </div>
                         </div>

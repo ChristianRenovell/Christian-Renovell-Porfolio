@@ -31,38 +31,41 @@ const Proyects = (props) => {
               </div>
             </div>
             <div className="row mt-5 content--inner">
-              <div className="col-12 col-sm-12 col-md-4">
+              <div className={`col-12 col-sm-12 col-md-4`}>
                 <Card
                   imgUrl={`${props.url}/assets//sapau-${props.mode}.png`}
                   color={color}
                   colorBorder={colorBorder}
                   title="Comercial Sapau.es"
                   description="Comercio de Marcas inportantes de Jardineria y camping."
-                  linkView="https://sapau.000webhostapp.com/" />
+                  linkView="https://sapau.000webhostapp.com/" 
+                  mode = {props.mode}/>
               </div>
-              <div className="col-12 col-sm-12 col-md-4">
+              <div className={`col-12 col-sm-12 col-md-4`}>
                 <Card
                   imgUrl={`${props.url}/assets/bebangarang-${props.mode}.png`}
                   color={color}
                   colorBorder={colorBorder}
                   title="Be Bangarang"
                   description="Colaborador para agencia deigital en varios proyectos."
-                  linkView="https://bebangarang.es/" />
+                  linkView="https://bebangarang.es/" 
+                  mode = {props.mode}/>
               </div>
-              <div className="col-12 col-sm-12 col-md-4">
+              <div className={`col-12 col-sm-12 col-md-4`}>
                 <Card
                   imgUrl={`${props.url}/assets/syc-${props.mode}.png`}
                   color={color}
                   colorBorder={colorBorder}
                   title="Show Your Company"
                   description="Empresa de publicidad y marquetin digital en dispositivos moviles."
-                  linkView="https://www.showyourcompany.com/" />
+                  linkView="https://www.showyourcompany.com/" 
+                  mode = {props.mode}/>
               </div>
             </div>
             <div className="row mt-5 pb-5">
               <div className="col-md-12 mb-5">
-                <div className="content--inner2">
-                  <a target="_blank" href="https://github.com/ChristianRenovell/Christian-Renovell-Porfolio"  className="titlePorfolio"><h2>Este es mi Portfolio<img className="ml-3 iconPorfolio" width="50px" src={`${props.url}/assets/git-${props.mode}.png`} id="git"/></h2></a>
+                <div className= {`content--inner2 cursor-${props.mode}`}>
+                  <a target="_blank" href="https://github.com/ChristianRenovell/Christian-Renovell-Porfolio"  className={`titlePorfolio cursor-${props.mode}`}><h2>Este es mi Portfolio<img className="ml-3 iconPorfolio" width="50px" src={`${props.url}/assets/git-${props.mode}.png`} id="git"/></h2></a>
                 </div>
               </div>
             </div>
