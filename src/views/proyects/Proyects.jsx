@@ -37,7 +37,7 @@ const Proyects = (props) => {
                   color={color}
                   colorBorder={colorBorder}
                   title="Comercial Sapau.es"
-                  description="Comercio de Marcas inportantes de Jardineria y camping."
+                  description="Comercio de Marcas importantes de Jardinería y camping."
                   linkView="https://sapau.000webhostapp.com/" 
                   mode = {props.mode}/>
               </div>
@@ -47,7 +47,7 @@ const Proyects = (props) => {
                   color={color}
                   colorBorder={colorBorder}
                   title="Be Bangarang"
-                  description="Colaborador para agencia deigital en varios proyectos."
+                  description="Colaborador para agencia digital en varios proyectos."
                   linkView="https://bebangarang.es/" 
                   mode = {props.mode}/>
               </div>
@@ -57,7 +57,7 @@ const Proyects = (props) => {
                   color={color}
                   colorBorder={colorBorder}
                   title="Show Your Company"
-                  description="Empresa de publicidad y marquetin digital en dispositivos moviles."
+                  description="Empresa de publicidad y marketing digital en dispositivos móviles."
                   linkView="https://www.showyourcompany.com/" 
                   mode = {props.mode}/>
               </div>

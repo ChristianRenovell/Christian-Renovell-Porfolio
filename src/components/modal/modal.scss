@@ -5,12 +5,25 @@
     left: 0;
     right: 0;
     display: grid;
-    background-color: rgba(0, 0, 0, 0.123);
+    opacity: 0;
+    background-color:#f1ede3;
     display: grid;
     justify-content: center;
     align-items: center;
     z-index: 1000;
     height: 100%;
+    animation-name: backOpen;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes backOpen{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 .modal {
 
