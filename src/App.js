@@ -39,6 +39,7 @@ class App extends Component {
   mode() {
 
     this.setState({menuOpen: false})
+    this.setState({navOpen: false})
 
     let elemento = document.getElementById("fullpage");
     let elemento2 = document.getElementById("switch");
@@ -185,10 +186,6 @@ class App extends Component {
 
     let URLactual = window.location.href;
 
-    if (URLactual === `https://christianrenovell.com/intro`) {
-      this.active(1);
-    }
-
     if (URLactual === `https://christianrenovell.com/home`) {
       this.active(1);
     }
@@ -233,7 +230,7 @@ class App extends Component {
         <div id="fullpage" className="night">
           <div className="section">
             <div id="intro-text">
-              <div className={`${this.state.navOpen ? "navDivOpen" : "navDivClose"}`} id="navContentClose" onClick={this.handleOpenMenu} />
+             
               <nav className="navbar navbar-expand-lg">
                 <div
                   id="btn-burger"
@@ -246,6 +243,7 @@ class App extends Component {
                   id="contentNav"
                   className={`${this.state.menuOpen ? "showMenu" : "navmenu"}`}
                 >
+                  
                   <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li className="nav-item">
                       <Link to={"/home"} id="nemuIten1" className={`navbar-brand lin cursor-${this.state.mode}`} onClick={() => this.active(1)}><span>Inicio</span></Link>
@@ -263,13 +261,12 @@ class App extends Component {
                       <Link to={"/contact"} id="nemuIten5" className={`navbar-brand lin cursor-${this.state.mode}`} onClick={() => this.active(5)}><span>Contacto</span></Link>
                     </li>
                   </ul>
-
+                  <div className={`${this.state.navOpen ? "navDivOpen" : "navDivClose"}`} id="navContentClose" onClick={this.handleOpenMenu} />
                 </div>
                 <div id="switch" onClick={this.mode}>
                   <div id="circle"></div>
                 </div>
               </nav>
-
               <div className={`${this.state.footerOpen ? "closeFooterOpen" : "closeFooterClose"}`} onClick={this.openFooter}>
               </div>
               <div className={`footIcon cursor-${this.state.mode}`} id="btnOpenFooter" onClick={this.openFooter}>
